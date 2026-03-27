@@ -1,10 +1,12 @@
-# OpenClaw
+# OpenClaw / Atomic Bot
 
 **Тип:** Desktop AI Client
-**Источник:** @atomicbot_ai, 27-03-2026
+**Сайт:** https://atomicbot.ai
+**GitHub:** https://github.com/OpenClaw (open source)
+**Источник:** [@atomicbot_ai](https://x.com/atomicbot_ai), 27-03-2026
 
-AI-клиент с поддержкой локальных моделей через Ollama. Установка в один клик на macOS.
+AI-клиент с поддержкой локальных моделей через Ollama. Установка в один клик на macOS и Windows.
 
 **Модели:** MiniMax, Qwen, Kimi и другие через Ollama
 **Режимы:** локально (через Ollama) или в облаке
-**Платформа:** macOS (one-click install), другие через облако
+**Платформа:** macOS, Windows (one-click install)
