@@ -63,7 +63,13 @@ list.txt  — входной список URL аккаунтов
 **2d. Обнаружение инструментов**
 Если в саммари упоминается конкретный продукт, сервис, API, библиотека или CLI-инструмент (с названием) — создать карточку.
 - Проверить: существует ли `tools/{tool-name}.md` → если да, пропустить.
-- Если нет — применить навык `ljg-card`, сохранить в `tools/{tool-name}.md`.
+- Если нет:
+  1. Создать `tools/{tool-name}.md` — текстовая карточка с описанием, **ссылками** (GitHub, сайт, Twitter, Reddit и т.п.) и источником-твитом
+  2. Сгенерировать PNG-карточку через ljg-card (шаблон `~/.claude/skills/ljg-card` или `/home/calcifer/git/ljg-skills/skills/ljg-card`):
+     - Создать HTML из `long_template.html`, заполнив `{{TITLE_BLOCK}}`, `{{BODY_HTML}}`, `{{SOURCE}}`, `{{BG_COLOR}}`, `{{ACCENT_COLOR}}`
+     - Путь к логотипу: `file:///home/calcifer/git/ljg-skills/skills/ljg-card/assets/logo.png`
+     - Запустить: `node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_{name}.html tools/{tool-name}.png 1080 800 fullpage`
+     - Если skills установлены в `/home/calcifer/git/ljg-skills/skills/ljg-card/assets/capture.js` — использовать этот путь
 
 **2e. Вывод статуса**
 ```
