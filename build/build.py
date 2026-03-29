@@ -213,6 +213,28 @@ def build_tool_index() -> dict:
     return index
 
 
+def autolink_github(html: str) -> str:
+    """**repo** (github-user) → ссылка на github.com/user/repo.
+    Не трогает уже залинкованные <strong><a ...>.
+    """
+    def replace(m):
+        name = m.group(1)
+        user = m.group(2)
+        # slug для GitHub: lowercase, пробелы → дефисы
+        repo = name.lower().replace(" ", "-")
+        return (
+            f'<strong><a href="https://github.com/{user}/{repo}">{name}</a></strong>'
+            f' (<a href="https://github.com/{user}">{user}</a>)'
+        )
+
+    # Матчим только незалинкованный <strong>text</strong> (без <a> внутри)
+    return re.sub(
+        r'<strong>([^<]+)</strong>\s*\(([A-Za-z0-9_-]+)\)',
+        replace,
+        html
+    )
+
+
 def autolink_tools(html: str, tool_index: dict) -> str:
     """Оборачивает жирные названия инструментов в ссылки на их страницы."""
     # Строим обратный словарь: lowercase_name → slug
@@ -279,7 +301,7 @@ def build_posts(tool_index: dict):
         account, date = m.group(1), m.group(2)
         text = f.read_text(encoding="utf-8")
         text = strip_meta_line(text)
-        content_html = autolink_tools(render_md(text), tool_index)
+        content_html = autolink_github(autolink_tools(render_md(text), tool_index))
         body = f"<article>{content_html}</article>"
 
         # PNG карточки инструментов из этого поста
