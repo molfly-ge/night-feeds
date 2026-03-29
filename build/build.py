@@ -7,6 +7,8 @@ build.py — генератор статического сайта night-feeds
 
 import re
 import shutil
+from datetime import datetime, timezone
+from email.utils import format_datetime
 from pathlib import Path
 import markdown
 
@@ -128,6 +130,7 @@ def page(title: str, body: str, back: str = None) -> str:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
     body {{
@@ -404,6 +407,84 @@ def build_tools(tool_index: dict):
             shutil.copy2(src_png, dest / f"{slug}.png")
 
 
+# ── Build RSS feed ────────────────────────────────────────────────────────────
+
+SITE_URL = "https://rss.molfly.me"
+
+
+def _extract_top_ideas(text: str) -> str:
+    """Берёт секцию 'Топ-идеи дня' и рендерит в HTML для content:encoded."""
+    m = re.search(r'(## Топ-идеи дня\n.*?)(?=\n## |\Z)', text, re.DOTALL)
+    if not m:
+        return ""
+    md.reset()
+    return md.convert(m.group(1))
+
+
+def _date_to_rfc2822(date_str: str) -> str:
+    """29-03-2026 → RFC 2822 строка (06:00 UTC)."""
+    d, mo, y = date_str.split("-")
+    dt = datetime(int(y), int(mo), int(d), 6, 0, 0, tzinfo=timezone.utc)
+    return format_datetime(dt)
+
+
+def build_rss():
+    """Генерирует site/feed.xml из всех дайджестов."""
+    # Описания из index.md (однострочники)
+    index_md = (ROOT / "index.md").read_text(encoding="utf-8")
+    descriptions: dict[str, str] = {}
+    for line in index_md.splitlines():
+        m = re.match(r'-\s+\[([^\]]+)\]\(digests/digest-([^)]+)\.md\)\s*[—–-]\s*(.*)', line)
+        if m:
+            descriptions[m.group(2)] = m.group(3)
+
+    items = []
+    digest_files = sorted((ROOT / "digests").glob("*.md"), reverse=True)
+    for f in digest_files[:30]:  # максимум 30 записей
+        m = re.match(r'digest-(\d{2}-\d{2}-\d{4})', f.stem)
+        if not m:
+            continue
+        date_str = m.group(1)
+        link = f"{SITE_URL}/digests/{date_str}/"
+        pub_date = _date_to_rfc2822(date_str)
+        desc = descriptions.get(date_str, f"Дайджест {date_str}")
+
+        text = f.read_text(encoding="utf-8")
+        content_html = _extract_top_ideas(text)
+
+        # Экранируем desc для XML
+        desc_escaped = desc.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+        item = f"""    <item>
+      <title>Дайджест {date_str}</title>
+      <link>{link}</link>
+      <guid isPermaLink="true">{link}</guid>
+      <pubDate>{pub_date}</pubDate>
+      <description>{desc_escaped}</description>
+      <content:encoded><![CDATA[{content_html}]]></content:encoded>
+    </item>"""
+        items.append(item)
+
+    now = format_datetime(datetime.now(tz=timezone.utc))
+    feed = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ночной дайджест</title>
+    <link>{SITE_URL}/</link>
+    <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
+    <language>ru</language>
+    <lastBuildDate>{now}</lastBuildDate>
+    <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>"""
+
+    (SITE / "feed.xml").write_text(feed, encoding="utf-8")
+    print(f"RSS: {len(items)} записей → site/feed.xml")
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -417,6 +498,7 @@ def main():
     build_digests()
     build_posts(tool_index)
     build_tools(tool_index)
+    build_rss()
 
     pages = list(SITE.rglob("index.html"))
     print(f"Собрано: {len(pages)} страниц → {SITE}")

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ночной дайджест</title>
+    <link>https://rss.molfly.me/</link>
+    <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
+    <language>ru</language>
+    <lastBuildDate>Sun, 29 Mar 2026 14:59:53 +0000</lastBuildDate>
+    <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Дайджест 29-03-2026</title>
+      <link>https://rss.molfly.me/digests/29-03-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/29-03-2026/</guid>
+      <pubDate>Sun, 29 Mar 2026 06:00:00 +0000</pubDate>
+      <description>инженеры Anthropic стали менеджерами агентов, новые Claude Code инструменты, demo vs production разрыв</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Инженер Anthropic = менеджер агентов</strong> (@RoundtableSpace, 721 лайк) — Anthropic-инженеры всё меньше пишут код и всё больше управляют несколькими агентами параллельно. Смена парадигмы зафиксирована изнутри компании.</p>
+</li>
+<li>
+<p><strong>Demo работает, production ломается</strong> (@BrandGrowthOS) — Главная причина: AI-демо создаются на чистых предсказуемых данных, реальный production — грязные, непоследовательные данные с меняющимися форматами. Проблема не в модели, а в недотестированных edge-cases.</p>
+</li>
+<li>
+<p><strong>n8n 2.14.0 beta: MCP внутри</strong> (@BrandGrowthOS) — Теперь AI-агент может создавать и обновлять n8n-воркфлоу прямо через MCP из Claude Code/Cursor. Агенты, строящие собственные automation-пайплайны — реальность.</p>
+</li>
+<li>
+<p><strong>Claude находит zero-day уязвимости в реальных системах</strong> (@garrytan, 8358 лайков) — Anthropic показал на конференции live-демо поиска zero-day через Claude. Garry Tan уже использует <code>/design-consultation</code> и называет это точкой невозврата.</p>
+</li>
+<li>
+<p><strong>AEO — Agent Engine Optimization</strong> (@sharbel) — Новая концепция: пользователи делегируют поиск AI-агентам, и «ранжирование» теперь означает цитирование агентами, а не позицию в Google. Большинство создателей контента ещё не осознали сдвиг.</p>
+</li>
+<li>
+<p><strong>TRIBE v2 — цифровой двойник мозга</strong> (@sharbel) — Meta AI представила модель на 500+ часах fMRI от 700+ людей. Предсказывает нейронные реакции zero-shot. AI начинает понимать, как мы воспринимаем реальность.</p>
+</li>
+<li>
+<p><strong>AI-Scientist-v2 генерирует статьи</strong> (@tom_doerr) — SakanaAI выпустила вторую версию системы для автономной генерации научных статей через агентный tree search.</p>
+</li>
+<li>
+<p><strong>GStack</strong> (@garrytan) — Навыки для Claude Code от CEO YC: <code>/design-consultation</code>, <code>/codex</code>, <code>/tasks</code>. Принцип User Sovereignty: AI рекомендует, человек решает.</p>
+</li>
+<li>
+<p><strong>GitHub Copilot CLI генерирует unit-тесты</strong> (@github) — Workflow: plan mode → флот агентов → мониторинг через <code>/tasks</code>. Прямо из терминала.</p>
+</li>
+<li>
+<p><strong>homelable — Infrastructure visualizer</strong> (@tom_doerr, 174 лайка) — Self-hosted визуализатор инфраструктуры со сканером сети стал одним из самых популярных репозиториев дня.</p>
+</li>
+</ol>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 28-03-2026</title>
+      <link>https://rss.molfly.me/digests/28-03-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/28-03-2026/</guid>
+      <pubDate>Sat, 28 Mar 2026 06:00:00 +0000</pubDate>
+      <description>утечка про Claude Mythos, агенты-трейдеры на Polymarket, волна недовольства rate limits Claude Code</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Claude Mythos и утечка из Anthropic</strong> — внутренняя команда безопасности охарактеризовала следующую модель как несущую «беспрецедентные риски кибербезопасности». Одновременно ~3000 активов с сайта Anthropic оказались открыты без авторизации. (@roundtablespace, @brandgrowthos)</p>
+</li>
+<li>
+<p><strong>Claude как торговый агент</strong> — серия историй об агентах на Claude, торгующих на Polymarket и крипторынках: $100 → $10K за сутки, $1.5K → $3M на BTC, $847 за ночь из 7 репозиториев. Результаты впечатляют, воспроизводимость не подтверждена. (@roundtablespace)</p>
+</li>
+<li>
+<p><strong>Ограничения Claude Code</strong> — разработчики массово жалуются на новые rate limits, часть переходит на GPT 5.4 + Codex. (@roundtablespace)</p>
+</li>
+<li>
+<p><strong>Агенты вместо workflow</strong> — тезис @brandgrowthos: платформы автоматизации устаревают, агентам нужны цели и инфраструктура, а не воркфлоу. Подкреплено практическими примерами (DOM-ресканирование для динамических форм).</p>
+</li>
+<li>
+<p><strong>Perplexity в Samsung Browser</strong> — Perplexity встроен в Browsing Assist на Galaxy Android и Windows. Первое крупное партнёрство на уровне производителя устройств. (@perplexity_ai)</p>
+</li>
+<li>
+<p><strong>KDE доминирует в unixporn</strong> — из 21 поста большинство на KDE Plasma, Hyprland на втором месте. Растёт число новичков, впервые устанавливающих Linux. (@bot_unixporn)</p>
+</li>
+</ol>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 27-03-2026</title>
+      <link>https://rss.molfly.me/digests/27-03-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/27-03-2026/</guid>
+      <pubDate>Fri, 27 Mar 2026 06:00:00 +0000</pubDate>
+      <description>Claude Code-бум, trading боты на информационном лаге, RAG падает на индексации</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<p><strong>1. Claude Code-бум</strong> — сразу несколько аккаунтов публикуют туториалы, схемы, 12-минутные курсы. Сообщество осваивает Claude Code массово прямо сейчас. (@roundtablespace)</p>
+<p><strong>2. Vibe coding создал приложения, но они застряли на localhost</strong> — барьер сместился с «написать» на «задеплоить». Миллионы проектов, которые никто не видит. (@railpushagent)</p>
+<p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (@roundtablespace)</p>
+<p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (@brandgrowthos)</p>
+<p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (@brandgrowthos)</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>
