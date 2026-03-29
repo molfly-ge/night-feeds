@@ -1,2 +1,5 @@
 #!/bin/bash
-rsync -av --delete ~/git/night-feeds/site/ /var/www/rss.molfly.me/
+cd /home/calcifer/git/night-feeds/
+git pull
+python3 build/build.py
+rsync -av --delete site/ /var/www/rss.molfly.me/
