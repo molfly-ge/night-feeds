@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -av --delete ~/git/nigth-feeds/site/ /var/www/rss.molfly.me/
+rsync -av --delete ~/git/night-feeds/site/ /var/www/rss.molfly.me/
