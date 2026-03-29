@@ -35,7 +35,6 @@ def strip_meta_line(text: str) -> str:
 
 def linkify_urls(html: str) -> str:
     """Превращает голые URL в <a href>. Не трогает уже существующие href/src."""
-    # Защищаем уже существующие атрибуты href="..." и src="..."
     protected = {}
     def protect(m):
         key = f"\x00ATTR{len(protected)}\x00"
@@ -43,10 +42,15 @@ def linkify_urls(html: str) -> str:
         return key
     html = re.sub(r'(?:href|src)="[^"]*"', protect, html)
 
-    # Linkify голые https?://... не внутри тегов
+    # https?://... и голые github.com/user/repo
     html = re.sub(
-        r'(?<!["\'=>])(https?://[^\s<>"\']+)',
+        r'(?<!["\'=>\w])(https?://[^\s<>"\']+)',
         lambda m: f'<a href="{m.group(1)}">{m.group(1)}</a>',
+        html
+    )
+    html = re.sub(
+        r'(?<!["\'=>\w/])(github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)',
+        lambda m: f'<a href="https://{m.group(1)}">{m.group(1)}</a>',
         html
     )
 
@@ -235,13 +239,19 @@ def autolink_github(html: str) -> str:
     )
 
 
-def autolink_tools(html: str, tool_index: dict) -> str:
-    """Оборачивает жирные названия инструментов в ссылки на их страницы."""
-    # Строим обратный словарь: lowercase_name → slug
+def _build_name_map(tool_index: dict, min_len: int = 5) -> list:
+    """Список (name_lower, slug) отсортированный по длине убывания."""
     name_to_slug = {}
     for slug, info in tool_index.items():
         for name in info["names"]:
-            name_to_slug[name.lower()] = slug
+            if len(name) >= min_len:
+                name_to_slug[name.lower()] = slug
+    return sorted(name_to_slug.items(), key=lambda x: len(x[0]), reverse=True)
+
+
+def autolink_tools(html: str, tool_index: dict) -> str:
+    """Оборачивает жирные названия инструментов в ссылки на их страницы."""
+    name_to_slug = {n.lower(): s for s, i in tool_index.items() for n in i["names"]}
 
     def replace(m):
         name = m.group(1)
@@ -251,6 +261,53 @@ def autolink_tools(html: str, tool_index: dict) -> str:
         return m.group(0)
 
     return re.sub(r'<strong>([^<]+)</strong>', replace, html)
+
+
+def autolink_tools_plain(html: str, tool_index: dict) -> str:
+    """Линкует имена инструментов в plain text (вне тегов и существующих ссылок)."""
+    name_map = dict(_build_name_map(tool_index))
+    if not name_map:
+        return html
+
+    # Разбиваем HTML на теги и текст
+    parts = re.split(r'(<[^>]+>)', html)
+    result = []
+    in_link = 0
+    linked_slugs: set = set()  # не линкуем один инструмент дважды на странице
+
+    for part in parts:
+        if part.startswith('<'):
+            tag_lower = part.lower()
+            if re.match(r'<a[\s>]', tag_lower):
+                in_link += 1
+            elif tag_lower.startswith('</a'):
+                in_link = max(0, in_link - 1)
+            result.append(part)
+            continue
+
+        if in_link > 0:
+            result.append(part)
+            continue
+
+        # Заменяем первое вхождение каждого имени инструмента
+        for name_lower, slug in name_map.items():
+            if slug in linked_slugs:
+                continue
+            pattern = re.compile(
+                rf'(?<![/\w])({re.escape(name_lower)})(?![\w/])',
+                re.IGNORECASE
+            )
+            new_part, n = pattern.subn(
+                lambda m, s=slug: f'<a href="/tools/{s}">{m.group(1)}</a>',
+                part, count=1
+            )
+            if n:
+                part = new_part
+                linked_slugs.add(slug)
+
+        result.append(part)
+
+    return ''.join(result)
 
 
 # ── Build index (/) ───────────────────────────────────────────────────────────
@@ -301,7 +358,12 @@ def build_posts(tool_index: dict):
         account, date = m.group(1), m.group(2)
         text = f.read_text(encoding="utf-8")
         text = strip_meta_line(text)
-        content_html = autolink_github(autolink_tools(render_md(text), tool_index))
+        content_html = autolink_tools_plain(
+            autolink_github(
+                autolink_tools(render_md(text), tool_index)
+            ),
+            tool_index
+        )
         body = f"<article>{content_html}</article>"
 
         # PNG карточки инструментов из этого поста
