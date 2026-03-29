@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Андрей</title>
+  <title>Дайджест</title>
+  <!--
+    TODO: добавить секции
+    - интро: "я — [имя], [роль]" + 1-2 строки описания
+    - ссылки: проекты, дайджест, github, telegram, email
+    - проекты: список с коротким описанием
+  -->
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -18,27 +24,19 @@
       color: #2D2D2D;
       background: #ffffff;
       padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
     }
 
     .container {
+      width: 100%;
       max-width: 640px;
-    }
-
-    h1 {
-      font-size: 26px;
-      font-weight: 600;
-      line-height: 1.3;
-      margin-bottom: 12px;
     }
 
     h2 {
       font-size: 17px;
       font-weight: 600;
       margin-bottom: 16px;
-      color: #2D2D2D;
-    }
-
-    p {
       color: #2D2D2D;
     }
 
@@ -51,34 +49,6 @@
       text-decoration: underline;
     }
 
-    section {
-      margin-top: 40px;
-    }
-
-    /* Ссылки-навигация */
-    .nav {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    /* Проекты */
-    .projects {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .project-name {
-      display: block;
-    }
-
-    .project-desc {
-      color: #666;
-      font-size: 15px;
-    }
-
-    /* Список постов */
     .posts {
       display: flex;
       flex-direction: column;
@@ -110,36 +80,6 @@
 </head>
 <body>
   <div class="container">
-
-    <section>
-      <h1>я — Андрей, разработчик</h1>
-      <p>Строю инструменты для работы с информацией.<br>Слежу за AI-экосистемой, собираю дайджесты.</p>
-    </section>
-
-    <section>
-      <h2>ссылки</h2>
-      <nav class="nav">
-        <a href="/projects">проекты</a>
-        <a href="/digests">дайджест</a>
-        <a href="https://github.com/">github</a>
-        <a href="https://t.me/">telegram</a>
-        <a href="mailto:">email</a>
-      </nav>
-    </section>
-
-    <section>
-      <h2>проекты</h2>
-      <div class="projects">
-        <div>
-          <a class="project-name" href="/projects/night-feeds">night-feeds</a>
-          <span class="project-desc">ночной дайджест Twitter-аккаунтов</span>
-        </div>
-        <div>
-          <a class="project-name" href="/projects/hn-parser">hn-parser</a>
-          <span class="project-desc">парсер Hacker News с фильтрацией</span>
-        </div>
-      </div>
-    </section>
 
     <section>
       <h2>дайджест</h2>
