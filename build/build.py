@@ -18,6 +18,38 @@ md = markdown.Markdown(extensions=["tables"])
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
+def strip_frontmatter(text: str) -> str:
+    """Убирает YAML frontmatter (--- ... ---) из начала файла."""
+    if not text.startswith("---"):
+        return text
+    end = text.find("\n---", 3)
+    if end == -1:
+        return text
+    return text[end + 4:].lstrip("\n")
+
+
+def linkify_urls(html: str) -> str:
+    """Превращает голые URL в <a href>. Не трогает уже существующие href/src."""
+    # Защищаем уже существующие атрибуты href="..." и src="..."
+    protected = {}
+    def protect(m):
+        key = f"\x00ATTR{len(protected)}\x00"
+        protected[key] = m.group(0)
+        return key
+    html = re.sub(r'(?:href|src)="[^"]*"', protect, html)
+
+    # Linkify голые https?://... не внутри тегов
+    html = re.sub(
+        r'(?<!["\'=>])(https?://[^\s<>"\']+)',
+        lambda m: f'<a href="{m.group(1)}">{m.group(1)}</a>',
+        html
+    )
+
+    for key, val in protected.items():
+        html = html.replace(key, val)
+    return html
+
+
 def linkify_mentions(text: str) -> str:
     """@username → ссылка на X, не трогая уже существующие markdown-ссылки."""
     # Защищаем уже существующие ссылки: [text](url) и [@name](url)
@@ -66,9 +98,11 @@ def fix_links(html: str) -> str:
 
 def render_md(text: str) -> str:
     md.reset()
+    text = strip_frontmatter(text)
     text = linkify_mentions(text)
     html = md.convert(text)
     html = fix_links(html)
+    html = linkify_urls(html)
     return html
 
 
