@@ -28,6 +28,11 @@ def strip_frontmatter(text: str) -> str:
     return text[end + 4:].lstrip("\n")
 
 
+def strip_meta_line(text: str) -> str:
+    """Убирает строку *Обработано: X твитов...*"""
+    return re.sub(r'\n---\n\*Обработано:.*?\*\s*$', '', text, flags=re.DOTALL).rstrip()
+
+
 def linkify_urls(html: str) -> str:
     """Превращает голые URL в <a href>. Не трогает уже существующие href/src."""
     # Защищаем уже существующие атрибуты href="..." и src="..."
@@ -177,7 +182,7 @@ def fmt_date(date_str: str) -> str:
     return f"{months[int(m)-1]} {int(d)}, {y}"
 
 
-# ── Tool index: {slug} → {source_account, source_date, has_png} ──────────────
+# ── Tool index: {slug} → {source_account, source_date, has_png, names} ───────
 
 def build_tool_index() -> dict:
     index = {}
@@ -189,8 +194,41 @@ def build_tool_index() -> dict:
         if m:
             account, date = m.group(1), m.group(2)
         has_png = (ROOT / "tools" / f"{slug}.png").exists()
-        index[slug] = {"account": account, "date": date, "has_png": has_png}
+
+        # Собираем варианты имён для авто-линковки
+        names = set()
+        # из frontmatter: name: ...
+        fm = re.search(r'^name:\s*(.+)$', text, re.MULTILINE)
+        if fm:
+            names.add(fm.group(1).strip())
+        # из заголовка: # Title
+        h1 = re.search(r'^# (.+)$', strip_frontmatter(text), re.MULTILINE)
+        if h1:
+            names.add(h1.group(1).strip())
+        # slug как fallback (дефисы → пробелы)
+        names.add(slug)
+        names.add(slug.replace("-", " "))
+
+        index[slug] = {"account": account, "date": date, "has_png": has_png, "names": names}
     return index
+
+
+def autolink_tools(html: str, tool_index: dict) -> str:
+    """Оборачивает жирные названия инструментов в ссылки на их страницы."""
+    # Строим обратный словарь: lowercase_name → slug
+    name_to_slug = {}
+    for slug, info in tool_index.items():
+        for name in info["names"]:
+            name_to_slug[name.lower()] = slug
+
+    def replace(m):
+        name = m.group(1)
+        slug = name_to_slug.get(name.lower())
+        if slug:
+            return f'<strong><a href="/tools/{slug}">{name}</a></strong>'
+        return m.group(0)
+
+    return re.sub(r'<strong>([^<]+)</strong>', replace, html)
 
 
 # ── Build index (/) ───────────────────────────────────────────────────────────
@@ -240,7 +278,9 @@ def build_posts(tool_index: dict):
             continue
         account, date = m.group(1), m.group(2)
         text = f.read_text(encoding="utf-8")
-        body = f"<article>{render_md(text)}</article>"
+        text = strip_meta_line(text)
+        content_html = autolink_tools(render_md(text), tool_index)
+        body = f"<article>{content_html}</article>"
 
         # PNG карточки инструментов из этого поста
         cards = [
