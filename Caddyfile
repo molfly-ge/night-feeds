@@ -1,0 +1,28 @@
+oc.molfly.me {
+    root * /var/www/oc.molfly.me
+    file_server
+    encode zstd gzip
+}
+
+molfly.me {
+    root * /var/www/molfly.me
+    file_server
+    encode zstd gzip
+    log {
+        output file /var/log/caddy/molfly.me.log
+    }
+}
+
+# Редирект с www
+www.molfly.me {
+    redir https://molfly.me{uri}
+}
+
+rss.molfly.me {
+    root * /var/www/rss.molfly.me
+    file_server
+    encode zstd gzip
+    log {
+        output file /var/log/caddy/rss.molfly.me.log
+    }
+}

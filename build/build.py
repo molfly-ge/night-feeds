@@ -5,7 +5,6 @@ build.py — генератор статического сайта night-feeds
 Выход: site/
 """
 
-import os
 import re
 import shutil
 from pathlib import Path
@@ -19,9 +18,58 @@ md = markdown.Markdown(extensions=["tables"])
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
+def linkify_mentions(text: str) -> str:
+    """@username → ссылка на X, не трогая уже существующие markdown-ссылки."""
+    # Защищаем уже существующие ссылки: [text](url) и [@name](url)
+    placeholders = {}
+    def protect(m):
+        key = f"\x00LINK{len(placeholders)}\x00"
+        placeholders[key] = m.group(0)
+        return key
+    text = re.sub(r'\[([^\]]*)\]\([^)]+\)', protect, text)
+
+    # Заменяем свободные @mentions
+    text = re.sub(
+        r'(?<![/\w])@([A-Za-z0-9_]+)',
+        lambda m: f'[@{m.group(1)}](https://x.com/{m.group(1)}?s=11)',
+        text
+    )
+
+    # Восстанавливаем защищённые ссылки
+    for key, val in placeholders.items():
+        text = text.replace(key, val)
+    return text
+
+
+def fix_links(html: str) -> str:
+    """Перепиши .md-ссылки в чистые URL сайта."""
+    # ../posts/post-{account}-{date}.md → /posts/{account}-{date}
+    html = re.sub(
+        r'href="\.\./posts/post-([^"]+)-(\d{2}-\d{2}-\d{4})\.md"',
+        r'href="/posts/\1-\2"',
+        html
+    )
+    # ../tools/{slug}.md → /tools/{slug}
+    html = re.sub(
+        r'href="\.\./tools/([^"]+)\.md"',
+        r'href="/tools/\1"',
+        html
+    )
+    # digests/digest-{date}.md → /digests/{date}  (из index.md)
+    html = re.sub(
+        r'href="digests/digest-([^"]+)\.md"',
+        r'href="/digests/\1"',
+        html
+    )
+    return html
+
+
 def render_md(text: str) -> str:
     md.reset()
-    return md.convert(text)
+    text = linkify_mentions(text)
+    html = md.convert(text)
+    html = fix_links(html)
+    return html
 
 
 def write_page(path: Path, html: str):
@@ -212,7 +260,6 @@ def main():
     build_posts(tool_index)
     build_tools(tool_index)
 
-    # Считаем страницы
     pages = list(SITE.rglob("index.html"))
     print(f"Собрано: {len(pages)} страниц → {SITE}")
 
