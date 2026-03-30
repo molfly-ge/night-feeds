@@ -7,8 +7,39 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Sun, 29 Mar 2026 14:59:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 05:58:00 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Дайджест 30-03-2026</title>
+      <link>https://rss.molfly.me/digests/30-03-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/30-03-2026/</guid>
+      <pubDate>Mon, 30 Mar 2026 06:00:00 +0000</pubDate>
+      <description>CLI как стандарт AI-агентов, Qwen3.5 VLM, fault tolerance в продакшене, нефть $95</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>CLI стал стандартом для AI-агентов</strong> — Feishu открыл <code>lark-cli</code>, Google ранее выпустил <code>gws</code>. Тренд 2026: все платформы делают CLI для AI-агентов. (@dotey)</p>
+</li>
+<li>
+<p><strong>Failure tolerance в AI-агентах — это фича, не баг</strong> — агенты проваливаются в продакшене не из-за плохих промптов, а потому что построены как традиционный ПО. Guardrails = слой координации. (@brandgrowthos)</p>
+</li>
+<li>
+<p><strong>LLM + открытый веб = баги и угрозы</strong> — Garry Tan подчёркивает: каждый раз, когда LLM взаимодействует с вебом, это «безумная ферма багов и кошмар безопасности». Cisco ответила инструментом <code>defenseclaw</code>. (@garrytan, @tom_doerr)</p>
+</li>
+<li>
+<p><strong>Нефть +60% за 2 месяца, Ормузский пролив под угрозой</strong> — Brent $95, AIS-данные уже визуализируют, как выглядело бы закрытие пролива. (@aakashgupta, @RoundtableSpace)</p>
+</li>
+<li>
+<p><strong>Qwen3.5 дебютирует на HuggingFace</strong> — 27B и 397B VLM в GPTQ Int4 квантизации, Apache 2.0, multimodal. (@HuggingModels)</p>
+</li>
+<li>
+<p><strong>Claude Code 15 недооценённых функций</strong> — Boris Cherny раскрыл мобильную разработку, синхронизацию сессий между устройствами и многое другое. (@dotey)</p>
+</li>
+<li>
+<p><strong>22 репозитория от @tom_doerr</strong> — от Pokemon-агента до enterprise RAG на Docker, децентрализованного AI-кластера Parallax и Cisco AI Defense.</p>
+</li>
+</ol>]]></content:encoded>
+    </item>
     <item>
       <title>Дайджест 29-03-2026</title>
       <link>https://rss.molfly.me/digests/29-03-2026/</link>

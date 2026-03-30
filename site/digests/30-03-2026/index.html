@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дайджест 30-03-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>Дайджест 30-03-2026</h1>
+<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>CLI стал стандартом для AI-агентов</strong> — Feishu открыл <code>lark-cli</code>, Google ранее выпустил <code>gws</code>. Тренд 2026: все платформы делают CLI для AI-агентов. (<a href="https://x.com/dotey?s=11">@dotey</a>)</p>
+</li>
+<li>
+<p><strong>Failure tolerance в AI-агентах — это фича, не баг</strong> — агенты проваливаются в продакшене не из-за плохих промптов, а потому что построены как традиционный ПО. Guardrails = слой координации. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
+</li>
+<li>
+<p><strong>LLM + открытый веб = баги и угрозы</strong> — Garry Tan подчёркивает: каждый раз, когда LLM взаимодействует с вебом, это «безумная ферма багов и кошмар безопасности». Cisco ответила инструментом <code>defenseclaw</code>. (<a href="https://x.com/garrytan?s=11">@garrytan</a>, <a href="https://x.com/tom_doerr?s=11">@tom_doerr</a>)</p>
+</li>
+<li>
+<p><strong>Нефть +60% за 2 месяца, Ормузский пролив под угрозой</strong> — Brent $95, AIS-данные уже визуализируют, как выглядело бы закрытие пролива. (<a href="https://x.com/aakashgupta?s=11">@aakashgupta</a>, <a href="https://x.com/RoundtableSpace?s=11">@RoundtableSpace</a>)</p>
+</li>
+<li>
+<p><strong>Qwen3.5 дебютирует на HuggingFace</strong> — 27B и 397B VLM в GPTQ Int4 квантизации, Apache 2.0, multimodal. (<a href="https://x.com/HuggingModels?s=11">@HuggingModels</a>)</p>
+</li>
+<li>
+<p><strong>Claude Code 15 недооценённых функций</strong> — Boris Cherny раскрыл мобильную разработку, синхронизацию сессий между устройствами и многое другое. (<a href="https://x.com/dotey?s=11">@dotey</a>)</p>
+</li>
+<li>
+<p><strong>22 репозитория от <a href="https://x.com/tom_doerr?s=11">@tom_doerr</a></strong> — от Pokemon-агента до enterprise RAG на Docker, децентрализованного AI-кластера Parallax и Cisco AI Defense.</p>
+</li>
+</ol>
+<h2>Пересечения тем</h2>
+<p><strong>AI-агенты в продакшене</strong> (roundtablespace, brandgrowthos, dotey, GithubProjects):
+- Все четыре аккаунта независимо поднимают тему надёжности и координации агентов в реальных системах.</p>
+<p><strong>CLI как интерфейс для AI</strong> (dotey, roundtablespace, tom_doerr):
+- lark-cli, lacp (local agent control plane), skillhub — тренд на programmatic управление агентами.</p>
+<p><strong>Геополитика через данные</strong> (aakashgupta, roundtablespace):
+- Оба аккаунта обсуждают Ормузский пролив с разных углов: AIS-данные и экономика нефти.</p>
+<h2>Новые инструменты</h2>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/tools/ragapp">ragapp</a></td>
+<td>Enterprise Agentic RAG на Docker</td>
+</tr>
+<tr>
+<td><a href="/tools/autoagents">autoagents</a></td>
+<td>Мультиагентный фреймворк на Rust</td>
+</tr>
+<tr>
+<td><a href="/tools/defenseclaw">defenseclaw</a></td>
+<td>Cisco: блокировка опасных AI-агентов</td>
+</tr>
+<tr>
+<td><a href="/tools/oh-my-mermaid">oh-my-mermaid</a></td>
+<td>AI → архитектурная документация</td>
+</tr>
+<tr>
+<td><a href="/tools/polyterm">polyterm</a></td>
+<td>TUI для аналитики PolyMarket</td>
+</tr>
+<tr>
+<td><a href="/tools/pokemon-agent">pokemon-agent</a></td>
+<td>NousResearch: AI играет в Pokémon</td>
+</tr>
+<tr>
+<td><a href="/tools/parallax-gradienthq">parallax-gradienthq</a></td>
+<td>Децентрализованный AI-кластер</td>
+</tr>
+<tr>
+<td><a href="/tools/motrix-next">motrix-next</a></td>
+<td>Motrix download manager на Tauri</td>
+</tr>
+<tr>
+<td><a href="/tools/lark-cli">lark-cli</a></td>
+<td>Feishu CLI для AI-агентов</td>
+</tr>
+<tr>
+<td><a href="/tools/core-so">core-so</a></td>
+<td>AI-нативное рабочее пространство</td>
+</tr>
+</tbody>
+</table>
+<h2>По аккаунтам</h2>
+<ul>
+<li><a href="/posts/roundtablespace-30-03-2026">roundtablespace</a> — 11 твитов: Hermes, Core.so, Google Colab в VS Code, Claude + Polymarket</li>
+<li><a href="/posts/atomicbot_ai-30-03-2026">atomicbot_ai</a> — тихий день</li>
+<li><a href="/posts/anthropicai-30-03-2026">anthropicai</a> — тихий день</li>
+<li><a href="/posts/brandgrowthos-30-03-2026">brandgrowthos</a> — 2 твита: failure tolerance, guardrails как координация</li>
+<li><a href="/posts/railpushagent-30-03-2026">railpushagent</a> — тихий день</li>
+<li><a href="/posts/nextgenos2026-30-03-2026">nextgenos2026</a> — тихий день</li>
+<li><a href="/posts/bot_unixporn-30-03-2026">bot_unixporn</a> — 3 поста: KDE Snow Leopard, Wayland parallax, Niri Catppuccin</li>
+<li><a href="/posts/perplexity_ai-30-03-2026">perplexity_ai</a> — тихий день</li>
+<li><a href="/posts/tom_doerr-30-03-2026">tom_doerr</a> — 22 репозитория: ragapp, AutoAgents, defenseclaw, Parallax и др.</li>
+<li><a href="/posts/sharbel-30-03-2026">sharbel</a> — тихий день</li>
+<li><a href="/posts/garrytan-30-03-2026">garrytan</a> — 4 твита: GStack PR волна, LLM + веб безопасность</li>
+<li><a href="/posts/atomic_chat_hq-30-03-2026">atomic_chat_hq</a> — тихий день</li>
+<li><a href="/posts/code-30-03-2026">code</a> — тихий день</li>
+<li><a href="/posts/github-30-03-2026">github</a> — тихий день</li>
+<li><a href="/posts/onevcat-30-03-2026">onevcat</a> — тихий день</li>
+<li><a href="/posts/axiaisacat-30-03-2026">axiaisacat</a> — тихий день</li>
+<li><a href="/posts/sdrzn-30-03-2026">sdrzn</a> — тихий день</li>
+<li><a href="/posts/GithubProjects-30-03-2026">GithubProjects</a> — 2 твита: production Agentic RAG курс</li>
+<li><a href="/posts/HuggingModels-30-03-2026">HuggingModels</a> — 9 твитов: Qwen3.5-27B, 397B VLM, uncensored code model</li>
+<li><a href="/posts/huggingface-30-03-2026">huggingface</a> — тихий день</li>
+<li><a href="/posts/aakashgupta-30-03-2026">aakashgupta</a> — 11 твитов: нефть $200, рынок труда 2032, нейронаука</li>
+<li><a href="/posts/karpathy-30-03-2026">karpathy</a> — тихий день</li>
+<li><a href="/posts/dotey-30-03-2026">dotey</a> — 8 твитов: Claude Code мобильный, lark-cli, Review Swarm</li>
+<li>yahiyadev — ✗ ошибка twitter-cli (rate_limited)</li>
+</ul></article>
+  </div>
+</body>
+</html>
