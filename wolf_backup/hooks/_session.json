@@ -1,0 +1,27 @@
+{
+  "session_id": "session-2026-03-30-1102",
+  "started": "2026-03-30T06:02:43.693Z",
+  "files_read": {
+    "/home/calcifer/git/nigth-feeds/run-digest.sh": {
+      "count": 1,
+      "tokens": 42,
+      "first_read": "2026-03-30T06:43:07.559Z"
+    }
+  },
+  "files_written": [
+    {
+      "file": "/home/calcifer/git/nigth-feeds/run-digest.sh",
+      "action": "edit",
+      "tokens": 36,
+      "at": "2026-03-30T06:43:41.529Z"
+    }
+  ],
+  "edit_counts": {
+    "run-digest.sh": 1
+  },
+  "anatomy_hits": 1,
+  "anatomy_misses": 0,
+  "repeated_reads_warned": 0,
+  "cerebrum_warnings": 0,
+  "stop_count": 3
+}

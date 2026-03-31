@@ -1,0 +1,2349 @@
+{
+  "version": 1,
+  "created_at": "2026-03-29T14:22:52.274Z",
+  "lifetime": {
+    "total_tokens_estimated": 123930,
+    "total_reads": 111,
+    "total_writes": 258,
+    "total_sessions": 4,
+    "anatomy_hits": 81,
+    "anatomy_misses": 30,
+    "repeated_reads_blocked": 21,
+    "estimated_savings_vs_bare_cli": 70283
+  },
+  "sessions": [
+    {
+      "id": "session-2026-03-29-1924",
+      "started": "2026-03-29T14:24:08.812Z",
+      "ended": "2026-03-29T14:25:25.534Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 911,
+        "output_tokens_estimated": 0,
+        "reads_count": 2,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-29-1924",
+      "started": "2026-03-29T14:24:08.812Z",
+      "ended": "2026-03-29T15:01:01.270Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-29-03-2026.md",
+          "tokens_estimated": 1272,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 82,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 124,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 812,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 47,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2331,
+        "output_tokens_estimated": 1065,
+        "reads_count": 6,
+        "writes_count": 4,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 5
+      }
+    },
+    {
+      "id": "session-2026-03-29-1924",
+      "started": "2026-03-29T14:24:08.812Z",
+      "ended": "2026-03-29T15:03:26.999Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-29-03-2026.md",
+          "tokens_estimated": 1272,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 82,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 124,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 812,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 47,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2331,
+        "output_tokens_estimated": 1065,
+        "reads_count": 6,
+        "writes_count": 4,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 5
+      }
+    },
+    {
+      "id": "session-2026-03-29-1924",
+      "started": "2026-03-29T14:24:08.812Z",
+      "ended": "2026-03-29T15:03:56.313Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-29-03-2026.md",
+          "tokens_estimated": 1272,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 82,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 124,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 812,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 47,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2331,
+        "output_tokens_estimated": 1065,
+        "reads_count": 6,
+        "writes_count": 4,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 5
+      }
+    },
+    {
+      "id": "session-2026-03-29-1924",
+      "started": "2026-03-29T14:24:08.812Z",
+      "ended": "2026-03-29T15:05:04.198Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-29-03-2026.md",
+          "tokens_estimated": 1272,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/.gitignore",
+          "tokens_estimated": 11,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 82,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 124,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 812,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 47,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2342,
+        "output_tokens_estimated": 1065,
+        "reads_count": 7,
+        "writes_count": 4,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 6
+      }
+    },
+    {
+      "id": "session-2026-03-29-1924",
+      "started": "2026-03-29T14:24:08.812Z",
+      "ended": "2026-03-29T15:06:05.870Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-29-03-2026.md",
+          "tokens_estimated": 1272,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/.gitignore",
+          "tokens_estimated": 11,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 82,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 124,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 812,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 47,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 138,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 2342,
+        "output_tokens_estimated": 1203,
+        "reads_count": 8,
+        "writes_count": 5,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 6
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:32:08.196Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 6048,
+        "output_tokens_estimated": 0,
+        "reads_count": 4,
+        "writes_count": 0,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:35:06.312Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [],
+      "totals": {
+        "input_tokens_estimated": 6048,
+        "output_tokens_estimated": 0,
+        "reads_count": 4,
+        "writes_count": 0,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:36:36.769Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6048,
+        "output_tokens_estimated": 10,
+        "reads_count": 4,
+        "writes_count": 1,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:38:01.128Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6048,
+        "output_tokens_estimated": 10,
+        "reads_count": 5,
+        "writes_count": 1,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:39:20.504Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6048,
+        "output_tokens_estimated": 20,
+        "reads_count": 5,
+        "writes_count": 2,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:39:43.222Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 37,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6048,
+        "output_tokens_estimated": 20,
+        "reads_count": 5,
+        "writes_count": 2,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:40:59.527Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 35,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 30,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6046,
+        "output_tokens_estimated": 77,
+        "reads_count": 5,
+        "writes_count": 4,
+        "repeated_reads_blocked": 2,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:41:37.514Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 35,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 30,
+          "action": "create"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 6046,
+        "output_tokens_estimated": 77,
+        "reads_count": 5,
+        "writes_count": 4,
+        "repeated_reads_blocked": 2,
+        "anatomy_lookups": 4
+      }
+    },
+    {
+      "id": "session-2026-03-29-2330",
+      "started": "2026-03-29T18:30:25.543Z",
+      "ended": "2026-03-29T18:47:56.721Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/build/build.py",
+          "tokens_estimated": 5100,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/Caddyfile",
+          "tokens_estimated": 124,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/site/index.html",
+          "tokens_estimated": 787,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 35,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/.claude/projects/-home-calcifer-git-nigth-feeds/memory/feedback_style.md",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/run-digest.sh",
+          "tokens_estimated": 42,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/CLAUDE.md",
+          "tokens_estimated": 1489,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 10,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 30,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/CLAUDE.md",
+          "tokens_estimated": 43,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/deploy.sh",
+          "tokens_estimated": 16,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 7685,
+        "output_tokens_estimated": 136,
+        "reads_count": 8,
+        "writes_count": 6,
+        "repeated_reads_blocked": 6,
+        "anatomy_lookups": 7
+      }
+    },
+    {
+      "id": "session-2026-03-30-1026",
+      "started": "2026-03-30T05:26:19.413Z",
+      "ended": "2026-03-30T05:58:49.988Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/b071ss7n0.output",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/bpy2wfuah.output",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-code-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-github-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-anthropicai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-huggingface-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-roundtablespace-30-03-2026.md",
+          "tokens_estimated": 819,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-bot_unixporn-30-03-2026.md",
+          "tokens_estimated": 263,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-tom_doerr-30-03-2026.md",
+          "tokens_estimated": 1556,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-garrytan-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-aakashgupta-30-03-2026.md",
+          "tokens_estimated": 814,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/ragapp.md",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/autoagents.md",
+          "tokens_estimated": 93,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/defenseclaw.md",
+          "tokens_estimated": 102,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/oh-my-mermaid.md",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/polyterm.md",
+          "tokens_estimated": 80,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/pokemon-agent.md",
+          "tokens_estimated": 91,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/parallax-gradienthq.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/motrix-next.md",
+          "tokens_estimated": 90,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomicbot_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-railpushagent-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-nextgenos2026-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-perplexity_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sharbel-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomic_chat_hq-30-03-2026.md",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-onevcat-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-axiaisacat-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sdrzn-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-karpathy-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-brandgrowthos-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-GithubProjects-30-03-2026.md",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-HuggingModels-30-03-2026.md",
+          "tokens_estimated": 403,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-dotey-30-03-2026.md",
+          "tokens_estimated": 650,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/lark-cli.md",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/core-so.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 1330,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 219,
+        "output_tokens_estimated": 8012,
+        "reads_count": 5,
+        "writes_count": 36,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-30-1026",
+      "started": "2026-03-30T05:26:19.413Z",
+      "ended": "2026-03-30T05:58:53.669Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/b071ss7n0.output",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/bpy2wfuah.output",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-code-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-github-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-anthropicai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-huggingface-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-roundtablespace-30-03-2026.md",
+          "tokens_estimated": 819,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-bot_unixporn-30-03-2026.md",
+          "tokens_estimated": 263,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-tom_doerr-30-03-2026.md",
+          "tokens_estimated": 1556,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-garrytan-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-aakashgupta-30-03-2026.md",
+          "tokens_estimated": 814,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/ragapp.md",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/autoagents.md",
+          "tokens_estimated": 93,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/defenseclaw.md",
+          "tokens_estimated": 102,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/oh-my-mermaid.md",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/polyterm.md",
+          "tokens_estimated": 80,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/pokemon-agent.md",
+          "tokens_estimated": 91,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/parallax-gradienthq.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/motrix-next.md",
+          "tokens_estimated": 90,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomicbot_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-railpushagent-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-nextgenos2026-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-perplexity_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sharbel-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomic_chat_hq-30-03-2026.md",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-onevcat-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-axiaisacat-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sdrzn-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-karpathy-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-brandgrowthos-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-GithubProjects-30-03-2026.md",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-HuggingModels-30-03-2026.md",
+          "tokens_estimated": 403,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-dotey-30-03-2026.md",
+          "tokens_estimated": 650,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/lark-cli.md",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/core-so.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 1330,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 219,
+        "output_tokens_estimated": 8012,
+        "reads_count": 5,
+        "writes_count": 36,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-30-1026",
+      "started": "2026-03-30T05:26:19.413Z",
+      "ended": "2026-03-30T05:58:57.135Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/b071ss7n0.output",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/bpy2wfuah.output",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-code-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-github-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-anthropicai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-huggingface-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-roundtablespace-30-03-2026.md",
+          "tokens_estimated": 819,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-bot_unixporn-30-03-2026.md",
+          "tokens_estimated": 263,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-tom_doerr-30-03-2026.md",
+          "tokens_estimated": 1556,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-garrytan-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-aakashgupta-30-03-2026.md",
+          "tokens_estimated": 814,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/ragapp.md",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/autoagents.md",
+          "tokens_estimated": 93,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/defenseclaw.md",
+          "tokens_estimated": 102,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/oh-my-mermaid.md",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/polyterm.md",
+          "tokens_estimated": 80,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/pokemon-agent.md",
+          "tokens_estimated": 91,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/parallax-gradienthq.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/motrix-next.md",
+          "tokens_estimated": 90,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomicbot_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-railpushagent-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-nextgenos2026-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-perplexity_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sharbel-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomic_chat_hq-30-03-2026.md",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-onevcat-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-axiaisacat-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sdrzn-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-karpathy-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-brandgrowthos-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-GithubProjects-30-03-2026.md",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-HuggingModels-30-03-2026.md",
+          "tokens_estimated": 403,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-dotey-30-03-2026.md",
+          "tokens_estimated": 650,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/lark-cli.md",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/core-so.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 1330,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 219,
+        "output_tokens_estimated": 8012,
+        "reads_count": 5,
+        "writes_count": 36,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-30-1026",
+      "started": "2026-03-30T05:26:19.413Z",
+      "ended": "2026-03-30T05:59:00.797Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/b071ss7n0.output",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/bpy2wfuah.output",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-code-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-github-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-anthropicai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-huggingface-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-roundtablespace-30-03-2026.md",
+          "tokens_estimated": 819,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-bot_unixporn-30-03-2026.md",
+          "tokens_estimated": 263,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-tom_doerr-30-03-2026.md",
+          "tokens_estimated": 1556,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-garrytan-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-aakashgupta-30-03-2026.md",
+          "tokens_estimated": 814,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/ragapp.md",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/autoagents.md",
+          "tokens_estimated": 93,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/defenseclaw.md",
+          "tokens_estimated": 102,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/oh-my-mermaid.md",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/polyterm.md",
+          "tokens_estimated": 80,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/pokemon-agent.md",
+          "tokens_estimated": 91,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/parallax-gradienthq.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/motrix-next.md",
+          "tokens_estimated": 90,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomicbot_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-railpushagent-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-nextgenos2026-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-perplexity_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sharbel-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomic_chat_hq-30-03-2026.md",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-onevcat-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-axiaisacat-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sdrzn-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-karpathy-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-brandgrowthos-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-GithubProjects-30-03-2026.md",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-HuggingModels-30-03-2026.md",
+          "tokens_estimated": 403,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-dotey-30-03-2026.md",
+          "tokens_estimated": 650,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/lark-cli.md",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/core-so.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 1330,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 219,
+        "output_tokens_estimated": 8012,
+        "reads_count": 5,
+        "writes_count": 36,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-30-1026",
+      "started": "2026-03-30T05:26:19.413Z",
+      "ended": "2026-03-30T05:59:04.904Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/b071ss7n0.output",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/bpy2wfuah.output",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-code-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-github-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-anthropicai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-huggingface-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-roundtablespace-30-03-2026.md",
+          "tokens_estimated": 819,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-bot_unixporn-30-03-2026.md",
+          "tokens_estimated": 263,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-tom_doerr-30-03-2026.md",
+          "tokens_estimated": 1556,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-garrytan-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-aakashgupta-30-03-2026.md",
+          "tokens_estimated": 814,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/ragapp.md",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/autoagents.md",
+          "tokens_estimated": 93,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/defenseclaw.md",
+          "tokens_estimated": 102,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/oh-my-mermaid.md",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/polyterm.md",
+          "tokens_estimated": 80,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/pokemon-agent.md",
+          "tokens_estimated": 91,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/parallax-gradienthq.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/motrix-next.md",
+          "tokens_estimated": 90,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomicbot_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-railpushagent-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-nextgenos2026-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-perplexity_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sharbel-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomic_chat_hq-30-03-2026.md",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-onevcat-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-axiaisacat-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sdrzn-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-karpathy-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-brandgrowthos-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-GithubProjects-30-03-2026.md",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-HuggingModels-30-03-2026.md",
+          "tokens_estimated": 403,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-dotey-30-03-2026.md",
+          "tokens_estimated": 650,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/lark-cli.md",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/core-so.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 1330,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 219,
+        "output_tokens_estimated": 8012,
+        "reads_count": 5,
+        "writes_count": 36,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-30-1026",
+      "started": "2026-03-30T05:26:19.413Z",
+      "ended": "2026-03-30T05:59:09.651Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/list.txt",
+          "tokens_estimated": 108,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/b071ss7n0.output",
+          "tokens_estimated": 0,
+          "was_repeated": true,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/tmp/claude-1000/-home-calcifer-git-nigth-feeds/43156848-2e70-4971-9482-1a22a13a7fe1/tasks/bpy2wfuah.output",
+          "tokens_estimated": 0,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 111,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-code-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-github-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-anthropicai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-huggingface-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-roundtablespace-30-03-2026.md",
+          "tokens_estimated": 819,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-bot_unixporn-30-03-2026.md",
+          "tokens_estimated": 263,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-tom_doerr-30-03-2026.md",
+          "tokens_estimated": 1556,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-garrytan-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-aakashgupta-30-03-2026.md",
+          "tokens_estimated": 814,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/ragapp.md",
+          "tokens_estimated": 88,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/autoagents.md",
+          "tokens_estimated": 93,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/defenseclaw.md",
+          "tokens_estimated": 102,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/oh-my-mermaid.md",
+          "tokens_estimated": 95,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/polyterm.md",
+          "tokens_estimated": 80,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/pokemon-agent.md",
+          "tokens_estimated": 91,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/parallax-gradienthq.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/motrix-next.md",
+          "tokens_estimated": 90,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomicbot_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-railpushagent-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-nextgenos2026-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-perplexity_ai-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sharbel-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-atomic_chat_hq-30-03-2026.md",
+          "tokens_estimated": 27,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-onevcat-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-axiaisacat-30-03-2026.md",
+          "tokens_estimated": 26,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-sdrzn-30-03-2026.md",
+          "tokens_estimated": 24,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-karpathy-30-03-2026.md",
+          "tokens_estimated": 25,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-brandgrowthos-30-03-2026.md",
+          "tokens_estimated": 340,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-GithubProjects-30-03-2026.md",
+          "tokens_estimated": 121,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-HuggingModels-30-03-2026.md",
+          "tokens_estimated": 403,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/posts/post-dotey-30-03-2026.md",
+          "tokens_estimated": 650,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/lark-cli.md",
+          "tokens_estimated": 119,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/tools/core-so.md",
+          "tokens_estimated": 96,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 1330,
+          "action": "create"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/index.md",
+          "tokens_estimated": 56,
+          "action": "edit"
+        },
+        {
+          "file": "/home/calcifer/git/nigth-feeds/digests/digest-30-03-2026.md",
+          "tokens_estimated": 14,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 219,
+        "output_tokens_estimated": 8012,
+        "reads_count": 5,
+        "writes_count": 36,
+        "repeated_reads_blocked": 1,
+        "anatomy_lookups": 2
+      }
+    },
+    {
+      "id": "session-2026-03-30-1102",
+      "started": "2026-03-30T06:02:43.693Z",
+      "ended": "2026-03-30T06:43:47.247Z",
+      "reads": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/run-digest.sh",
+          "tokens_estimated": 42,
+          "was_repeated": false,
+          "anatomy_had_description": false
+        }
+      ],
+      "writes": [
+        {
+          "file": "/home/calcifer/git/nigth-feeds/run-digest.sh",
+          "tokens_estimated": 36,
+          "action": "edit"
+        }
+      ],
+      "totals": {
+        "input_tokens_estimated": 42,
+        "output_tokens_estimated": 36,
+        "reads_count": 1,
+        "writes_count": 1,
+        "repeated_reads_blocked": 0,
+        "anatomy_lookups": 1
+      }
+    }
+  ],
+  "daemon_usage": [],
+  "waste_flags": [],
+  "optimization_report": {
+    "last_generated": null,
+    "patterns": []
+  }
+}
