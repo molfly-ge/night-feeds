@@ -9,6 +9,7 @@ https://x.com/perplexity_ai?s=11
 https://x.com/tom_doerr?s=11
 https://x.com/sharbel?s=20
 https://x.com/garrytan?s=11
+https://x.com/ollama?s=20
 https://x.com/atomic_chat_hq?s=11
 https://x.com/code?s=11
 https://x.com/github?s=11
