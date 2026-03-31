@@ -86,15 +86,15 @@ def linkify_mentions(text: str) -> str:
 
 def fix_links(html: str) -> str:
     """Перепиши .md-ссылки в чистые URL сайта."""
-    # ../posts/post-{account}-{date}.md → /posts/{account}-{date}
+    # (../)?posts/post-{account}-{date}.md → /posts/{account}-{date}
     html = re.sub(
-        r'href="\.\./posts/post-([^"]+)-(\d{2}-\d{2}-\d{4})\.md"',
+        r'href="(?:\.\./)?posts/post-([^"]+)-(\d{2}-\d{2}-\d{4})\.md"',
         r'href="/posts/\1-\2"',
         html
     )
-    # ../tools/{slug}.md → /tools/{slug}
+    # (../)?tools/{slug}.md → /tools/{slug}
     html = re.sub(
-        r'href="\.\./tools/([^"]+)\.md"',
+        r'href="(?:\.\./)?tools/([^"]+)\.md"',
         r'href="/tools/\1"',
         html
     )
