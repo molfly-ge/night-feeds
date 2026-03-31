@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Дайджест</title>
+  <title>codex-plugin-cc</title>
   <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -48,28 +48,21 @@
 </head>
 <body>
   <div class="container">
-    
-    <section>
-      <h2>дайджест</h2>
-      <div class="posts">
-        <div class="post">
-          <a href="/digests/31-03-2026">Claude Code computer use в CLI, Codex-плагин OpenAI для Claude Code, RAM-кризис и TurboQuant, llama.cpp 100K звёзд</a>
-          <span class="date">Mar 31, 2026</span>
-        </div><div class="post">
-          <a href="/digests/30-03-2026">CLI как стандарт AI-агентов, Qwen3.5 VLM, fault tolerance в продакшене, нефть $95</a>
-          <span class="date">Mar 30, 2026</span>
-        </div><div class="post">
-          <a href="/digests/29-03-2026">инженеры Anthropic стали менеджерами агентов, новые Claude Code инструменты, demo vs production разрыв</a>
-          <span class="date">Mar 29, 2026</span>
-        </div><div class="post">
-          <a href="/digests/28-03-2026">утечка про Claude Mythos, агенты-трейдеры на Polymarket, волна недовольства rate limits Claude Code</a>
-          <span class="date">Mar 28, 2026</span>
-        </div><div class="post">
-          <a href="/digests/27-03-2026">Claude Code-бум, trading боты на информационном лаге, RAG падает на индексации</a>
-          <span class="date">Mar 27, 2026</span>
-        </div>
-      </div>
-    </section>
+    <p class="back"><a href="/">← назад</a></p>
+    <article><p><img src="codex-plugin-cc.png" alt="codex-plugin-cc" style="width:100%;height:auto;display:block;margin-bottom:24px;"></p><h1>codex-plugin-cc</h1>
+<p><strong>Тип:</strong> Claude Code Plugin
+<strong>Автор:</strong> OpenAI (официальный)
+<strong>Установка:</strong> <code>/plugin marketplace add openai/codex-plugin-cc</code>
+<strong>Источник:</strong> <a href="https://x.com/axiaisacat/status/2038808690619207712">@axiaisacat</a>, <a href="https://x.com/dotey/status/2038682622180634793">@dotey</a>, 31-03-2026</p>
+<p>Официальный плагин OpenAI для Claude Code — Codex как «второе мнение» прямо в рабочем процессе конкурента.</p>
+<p><strong>Команды:</strong>
+- <code>/codex:review</code> — стандартный read-only code review
+- <code>/codex:adversarial-review</code> — атакует скрытые предположения (race conditions, security, auth)
+- <code>/codex:rescue</code> — делегирует задачу Codex-суб-агенту при зависании
+- <code>/codex:setup</code> — включение review gate (блокирует Claude до завершения проверки)
+- <code>/codex:status</code> / <code>/codex:cancel</code> / <code>/codex:result</code> — управление задачами</p>
+<p><strong>Требования:</strong> ChatGPT-подписка (включая Free) или OpenAI API key + Node.js 18.18+</p>
+<p><strong>Примечание:</strong> Все задачи работают в фоновом режиме. Review gate может вызвать цикл двух агентов.</p></article>
   </div>
 </body>
 </html>

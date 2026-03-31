@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дайджест 31-03-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>Дайджест 31-03-2026</h1>
+<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Claude Code computer use замкнул петлю разработки</strong> — 17 месяцев от Docker-демо к CLI: теперь Claude пишет код, открывает приложение, кликает по UI, находит баг и исправляет — в одном сеансе терминала. Только macOS, Pro/Max. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>, <a href="posts/post-roundtablespace-31-03-2026.md">roundtablespace</a>)</p>
+</li>
+<li>
+<p><strong>OpenAI официально вошла в экосистему Claude Code</strong> — плагин codex-plugin-cc: <code>/codex:adversarial-review</code> ловит баги, которые Claude пропускает в своём собственном коде. Подтверждено экспериментом: Claude написал игру, пропустил soft-lock баг, Codex поймал с первого прохода. (<a href="posts/post-axiaisacat-31-03-2026.md">axiaisacat</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>, <a href="posts/post-brandgrowthos-31-03-2026.md">brandgrowthos</a>)</p>
+</li>
+<li>
+<p><strong>RAM-кризис и TurboQuant</strong> — самая резкая разворачивающаяся история: Sam Altman подписал 40% мирового предложения DRAM, Micron убила Crucial, потом Google выпускает алгоритм 6× сжатия. Micron -33% при выручке +196%. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>CLI &gt; MCP &gt; API</strong> — иерархия подтверждена Karpathy и подробно разобрана: MCP-серверы занимают контекст постоянно, CLIs — только по вызову. Лучшие пользователи Claude Code удалили большинство MCP. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>)</p>
+</li>
+<li>
+<p><strong>llama.cpp достиг 100K звёзд</strong> — Georgi Gerganov прогнозирует, что 90% AI-агентов будут работать локально с llama.cpp через 3-6 месяцев. Local agentic workflows — реальность с лета 2025. (<a href="posts/post-huggingface-31-03-2026.md">huggingface</a>)</p>
+</li>
+<li>
+<p><strong>Eval постоянен, промпты — нет</strong> — каждый swap модели обнуляет промпты, но не eval. Компании, инвестирующие в prompt engineering вместо eval, строят на песке. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>Starcloud — быстрейший единорог YC</strong> — $170M Series A при $1.1B оценке. Уже обучила AI в космосе на H100. EQT (70+ датацентров) инвестирует в орбитальные датацентры — сигнал что земля заканчивается. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-garrytan-31-03-2026.md">garrytan</a>)</p>
+</li>
+</ol>
+<h2>Пересечения тем</h2>
+<p><strong>Computer use / CLI тестирование:</strong> roundtablespace, aakashgupta, dotey, axiaisacat — все отмечают как главное событие дня.</p>
+<p><strong>Codex plugin для Claude Code:</strong> axiaisacat, dotey, brandgrowthos, roundtablespace — независимое упоминание из 4 источников.</p>
+<p><strong>Starcloud:</strong> aakashgupta, garrytan, roundtablespace (косвенно) — орбитальные датацентры как реальная инфраструктура.</p>
+<p><strong>Герои vs VibeVoice:</strong> sharbel, roundtablespace, dotey — Microsoft VibeVoice упомянута несколькими аккаунтами как underrated релиз.</p>
+<p><strong>GStack:</strong> garrytan, aakashgupta (косвенно через Boris Cherny tips) — активное развитие Claude Code skills ecosystem.</p>
+<h2>Новые инструменты</h2>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Тип</th>
+<th>Источник</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="tools/hermes-agent.md">Hermes Agent</a></td>
+<td>AI Coding Agent</td>
+<td>sharbel, roundtablespace</td>
+</tr>
+<tr>
+<td><a href="tools/vibe-voice.md">VibeVoice</a></td>
+<td>Voice AI (TTS/ASR, MIT)</td>
+<td>sharbel, dotey</td>
+</tr>
+<tr>
+<td><a href="tools/pi-agent.md">Pi Agent</a></td>
+<td>Ollama Coding Agent</td>
+<td>ollama</td>
+</tr>
+<tr>
+<td><a href="tools/codex-plugin-cc.md">codex-plugin-cc</a></td>
+<td>Claude Code Plugin (OpenAI)</td>
+<td>axiaisacat, dotey</td>
+</tr>
+<tr>
+<td><a href="tools/transformers-js-v4.md">Transformers.js v4</a></td>
+<td>ML Library (WebGPU)</td>
+<td>huggingface</td>
+</tr>
+<tr>
+<td><a href="tools/starcloud.md">Starcloud</a></td>
+<td>Orbital Data Centers</td>
+<td>aakashgupta, garrytan</td>
+</tr>
+</tbody>
+</table>
+<h2>По аккаунтам</h2>
+<table>
+<thead>
+<tr>
+<th>Аккаунт</th>
+<th>Твиты</th>
+<th>Пост</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>roundtablespace</td>
+<td>39</td>
+<td><a href="posts/post-roundtablespace-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>brandgrowthos</td>
+<td>13</td>
+<td><a href="posts/post-brandgrowthos-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>nextgenos2026</td>
+<td>5</td>
+<td><a href="posts/post-nextgenos2026-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>bot_unixporn</td>
+<td>27</td>
+<td><a href="posts/post-bot_unixporn-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>tom_doerr</td>
+<td>40</td>
+<td><a href="posts/post-tom_doerr-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>sharbel</td>
+<td>8</td>
+<td><a href="posts/post-sharbel-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>garrytan</td>
+<td>34</td>
+<td><a href="posts/post-garrytan-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>ollama</td>
+<td>3</td>
+<td><a href="posts/post-ollama-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>github</td>
+<td>1</td>
+<td><a href="posts/post-github-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>axiaisacat</td>
+<td>7</td>
+<td><a href="posts/post-axiaisacat-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>GithubProjects</td>
+<td>13</td>
+<td><a href="posts/post-GithubProjects-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>HuggingModels</td>
+<td>20</td>
+<td><a href="posts/post-HuggingModels-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>huggingface</td>
+<td>8</td>
+<td><a href="posts/post-huggingface-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>aakashgupta</td>
+<td>40</td>
+<td><a href="posts/post-aakashgupta-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>dotey</td>
+<td>13</td>
+<td><a href="posts/post-dotey-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>yahiyadev</td>
+<td>2</td>
+<td><a href="posts/post-yahiyadev-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>atomicbot_ai</td>
+<td>0</td>
+<td><a href="posts/post-atomicbot_ai-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>anthropicai</td>
+<td>0</td>
+<td><a href="posts/post-anthropicai-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>railpushagent</td>
+<td>0</td>
+<td><a href="posts/post-railpushagent-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>perplexity_ai</td>
+<td>0</td>
+<td><a href="posts/post-perplexity_ai-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>atomic_chat_hq</td>
+<td>0</td>
+<td><a href="posts/post-atomic_chat_hq-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>code</td>
+<td>0</td>
+<td><a href="posts/post-code-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>onevcat</td>
+<td>0</td>
+<td><a href="posts/post-onevcat-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>sdrzn</td>
+<td>0</td>
+<td><a href="posts/post-sdrzn-31-03-2026.md">post</a></td>
+</tr>
+<tr>
+<td>karpathy</td>
+<td>0</td>
+<td><a href="posts/post-karpathy-31-03-2026.md">post</a></td>
+</tr>
+</tbody>
+</table></article>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>garrytan — 31-03-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>garrytan — 31-03-2026</h1>
+<p>garrytan — 34 твита. День насыщен <a href="/tools/gstack">GStack</a>-обновлениями, философией агентной инженерии и YC-новостями.</p>
+<h2>GStack: новые возможности</h2>
+<ul>
+<li><strong>GStack browser</strong> теперь поддерживает multiple tabs + извлечение контекста с сайтов обратно в coding agent, чтение/изменение/дебаг CSS. Команды: <code>/gstack-upgrade</code> → <code>/connect-chrome</code>. (<a href="https://x.com/garrytan/status/2038545872225710129">tweet</a>)</li>
+<li>Добавлен <strong>Pretext skill</strong> (<code>/design-html</code>) — самый быстрый способ попробовать Pretext для гиперотзывчивой HTML-вёрстки. (<a href="https://x.com/garrytan/status/2038523236556980252">tweet</a>)</li>
+<li><strong>GStack теперь в Scira Agent</strong>. (<a href="https://x.com/garrytan/status/2038550184913944742">tweet</a>)</li>
+<li>Garry советует 99.9% фаундерам: "Install GStack" в Claude Code. (<a href="https://x.com/garrytan/status/2038794219176042504">tweet</a>)</li>
+</ul>
+<h2>Агентная инженерия: философия и метрики</h2>
+<ul>
+<li>37K строк кода в день через 5 проектов — и темп только растёт. Garry утверждает, что с AI он работает в 90× продуктивнее, чем в 2013 году. (<a href="https://x.com/garrytan/status/2038555792052506941">tweet</a>)</li>
+<li>"LOC — это плохо" — священная корова, которая неверна в агентной инженерии. За 5 лет все это примут. (<a href="https://x.com/garrytan/status/2038619455262863773">tweet</a>)</li>
+<li>git worktrees наконец получили признание — параллельные агенты раскрыли их потенциал. (<a href="https://x.com/amritwt/status/2038503109115445364">tweet</a>)</li>
+</ul>
+<h2>Экосистема и инструменты</h2>
+<ul>
+<li><strong>Exo</strong> — open-source email client, построенный с Claude Code: управляет инбоксом, агентные операции с почтой. (<a href="https://x.com/agupta/status/2038692501536559208">tweet</a>)</li>
+<li><strong>conductor.build</strong>: инструмент для управления агентными проектами. (<a href="https://x.com/garrytan/status/2038546148290691189">tweet</a>)</li>
+<li>Kevin Rose: GStack — один из лучших AI-инструментов, которые он пробовал. (<a href="https://x.com/kevinrose/status/2038641439157125277">tweet</a>)</li>
+</ul>
+<h2>YC и стартапы</h2>
+<ul>
+<li><strong><a href="/tools/starcloud">Starcloud</a></strong> (YC) привлекла $170M Series A при оценке $1.1B — самый быстрый единорог в истории YC. Строит орбитальные дата-центры, уже обучила AI-модель в космосе на NVIDIA H100 GPU. (<a href="https://x.com/StockSavvyShay/status/2038595321564176410">tweet</a>)</li>
+<li>Jeff Dean (Google): больших контекстных окон недостаточно — нужен staged retrieval: сужение с триллиона токенов до 10M, затем до 1M нужных. (<a href="https://x.com/slow_developer/status/2038515317841035622">tweet</a>)</li>
+<li>85% мира никогда не открывали ChatGPT. Две интернет-реальности существуют одновременно. (<a href="https://x.com/tibo_maker/status/2038549331267985618">tweet</a>)</li>
+</ul>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/garrytan/status/2038556635699060758">GStack open source</a></li>
+<li><a href="https://x.com/garrytan/status/2038555792052506941">@garrytan, 31-03-2026</a></li>
+<li><a href="https://x.com/StockSavvyShay/status/2038595321564176410">@StockSavvyShay — Starcloud</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

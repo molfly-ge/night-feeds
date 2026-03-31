@@ -7,8 +7,39 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Mon, 30 Mar 2026 05:58:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 03:30:18 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Дайджест 31-03-2026</title>
+      <link>https://rss.molfly.me/digests/31-03-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/31-03-2026/</guid>
+      <pubDate>Tue, 31 Mar 2026 06:00:00 +0000</pubDate>
+      <description>Claude Code computer use в CLI, Codex-плагин OpenAI для Claude Code, RAM-кризис и TurboQuant, llama.cpp 100K звёзд</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Claude Code computer use замкнул петлю разработки</strong> — 17 месяцев от Docker-демо к CLI: теперь Claude пишет код, открывает приложение, кликает по UI, находит баг и исправляет — в одном сеансе терминала. Только macOS, Pro/Max. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>, <a href="posts/post-roundtablespace-31-03-2026.md">roundtablespace</a>)</p>
+</li>
+<li>
+<p><strong>OpenAI официально вошла в экосистему Claude Code</strong> — плагин codex-plugin-cc: <code>/codex:adversarial-review</code> ловит баги, которые Claude пропускает в своём собственном коде. Подтверждено экспериментом: Claude написал игру, пропустил soft-lock баг, Codex поймал с первого прохода. (<a href="posts/post-axiaisacat-31-03-2026.md">axiaisacat</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>, <a href="posts/post-brandgrowthos-31-03-2026.md">brandgrowthos</a>)</p>
+</li>
+<li>
+<p><strong>RAM-кризис и TurboQuant</strong> — самая резкая разворачивающаяся история: Sam Altman подписал 40% мирового предложения DRAM, Micron убила Crucial, потом Google выпускает алгоритм 6× сжатия. Micron -33% при выручке +196%. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>CLI &gt; MCP &gt; API</strong> — иерархия подтверждена Karpathy и подробно разобрана: MCP-серверы занимают контекст постоянно, CLIs — только по вызову. Лучшие пользователи Claude Code удалили большинство MCP. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>)</p>
+</li>
+<li>
+<p><strong>llama.cpp достиг 100K звёзд</strong> — Georgi Gerganov прогнозирует, что 90% AI-агентов будут работать локально с llama.cpp через 3-6 месяцев. Local agentic workflows — реальность с лета 2025. (<a href="posts/post-huggingface-31-03-2026.md">huggingface</a>)</p>
+</li>
+<li>
+<p><strong>Eval постоянен, промпты — нет</strong> — каждый swap модели обнуляет промпты, но не eval. Компании, инвестирующие в prompt engineering вместо eval, строят на песке. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>Starcloud — быстрейший единорог YC</strong> — $170M Series A при $1.1B оценке. Уже обучила AI в космосе на H100. EQT (70+ датацентров) инвестирует в орбитальные датацентры — сигнал что земля заканчивается. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-garrytan-31-03-2026.md">garrytan</a>)</p>
+</li>
+</ol>]]></content:encoded>
+    </item>
     <item>
       <title>Дайджест 30-03-2026</title>
       <link>https://rss.molfly.me/digests/30-03-2026/</link>

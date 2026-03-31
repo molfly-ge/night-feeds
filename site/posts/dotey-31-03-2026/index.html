@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotey — 31-03-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>dotey — 31-03-2026</h1>
+<p>dotey — 13 твитов. Китайскоязычный аккаунт: глубокие разборы Codex-плагина, computer use в Claude Code, Feishu CLI и 15 функций Claude Code от Boris Cherny.</p>
+<h2>OpenAI Codex-плагин для Claude Code</h2>
+<p>OpenAI официально вошла в экосистему конкурента. Плагин <strong><a href="/tools/codex-plugin-cc">codex-plugin-cc</a></strong> превращает Codex в «второе мнение» прямо внутри Claude Code.</p>
+<p>Три ключевые команды:
+- <code>/codex:review</code> — read-only стандартный ревью
+- <code>/codex:adversarial-review</code> — атакует скрытые предположения: миграции, auth-изменения, инфраструктурные скрипты
+- <code>/codex:rescue</code> — передаёт задачу Codex-агенту при зависании потока</p>
+<p>Все работают в фоне. Опциональный review gate блокирует Claude до завершения проверки, но может вызвать цикл двух агентов и сжечь квоту. Техническая реализация: через локальный Codex CLI и app server, переиспользует существующую auth и MCP-настройку. (<a href="https://x.com/dotey/status/2038682622180634793">tweet</a>)</p>
+<h2>Computer Use в Claude Code</h2>
+<p>Anthropic добавила управление Mac-десктопом в Claude Code CLI. Цикл: написать Swift/Electron-код → скомпилировать → запустить → кликать кнопки → скриншот-верификация → исправить → повторить.</p>
+<p>Режим включается через <code>/mcp</code> → computer-use сервер. Безопасность: каждое приложение требует отдельной авторизации, терминальные окна не скриншотятся, Esc прерывает, только одна сессия управляет экраном одновременно. Пока: только macOS, Pro/Max, не работает с <code>-p</code>. (<a href="https://x.com/dotey/status/2038671395631108220">tweet</a>)</p>
+<h2>Feishu (Lark) CLI — AI-агентам в корпоративную среду</h2>
+<p>Feishu (аналог Notion/Slack) открыла <strong><a href="/tools/lark-cli">lark-cli</a></strong>: AI-агент говорит одну фразу → выполняет цепочку корпоративных задач. Сообщение на собрание → создать задачи → разослать итоги.</p>
+<p>Почему CLI, а не MCP: CLI самодокументируется (<code>--help</code>), поддерживает <code>--dry-run</code>, возвращает структурированный JSON, не занимает контекст постоянно. MCP — для сред без доступа к терминалу.</p>
+<p>Установка: <code>npm install -g [@larksuite](<a href="https://x.com/larksuite?s=11)/cli">https://x.com/larksuite?s=11)/cli</a></code>. Ключевая идея для дизайнеров AI CLI: help как единственная документация, dry-run как безопасная сеть, ошибки с инструкцией следующего шага. (<a href="https://x.com/dotey/status/2038406683865624800">tweet</a>)</p>
+<h2>review-swarm: 4 параллельных read-only агента</h2>
+<p>Skill от Thomas Ricouard (iOS/macOS разработчик, перешёл в OpenAI Codex): 4 специализированных агента запускаются параллельно по git diff:
+1. Intent &amp; Regression: неожиданный behavioral drift?
+2. Security &amp; Privacy: auth, injection, утечки данных
+3. Performance &amp; Reliability: горячие пути, race conditions, resource leaks
+4. Contract &amp; Coverage: API совместимость, тестовое покрытие</p>
+<p>Вывод — приоритизированный список: "fix now / fix soon / optional". (<a href="https://x.com/dotey/status/2038431616125530447">tweet</a> / источник)</p>
+<h2>15 недооценённых функций Claude Code (Boris Cherny)</h2>
+<p>Разбор от создателя Claude Code: мобильный Claude Code на iOS, <code>/teleport</code> (перенос сессии из терминала в облако), <code>/loop 5m /babysit</code> (автоматическое сопровождение PR к мержу), <code>/schedule</code> (задачи на неделю), Hooks (SessionStart, PreToolUse, Stop), <code>/btw</code> (вопрос без прерывания задачи), git worktrees (десятки параллельных агентов), <code>/batch</code> (тысячи параллельных воркфлоу), <code>--bare</code> (10× ускорение запуска SDK), <code>--add-dir</code> (работа с несколькими репозиториями), <code>/voice</code> (большинство кода Cherny пишет голосом). (<a href="https://x.com/dotey/status/2038481514732691940">tweet</a>)</p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/dotey/status/2038808815883047340">@dotey, 31-03-2026</a></li>
+<li><a href="https://x.com/dotey/status/2038406683865624800">lark-cli (Feishu)</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

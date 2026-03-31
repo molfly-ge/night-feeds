@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aakashgupta — 31-03-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>aakashgupta — 31-03-2026</h1>
+<p>aakashgupta — 40 твитов. Глубокие аналитические разборы: RAM-кризис, Claude Code computer use, иерархия CLI &gt; MCP &gt; API, рынок AI-агентов, провалы OpenAI.</p>
+<h2>RAM-кризис и TurboQuant</h2>
+<p>Цепочка событий октябрь 2025 — март 2026:
+- Sam Altman подписал с Samsung и SK Hynix LOI на 900K DRAM-пластин/мес (40% мирового предложения). Ни одна компания не знала о другом договоре. Контрактные цены DRAM выросли на 171%, DDR5 64GB с $190 до $700.
+- Micron ликвидировала бренд Crucial (29 лет) — перенаправила все мощности на AI/enterprise.
+- Март 2026: Google публикует <strong>TurboQuant</strong> — алгоритм сжатия, снижающий требования к памяти AI в 6× без потери точности. Тезис о "бесконечном росте AI-потребления памяти" получил полугодовой срок жизни.
+- OpenAI и Oracle отменили расширение Stargate в Abilene. Акции Micron -33% от пика при выручке +196% г/г и EPS +682%.</p>
+<p>(<a href="https://x.com/aakashgupta/status/2038813799856374135">tweet</a>)</p>
+<h2>CLI &gt; MCP &gt; API: правильная иерархия</h2>
+<p>(Подтверждено Karpathy): CLIs используют ноль контекста до момента вызова. MCP-серверы занимают контекст с момента подключения — 5 MCP = -15-20% контекстного окна до первого сообщения.</p>
+<p>Пример Карла Велотти: задача с 10 tool calls через суб-агент — основная сессия выросла с 16% до 16.5% контекста. Без суб-агента — до 25%. Разница между сессией на 30 сообщений и компакцией после 5.</p>
+<p>Лучшие пользователи Claude Code удалили большинство MCP и перешли на CLIs. (<a href="https://x.com/aakashgupta/status/2038723705237631414">tweet</a>)</p>
+<h2>Claude Code Computer Use: 17-месячная история</h2>
+<ul>
+<li>Октябрь 2024: API beta, Docker контейнер, скриншоты, клик по пикселям — tech demo.</li>
+<li>Январь 2025: новые команды API (hold_key, scroll), всё ещё только для разработчиков.</li>
+<li>23 марта 2026: Cowork и Claude Desktop — управление реальным Mac. 57M просмотров.</li>
+<li>30 марта 2026: <strong>Claude Code CLI</strong> — наконец замыкает петлю: написать код → открыть приложение → кликнуть по UI → найти баг → исправить. Всё в одном сеансе терминала.</li>
+</ul>
+<p>Ограничения: только macOS, Pro/Max планы, research preview, не работает с <code>-p</code> (non-interactive). (<a href="https://x.com/aakashgupta/status/2038688479501226418">tweet</a>)</p>
+<h2>Рынок AI-агентов 2026: 4 инструмента</h2>
+<table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Для кого</th>
+<th>Ключевое</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/tools/openclaw">OpenClaw</a></td>
+<td>Инженеры с полным контролем</td>
+<td>Любая модель + любой API, local exec</td>
+</tr>
+<tr>
+<td>Claude Code</td>
+<td>Dev/technical PM</td>
+<td>CLI, вся кодовая база, CLAUDE.md</td>
+</tr>
+<tr>
+<td>Cowork</td>
+<td>Команды для document analysis</td>
+<td>38+ коннекторов, без поминутной оплаты</td>
+</tr>
+<tr>
+<td>Computer</td>
+<td>PM/аналитики</td>
+<td>19 моделей, cloud exec, 400+ managed connectors</td>
+</tr>
+</tbody>
+</table>
+<p>(<a href="https://x.com/aakashgupta/status/2038662296990515704">tweet</a>)</p>
+<h2>Разное (важное)</h2>
+<ul>
+<li><strong>Eval постоянен, промпты — нет</strong>: инвестируй в eval, а не в prompt engineering. Каждый swap модели обнуляет промпты, но не eval. (<a href="https://x.com/aakashgupta/status/2038537715671798099">tweet</a>)</li>
+<li><strong>ChatGPT App Store</strong>: второй провал OpenAI подряд. GPT Store не выплатил разработчикам ни цента. ChatGPT App Store — та же схема: 300 интеграций, партнёры не хотят отдавать customer relationships. (<a href="https://x.com/aakashgupta/status/2038714642487533679">tweet</a>)</li>
+<li><strong>Meta Avocado задержан</strong>: тесты показали результаты между Gemini 2.5 и 3.0. Перенос с марта на май. OpenAI Gemini используется как backstop для Meta AI. (<a href="https://x.com/aakashgupta/status/2038542018406920611">tweet</a>)</li>
+<li><strong>Context engineering как дизайн-проблема</strong>: что кладём в чемодан — rolling window, RAG, trim knowledge context. Неправильный подход увеличивает inference bill в 10×. (<a href="https://x.com/aakashgupta/status/2038579239310787057">tweet</a>)</li>
+<li><strong><a href="/tools/starcloud">Starcloud</a> $170M Series A</strong> ($1.1B оценка, быстрейший единорог YC): Starcloud-1 обучила AI в космосе на H100. Starcloud-2 = 100× мощность, B200, AWS blade, bitcoin mining. Инвесторы: Benchmark, EQT (70+ датацентров). (<a href="https://x.com/aakashgupta/status/2038647198607716476">tweet</a>)</li>
+<li><strong>Boris Cherny's 15 Claude Code tips</strong>: мобильный Claude Code, /teleport, /loop (5m /babysit), /schedule, Hooks, Dispatch, Chrome extension, git worktrees, /batch, --bare (10× SDK startup), /voice. (<a href="https://x.com/aakashgupta/status/2038713289254064321">tweet</a>)</li>
+</ul>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/aakashgupta/status/2038813799856374135">@aakashgupta, 31-03-2026</a></li>
+<li><a href="https://x.com/carlvellotti/status/2038717018988580963">@carlvellotti — Claude Code tips</a></li>
+</ul></article>
+  </div>
+</body>
+</html>
