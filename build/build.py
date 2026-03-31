@@ -149,6 +149,10 @@ def write_page(path: Path, html: str):
     (path / "index.html").write_text(html, encoding="utf-8")
 
 
+def fail_build(message: str):
+    raise SystemExit(f"BUILD FAILED: {message}")
+
+
 def page(title: str, body: str, back: str = None) -> str:
     back_link = f'<p class="back"><a href="{back}">← назад</a></p>' if back else ""
     return f"""<!DOCTYPE html>
@@ -511,6 +515,37 @@ def build_rss():
     print(f"RSS: {len(items)} записей → site/feed.xml")
 
 
+def validate_site():
+    """Smoke-check на внутренние ссылки и структуру дайджестов."""
+    md_link_pattern = re.compile(
+        r'href="(?:\.\./)?(?:posts/post-[^"]+\.md|tools/[^"]+\.md|digests/digest-[^"]+\.md)"'
+    )
+
+    for path in SITE.rglob("*.html"):
+        text = path.read_text(encoding="utf-8")
+        broken = md_link_pattern.search(text)
+        if broken:
+            fail_build(f"{path.relative_to(ROOT)} содержит markdown-ссылку: {broken.group(0)}")
+
+    feed = (SITE / "feed.xml").read_text(encoding="utf-8")
+    broken = md_link_pattern.search(feed)
+    if broken:
+        fail_build(f"site/feed.xml содержит markdown-ссылку: {broken.group(0)}")
+
+    account_link_pattern = re.compile(r'href="/posts/[^"]+"')
+    for path in (SITE / "digests").glob("*/index.html"):
+        text = path.read_text(encoding="utf-8")
+        if "<h2>По аккаунтам</h2>" not in text:
+            continue
+        section = text.split("<h2>По аккаунтам</h2>", 1)[1]
+        if not account_link_pattern.search(section):
+            fail_build(
+                f"{path.relative_to(ROOT)}: в секции 'По аккаунтам' нет ссылок на /posts/..."
+            )
+
+    print("Проверка: ссылки и таблицы дайджестов валидны")
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -525,6 +560,7 @@ def main():
     build_posts(tool_index)
     build_tools(tool_index)
     build_rss()
+    validate_site()
 
     pages = list(SITE.rglob("index.html"))
     print(f"Собрано: {len(pages)} страниц → {SITE}")
