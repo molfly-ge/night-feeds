@@ -91,3 +91,12 @@
 |------|--------|---------|---------|--------|
 | 11:43 | Edited run-digest.sh | inline fix | ~34 |
 | 11:43 | Session end: 1 writes across 1 files (run-digest.sh) | 1 reads | ~78 tok |
+
+## Session: 2026-03-31 11:58
+
+| Time | Action | File(s) | Outcome | ~Tokens |
+|------|--------|---------|---------|--------|
+| 11:50 | Проверка битых ссылок в сегодняшнем дайджесте | build/build.py, digests/digest-31-03-2026.md, site/digests/31-03-2026/index.html, site/feed.xml | локализован баг в генераторе ссылок и таблице аккаунтов | ~2500 |
+| 11:54 | Edited build/build.py | render_md теперь применяется и в RSS; таблица "По аккаунтам" линкует названия аккаунтов | ~180 |
+| 11:55 | Пересборка сайта | build/build.py, site/ | `python3 build/build.py` успешно: 123 страниц, RSS без `.md` ссылок | ~120 |
+| 11:57 | Обновлена документация проекта | CLAUDE.md, wolf_backup/anatomy.md, wolf_backup/memory.md | зафиксированы инварианты линковки и описание фикса | ~220 |

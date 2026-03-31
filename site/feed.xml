@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 31 Mar 2026 06:43:45 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 06:54:18 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -18,25 +18,25 @@
       <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
 <ol>
 <li>
-<p><strong>Claude Code computer use замкнул петлю разработки</strong> — 17 месяцев от Docker-демо к CLI: теперь Claude пишет код, открывает приложение, кликает по UI, находит баг и исправляет — в одном сеансе терминала. Только macOS, Pro/Max. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>, <a href="posts/post-roundtablespace-31-03-2026.md">roundtablespace</a>)</p>
+<p><strong>Claude Code computer use замкнул петлю разработки</strong> — 17 месяцев от Docker-демо к CLI: теперь Claude пишет код, открывает приложение, кликает по UI, находит баг и исправляет — в одном сеансе терминала. Только macOS, Pro/Max. (<a href="/posts/aakashgupta-31-03-2026">aakashgupta</a>, <a href="/posts/dotey-31-03-2026">dotey</a>, <a href="/posts/roundtablespace-31-03-2026">roundtablespace</a>)</p>
 </li>
 <li>
-<p><strong>OpenAI официально вошла в экосистему Claude Code</strong> — плагин codex-plugin-cc: <code>/codex:adversarial-review</code> ловит баги, которые Claude пропускает в своём собственном коде. Подтверждено экспериментом: Claude написал игру, пропустил soft-lock баг, Codex поймал с первого прохода. (<a href="posts/post-axiaisacat-31-03-2026.md">axiaisacat</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>, <a href="posts/post-brandgrowthos-31-03-2026.md">brandgrowthos</a>)</p>
+<p><strong>OpenAI официально вошла в экосистему Claude Code</strong> — плагин codex-plugin-cc: <code>/codex:adversarial-review</code> ловит баги, которые Claude пропускает в своём собственном коде. Подтверждено экспериментом: Claude написал игру, пропустил soft-lock баг, Codex поймал с первого прохода. (<a href="/posts/axiaisacat-31-03-2026">axiaisacat</a>, <a href="/posts/dotey-31-03-2026">dotey</a>, <a href="/posts/brandgrowthos-31-03-2026">brandgrowthos</a>)</p>
 </li>
 <li>
-<p><strong>RAM-кризис и TurboQuant</strong> — самая резкая разворачивающаяся история: Sam Altman подписал 40% мирового предложения DRAM, Micron убила Crucial, потом Google выпускает алгоритм 6× сжатия. Micron -33% при выручке +196%. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>)</p>
+<p><strong>RAM-кризис и TurboQuant</strong> — самая резкая разворачивающаяся история: Sam Altman подписал 40% мирового предложения DRAM, Micron убила Crucial, потом Google выпускает алгоритм 6× сжатия. Micron -33% при выручке +196%. (<a href="/posts/aakashgupta-31-03-2026">aakashgupta</a>)</p>
 </li>
 <li>
-<p><strong>CLI &gt; MCP &gt; API</strong> — иерархия подтверждена Karpathy и подробно разобрана: MCP-серверы занимают контекст постоянно, CLIs — только по вызову. Лучшие пользователи Claude Code удалили большинство MCP. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-dotey-31-03-2026.md">dotey</a>)</p>
+<p><strong>CLI &gt; MCP &gt; API</strong> — иерархия подтверждена Karpathy и подробно разобрана: MCP-серверы занимают контекст постоянно, CLIs — только по вызову. Лучшие пользователи Claude Code удалили большинство MCP. (<a href="/posts/aakashgupta-31-03-2026">aakashgupta</a>, <a href="/posts/dotey-31-03-2026">dotey</a>)</p>
 </li>
 <li>
-<p><strong>llama.cpp достиг 100K звёзд</strong> — Georgi Gerganov прогнозирует, что 90% AI-агентов будут работать локально с llama.cpp через 3-6 месяцев. Local agentic workflows — реальность с лета 2025. (<a href="posts/post-huggingface-31-03-2026.md">huggingface</a>)</p>
+<p><strong>llama.cpp достиг 100K звёзд</strong> — Georgi Gerganov прогнозирует, что 90% AI-агентов будут работать локально с llama.cpp через 3-6 месяцев. Local agentic workflows — реальность с лета 2025. (<a href="/posts/huggingface-31-03-2026">huggingface</a>)</p>
 </li>
 <li>
-<p><strong>Eval постоянен, промпты — нет</strong> — каждый swap модели обнуляет промпты, но не eval. Компании, инвестирующие в prompt engineering вместо eval, строят на песке. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>)</p>
+<p><strong>Eval постоянен, промпты — нет</strong> — каждый swap модели обнуляет промпты, но не eval. Компании, инвестирующие в prompt engineering вместо eval, строят на песке. (<a href="/posts/aakashgupta-31-03-2026">aakashgupta</a>)</p>
 </li>
 <li>
-<p><strong>Starcloud — быстрейший единорог YC</strong> — $170M Series A при $1.1B оценке. Уже обучила AI в космосе на H100. EQT (70+ датацентров) инвестирует в орбитальные датацентры — сигнал что земля заканчивается. (<a href="posts/post-aakashgupta-31-03-2026.md">aakashgupta</a>, <a href="posts/post-garrytan-31-03-2026.md">garrytan</a>)</p>
+<p><strong>Starcloud — быстрейший единорог YC</strong> — $170M Series A при $1.1B оценке. Уже обучила AI в космосе на H100. EQT (70+ датацентров) инвестирует в орбитальные датацентры — сигнал что земля заканчивается. (<a href="/posts/aakashgupta-31-03-2026">aakashgupta</a>, <a href="/posts/garrytan-31-03-2026">garrytan</a>)</p>
 </li>
 </ol>]]></content:encoded>
     </item>
@@ -49,25 +49,25 @@
       <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
 <ol>
 <li>
-<p><strong>CLI стал стандартом для AI-агентов</strong> — Feishu открыл <code>lark-cli</code>, Google ранее выпустил <code>gws</code>. Тренд 2026: все платформы делают CLI для AI-агентов. (@dotey)</p>
+<p><strong>CLI стал стандартом для AI-агентов</strong> — Feishu открыл <code>lark-cli</code>, Google ранее выпустил <code>gws</code>. Тренд 2026: все платформы делают CLI для AI-агентов. (<a href="https://x.com/dotey?s=11">@dotey</a>)</p>
 </li>
 <li>
-<p><strong>Failure tolerance в AI-агентах — это фича, не баг</strong> — агенты проваливаются в продакшене не из-за плохих промптов, а потому что построены как традиционный ПО. Guardrails = слой координации. (@brandgrowthos)</p>
+<p><strong>Failure tolerance в AI-агентах — это фича, не баг</strong> — агенты проваливаются в продакшене не из-за плохих промптов, а потому что построены как традиционный ПО. Guardrails = слой координации. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 </li>
 <li>
-<p><strong>LLM + открытый веб = баги и угрозы</strong> — Garry Tan подчёркивает: каждый раз, когда LLM взаимодействует с вебом, это «безумная ферма багов и кошмар безопасности». Cisco ответила инструментом <code>defenseclaw</code>. (@garrytan, @tom_doerr)</p>
+<p><strong>LLM + открытый веб = баги и угрозы</strong> — Garry Tan подчёркивает: каждый раз, когда LLM взаимодействует с вебом, это «безумная ферма багов и кошмар безопасности». Cisco ответила инструментом <code>defenseclaw</code>. (<a href="https://x.com/garrytan?s=11">@garrytan</a>, <a href="https://x.com/tom_doerr?s=11">@tom_doerr</a>)</p>
 </li>
 <li>
-<p><strong>Нефть +60% за 2 месяца, Ормузский пролив под угрозой</strong> — Brent $95, AIS-данные уже визуализируют, как выглядело бы закрытие пролива. (@aakashgupta, @RoundtableSpace)</p>
+<p><strong>Нефть +60% за 2 месяца, Ормузский пролив под угрозой</strong> — Brent $95, AIS-данные уже визуализируют, как выглядело бы закрытие пролива. (<a href="https://x.com/aakashgupta?s=11">@aakashgupta</a>, <a href="https://x.com/RoundtableSpace?s=11">@RoundtableSpace</a>)</p>
 </li>
 <li>
-<p><strong>Qwen3.5 дебютирует на HuggingFace</strong> — 27B и 397B VLM в GPTQ Int4 квантизации, Apache 2.0, multimodal. (@HuggingModels)</p>
+<p><strong>Qwen3.5 дебютирует на HuggingFace</strong> — 27B и 397B VLM в GPTQ Int4 квантизации, Apache 2.0, multimodal. (<a href="https://x.com/HuggingModels?s=11">@HuggingModels</a>)</p>
 </li>
 <li>
-<p><strong>Claude Code 15 недооценённых функций</strong> — Boris Cherny раскрыл мобильную разработку, синхронизацию сессий между устройствами и многое другое. (@dotey)</p>
+<p><strong>Claude Code 15 недооценённых функций</strong> — Boris Cherny раскрыл мобильную разработку, синхронизацию сессий между устройствами и многое другое. (<a href="https://x.com/dotey?s=11">@dotey</a>)</p>
 </li>
 <li>
-<p><strong>22 репозитория от @tom_doerr</strong> — от Pokemon-агента до enterprise RAG на Docker, децентрализованного AI-кластера Parallax и Cisco AI Defense.</p>
+<p><strong>22 репозитория от <a href="https://x.com/tom_doerr?s=11">@tom_doerr</a></strong> — от Pokemon-агента до enterprise RAG на Docker, децентрализованного AI-кластера Parallax и Cisco AI Defense.</p>
 </li>
 </ol>]]></content:encoded>
     </item>
@@ -80,34 +80,34 @@
       <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
 <ol>
 <li>
-<p><strong>Инженер Anthropic = менеджер агентов</strong> (@RoundtableSpace, 721 лайк) — Anthropic-инженеры всё меньше пишут код и всё больше управляют несколькими агентами параллельно. Смена парадигмы зафиксирована изнутри компании.</p>
+<p><strong>Инженер Anthropic = менеджер агентов</strong> (<a href="https://x.com/RoundtableSpace?s=11">@RoundtableSpace</a>, 721 лайк) — Anthropic-инженеры всё меньше пишут код и всё больше управляют несколькими агентами параллельно. Смена парадигмы зафиксирована изнутри компании.</p>
 </li>
 <li>
-<p><strong>Demo работает, production ломается</strong> (@BrandGrowthOS) — Главная причина: AI-демо создаются на чистых предсказуемых данных, реальный production — грязные, непоследовательные данные с меняющимися форматами. Проблема не в модели, а в недотестированных edge-cases.</p>
+<p><strong>Demo работает, production ломается</strong> (<a href="https://x.com/BrandGrowthOS?s=11">@BrandGrowthOS</a>) — Главная причина: AI-демо создаются на чистых предсказуемых данных, реальный production — грязные, непоследовательные данные с меняющимися форматами. Проблема не в модели, а в недотестированных edge-cases.</p>
 </li>
 <li>
-<p><strong>n8n 2.14.0 beta: MCP внутри</strong> (@BrandGrowthOS) — Теперь AI-агент может создавать и обновлять n8n-воркфлоу прямо через MCP из Claude Code/Cursor. Агенты, строящие собственные automation-пайплайны — реальность.</p>
+<p><strong>n8n 2.14.0 beta: MCP внутри</strong> (<a href="https://x.com/BrandGrowthOS?s=11">@BrandGrowthOS</a>) — Теперь AI-агент может создавать и обновлять n8n-воркфлоу прямо через MCP из Claude Code/Cursor. Агенты, строящие собственные automation-пайплайны — реальность.</p>
 </li>
 <li>
-<p><strong>Claude находит zero-day уязвимости в реальных системах</strong> (@garrytan, 8358 лайков) — Anthropic показал на конференции live-демо поиска zero-day через Claude. Garry Tan уже использует <code>/design-consultation</code> и называет это точкой невозврата.</p>
+<p><strong>Claude находит zero-day уязвимости в реальных системах</strong> (<a href="https://x.com/garrytan?s=11">@garrytan</a>, 8358 лайков) — Anthropic показал на конференции live-демо поиска zero-day через Claude. Garry Tan уже использует <code>/design-consultation</code> и называет это точкой невозврата.</p>
 </li>
 <li>
-<p><strong>AEO — Agent Engine Optimization</strong> (@sharbel) — Новая концепция: пользователи делегируют поиск AI-агентам, и «ранжирование» теперь означает цитирование агентами, а не позицию в Google. Большинство создателей контента ещё не осознали сдвиг.</p>
+<p><strong>AEO — Agent Engine Optimization</strong> (<a href="https://x.com/sharbel?s=11">@sharbel</a>) — Новая концепция: пользователи делегируют поиск AI-агентам, и «ранжирование» теперь означает цитирование агентами, а не позицию в Google. Большинство создателей контента ещё не осознали сдвиг.</p>
 </li>
 <li>
-<p><strong>TRIBE v2 — цифровой двойник мозга</strong> (@sharbel) — Meta AI представила модель на 500+ часах fMRI от 700+ людей. Предсказывает нейронные реакции zero-shot. AI начинает понимать, как мы воспринимаем реальность.</p>
+<p><strong>TRIBE v2 — цифровой двойник мозга</strong> (<a href="https://x.com/sharbel?s=11">@sharbel</a>) — Meta AI представила модель на 500+ часах fMRI от 700+ людей. Предсказывает нейронные реакции zero-shot. AI начинает понимать, как мы воспринимаем реальность.</p>
 </li>
 <li>
-<p><strong>AI-Scientist-v2 генерирует статьи</strong> (@tom_doerr) — SakanaAI выпустила вторую версию системы для автономной генерации научных статей через агентный tree search.</p>
+<p><strong>AI-Scientist-v2 генерирует статьи</strong> (<a href="https://x.com/tom_doerr?s=11">@tom_doerr</a>) — SakanaAI выпустила вторую версию системы для автономной генерации научных статей через агентный tree search.</p>
 </li>
 <li>
-<p><strong>GStack</strong> (@garrytan) — Навыки для Claude Code от CEO YC: <code>/design-consultation</code>, <code>/codex</code>, <code>/tasks</code>. Принцип User Sovereignty: AI рекомендует, человек решает.</p>
+<p><strong>GStack</strong> (<a href="https://x.com/garrytan?s=11">@garrytan</a>) — Навыки для Claude Code от CEO YC: <code>/design-consultation</code>, <code>/codex</code>, <code>/tasks</code>. Принцип User Sovereignty: AI рекомендует, человек решает.</p>
 </li>
 <li>
-<p><strong>GitHub Copilot CLI генерирует unit-тесты</strong> (@github) — Workflow: plan mode → флот агентов → мониторинг через <code>/tasks</code>. Прямо из терминала.</p>
+<p><strong>GitHub Copilot CLI генерирует unit-тесты</strong> (<a href="https://x.com/github?s=11">@github</a>) — Workflow: plan mode → флот агентов → мониторинг через <code>/tasks</code>. Прямо из терминала.</p>
 </li>
 <li>
-<p><strong>homelable — Infrastructure visualizer</strong> (@tom_doerr, 174 лайка) — Self-hosted визуализатор инфраструктуры со сканером сети стал одним из самых популярных репозиториев дня.</p>
+<p><strong>homelable — Infrastructure visualizer</strong> (<a href="https://x.com/tom_doerr?s=11">@tom_doerr</a>, 174 лайка) — Self-hosted визуализатор инфраструктуры со сканером сети стал одним из самых популярных репозиториев дня.</p>
 </li>
 </ol>]]></content:encoded>
     </item>
@@ -120,22 +120,22 @@
       <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
 <ol>
 <li>
-<p><strong>Claude Mythos и утечка из Anthropic</strong> — внутренняя команда безопасности охарактеризовала следующую модель как несущую «беспрецедентные риски кибербезопасности». Одновременно ~3000 активов с сайта Anthropic оказались открыты без авторизации. (@roundtablespace, @brandgrowthos)</p>
+<p><strong>Claude Mythos и утечка из Anthropic</strong> — внутренняя команда безопасности охарактеризовала следующую модель как несущую «беспрецедентные риски кибербезопасности». Одновременно ~3000 активов с сайта Anthropic оказались открыты без авторизации. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>, <a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 </li>
 <li>
-<p><strong>Claude как торговый агент</strong> — серия историй об агентах на Claude, торгующих на Polymarket и крипторынках: $100 → $10K за сутки, $1.5K → $3M на BTC, $847 за ночь из 7 репозиториев. Результаты впечатляют, воспроизводимость не подтверждена. (@roundtablespace)</p>
+<p><strong>Claude как торговый агент</strong> — серия историй об агентах на Claude, торгующих на Polymarket и крипторынках: $100 → $10K за сутки, $1.5K → $3M на BTC, $847 за ночь из 7 репозиториев. Результаты впечатляют, воспроизводимость не подтверждена. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 </li>
 <li>
-<p><strong>Ограничения Claude Code</strong> — разработчики массово жалуются на новые rate limits, часть переходит на GPT 5.4 + Codex. (@roundtablespace)</p>
+<p><strong>Ограничения Claude Code</strong> — разработчики массово жалуются на новые rate limits, часть переходит на GPT 5.4 + Codex. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 </li>
 <li>
-<p><strong>Агенты вместо workflow</strong> — тезис @brandgrowthos: платформы автоматизации устаревают, агентам нужны цели и инфраструктура, а не воркфлоу. Подкреплено практическими примерами (DOM-ресканирование для динамических форм).</p>
+<p><strong>Агенты вместо workflow</strong> — тезис <a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>: платформы автоматизации устаревают, агентам нужны цели и инфраструктура, а не воркфлоу. Подкреплено практическими примерами (DOM-ресканирование для динамических форм).</p>
 </li>
 <li>
-<p><strong>Perplexity в Samsung Browser</strong> — Perplexity встроен в Browsing Assist на Galaxy Android и Windows. Первое крупное партнёрство на уровне производителя устройств. (@perplexity_ai)</p>
+<p><strong>Perplexity в Samsung Browser</strong> — Perplexity встроен в Browsing Assist на Galaxy Android и Windows. Первое крупное партнёрство на уровне производителя устройств. (<a href="https://x.com/perplexity_ai?s=11">@perplexity_ai</a>)</p>
 </li>
 <li>
-<p><strong>KDE доминирует в unixporn</strong> — из 21 поста большинство на KDE Plasma, Hyprland на втором месте. Растёт число новичков, впервые устанавливающих Linux. (@bot_unixporn)</p>
+<p><strong>KDE доминирует в unixporn</strong> — из 21 поста большинство на KDE Plasma, Hyprland на втором месте. Растёт число новичков, впервые устанавливающих Linux. (<a href="https://x.com/bot_unixporn?s=11">@bot_unixporn</a>)</p>
 </li>
 </ol>]]></content:encoded>
     </item>
@@ -146,11 +146,11 @@
       <pubDate>Fri, 27 Mar 2026 06:00:00 +0000</pubDate>
       <description>Claude Code-бум, trading боты на информационном лаге, RAG падает на индексации</description>
       <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
-<p><strong>1. Claude Code-бум</strong> — сразу несколько аккаунтов публикуют туториалы, схемы, 12-минутные курсы. Сообщество осваивает Claude Code массово прямо сейчас. (@roundtablespace)</p>
-<p><strong>2. Vibe coding создал приложения, но они застряли на localhost</strong> — барьер сместился с «написать» на «задеплоить». Миллионы проектов, которые никто не видит. (@railpushagent)</p>
-<p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (@roundtablespace)</p>
-<p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (@brandgrowthos)</p>
-<p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (@brandgrowthos)</p>]]></content:encoded>
+<p><strong>1. Claude Code-бум</strong> — сразу несколько аккаунтов публикуют туториалы, схемы, 12-минутные курсы. Сообщество осваивает Claude Code массово прямо сейчас. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
+<p><strong>2. Vibe coding создал приложения, но они застряли на localhost</strong> — барьер сместился с «написать» на «задеплоить». Миллионы проектов, которые никто не видит. (<a href="https://x.com/railpushagent?s=11">@railpushagent</a>)</p>
+<p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
+<p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
+<p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

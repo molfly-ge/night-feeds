@@ -107,12 +107,39 @@ def fix_links(html: str) -> str:
     return html
 
 
+def enhance_account_links(html: str) -> str:
+    """В таблицах аккаунтов линкует имя аккаунта на его пост и делает текст ссылки читаемым."""
+    row_pattern = re.compile(
+        r'<tr>\s*'
+        r'<td>([^<]+)</td>\s*'
+        r'<td>([^<]+)</td>\s*'
+        r'<td><a href="(/posts/[^"]+)">([^<]+)</a></td>\s*'
+        r'</tr>',
+        re.DOTALL
+    )
+
+    def replace(m):
+        account = m.group(1).strip()
+        count = m.group(2).strip()
+        href = m.group(3)
+        return (
+            "<tr>\n"
+            f'<td><a href="{href}">{account}</a></td>\n'
+            f"<td>{count}</td>\n"
+            f'<td><a href="{href}">дайджест</a></td>\n'
+            "</tr>"
+        )
+
+    return row_pattern.sub(replace, html)
+
+
 def render_md(text: str) -> str:
     md.reset()
     text = strip_frontmatter(text)
     text = linkify_mentions(text)
     html = md.convert(text)
     html = fix_links(html)
+    html = enhance_account_links(html)
     html = linkify_urls(html)
     return html
 
@@ -417,8 +444,7 @@ def _extract_top_ideas(text: str) -> str:
     m = re.search(r'(## Топ-идеи дня\n.*?)(?=\n## |\Z)', text, re.DOTALL)
     if not m:
         return ""
-    md.reset()
-    return md.convert(m.group(1))
+    return render_md(m.group(1))
 
 
 def _date_to_rfc2822(date_str: str) -> str:

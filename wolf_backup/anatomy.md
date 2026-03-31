@@ -1,6 +1,6 @@
 # anatomy.md
 
-> Auto-maintained by OpenWolf. Last scanned: 2026-03-30T06:43:41.517Z
+> Auto-maintained by OpenWolf. Last scanned: 2026-03-31T06:58:04.000Z
 > Files: 160 tracked | Anatomy hits: 0 | Misses: 0
 
 ## ../../.claude/projects/-home-calcifer-git-nigth-feeds/memory/
@@ -29,7 +29,7 @@
 
 ## build/
 
-- `build.py` — генератор статического сайта + RSS feed (build_rss, feed.xml) (~5100 tok)
+- `build.py` — генератор статического сайта + RSS feed; переписывает `.md` ссылки в `/posts/*`, `/tools/*`, `/digests/*`, линкует таблицу аккаунтов в дайджестах (~5300 tok)
 
 ## digests/
 
@@ -37,6 +37,7 @@
 - `digest-28-03-2026.md` — Дайджест 28-03-2026 (~782 tok)
 - `digest-29-03-2026.md` — Дайджест 29-03-2026 (~1272 tok)
 - `digest-30-03-2026.md` — Дайджест 30-03-2026 (~1159 tok)
+- `digest-31-03-2026.md` — Дайджест 31-03-2026 (~1540 tok)
 
 ## posts/
 
