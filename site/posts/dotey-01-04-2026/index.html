@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotey — 01-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>dotey — 01-04-2026</h1>
+<p>22 твита — глубокий технический разбор утечки исходного кода Claude Code и обзор нового инструмента для поиска в видео.</p>
+<p><strong>Утечка Claude Code: пошаговый разбор.</strong> Не из-за bun — из-за ошибки разработчика (забытая строка в .npmignore). Dotey опубликовал трёхшаговый гайд по изучению кода:
+1. Запустить утечку локально — код уже восстановлен сообществом <a href="https://github.com/claude-code-best/claude-code">github.com/claude-code-best/claude-code</a> (910 лайков, 152 RT)
+2. Анализировать функции: от входа до выхода, логировать API-запросы и ответы для понимания Agent Loop
+3. Форкнуть и дорабатывать — лучший способ понять архитектуру <a href="https://x.com/dotey/status/2039020301434909095">Твит</a></p>
+<p><strong>Три слоя anti-distillation в Claude Code.</strong> Разбор от «утиного папы» из статьи на yage.ai:
+- Слой 1: в API-ответы подмешиваются фиктивные tool calls. Обычных пользователей это не задевает — сервер фильтрует. Но тренировочные датасеты, собранные с API, получают загрязнённые данные.
+- Слой 2: промежуточные рассуждения заменяются на краткое summary + криптографическую подпись. Полная цепочка мышления скрыта от внешних наблюдателей.
+- Слой 3: отдельный JSON-протокол с версионным маркером, статистически изолированным от обычных API-запросов. Бонус — экономия ~4.5% output tokens.
+<a href="https://yage.ai/share/claude-code-engineering-cost-20260331.html">Статья yage.ai</a> <a href="https://x.com/dotey/status/2039042306871906655">Твит</a></p>
+<p><strong>Почему Claude Code никогда не откроют.</strong> Причины оставаться закрытыми: можно скрывать качество кода (один React-файл на несколько тысяч строк — норма, но открывать стыдно), добавлять скрытые фичи вроде anti-distillation, выпускать «новые» фичи которые уже готовы (например <code>/buddy</code> уже в коде, ждёт 1 апреля), быстро итерировать без code review. <a href="https://x.com/dotey/status/2039151725680980209">Твит</a></p>
+<p><strong>axios@1.14.1 и axios@0.30.4 заражены.</strong> Не первый такой случай с популярными npm-пакетами. Заражённые версии содержат Remote Access Trojan. <a href="https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan">StepSecurity Blog</a> <a href="https://x.com/dotey/status/2038828715560534034">Твит</a></p>
+<p><strong>SentrySearch — поиск по видео естественным языком.</strong> Опенсорс CLI: разрезает видео на перекрывающиеся фрагменты, кодирует их через Gemini Embedding API или локальный Qwen3-VL, хранит в ChromaDB. Поисковый запрос попадает в тот же векторный пространство — и сопоставляется с видеофрагментами напрямую, без OCR и описаний кадров. Стоимость индексации 1 часа: ~$2.84 через API или бесплатно на GPU с 24 GB VRAM. Специальная поддержка Tesla Dashcam: скорость, GPS, время на вырезанных клипах. <a href="https://github.com/xxxxxx">GitHub SentrySearch</a> <a href="https://x.com/dotey/status/2039147493355634989">Твит</a></p>
+<p><strong>Кодекс обучения по утечке:</strong> смотреть изолированно от AI не стоит — лучше сразу форкать и реализовывать конкретные фичи, вроде <code>/buddy</code>. Это быстрее даёт понимание архитектуры. <a href="https://x.com/dotey/status/2039173267018191155">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://github.com/claude-code-best/claude-code">claude-code-best (восстановленный код)</a></li>
+<li><a href="https://yage.ai/share/claude-code-engineering-cost-20260331.html">yage.ai: три слоя anti-distillation</a></li>
+<li><a href="https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan">StepSecurity: axios supply chain attack</a></li>
+<li><a href="https://x.com/dotey/status/2039020301434909095">@dotey, 01-04-2026 — шаг 1 разбора</a></li>
+<li><a href="https://x.com/dotey/status/2039042306871906655">@dotey, 01-04-2026 — anti-distillation</a></li>
+<li><a href="https://x.com/dotey/status/2038828715560534034">@dotey, 01-04-2026 — axios</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

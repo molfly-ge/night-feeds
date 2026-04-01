@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ollama — 01-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1><a href="/tools/ollama">ollama</a> — 01-04-2026</h1>
+<p>11 твитов — крупный релиз Ollama с поддержкой MLX на Apple Silicon.</p>
+<p><strong>Ollama + MLX: большое обновление.</strong> Теперь Ollama может использовать MLX как бэкенд на Mac — это прямой прирост производительности на всём Apple Silicon. На M5/M5 Pro/M5 Max задействуются новые GPU Neural Accelerators для ускорения и TTFT (time to first token), и скорости генерации. Тест на Qwen3.5-35B-A3B: NVFP4 против Q4_K_M предыдущей версии. <a href="https://ollama.com/blog/mlx">Блог Ollama</a> <a href="https://x.com/ollama/status/2038871514003513501">Твит анонса</a></p>
+<p><strong>Стартовая модель — Qwen3.5-35B-A3B-nvfp4.</strong> Нужно больше 32 GB unified memory. Работает с Claude Code и <a href="/tools/openclaw">OpenClaw</a>:
+<code>ollama launch claude --model qwen3.5:35b-a3b-coding-nvfp4
+ollama launch openclaw --model qwen3.5:35b-a3b-coding-nvfp4</code>
+<a href="https://x.com/ollama/status/2038835457358958652">Твит</a></p>
+<p><strong>NVFP4: точность производственного уровня.</strong> Новый формат NVIDIA уменьшает требования к памяти и bandwidth, сохраняя качество. Ollama теперь даёт те же результаты, что и production-инфраструктура у крупных провайдеров. <a href="https://x.com/ollama/status/2038835453265367271">Твит</a></p>
+<p><strong>Умное кэширование.</strong> Ollama переиспользует кэш между разговорами, снижая потребление памяти. Интеллектуальные контрольные точки по всему промпту ускоряют ответы при разветвлённых сессиях (как в Claude Code с общим system prompt). <a href="https://x.com/ollama/status/2038835455777763762">Твит</a></p>
+<p><strong>Пользователи уже тестируют.</strong> Qwen3.5:36b через MLX ускорился в 2.2x на первом же апгрейде. Qwen3.5:4b-nvfp4 на M1 Max — 38% быстрее предыдущей версии в реальном агентном use case. <a href="https://x.com/ollama/status/2039014724071719405">Твит</a></p>
+<p><strong>Поддержка кастомных моделей.</strong> Команда работает над расширением списка архитектур и упрощённым импортом fine-tuned моделей. <a href="https://x.com/ollama/status/2038835458969686091">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://ollama.com/blog/mlx">Ollama Blog: MLX backend</a></li>
+<li><a href="https://x.com/ollama/status/2038871514003513501">@ollama, 01-04-2026 — анонс MLX</a></li>
+<li><a href="https://x.com/ollama/status/2038835457358958652">@ollama, 01-04-2026 — старт с Qwen3.5</a></li>
+<li><a href="https://x.com/ollama/status/2038835453265367271">@ollama, 01-04-2026 — NVFP4</a></li>
+<li><a href="https://x.com/ollama/status/2038835455777763762">@ollama, 01-04-2026 — кэширование</a></li>
+</ul></article><div class="tool-cards"><img src="/tools/ollama/ollama.png" alt="ollama"></div>
+  </div>
+</body>
+</html>

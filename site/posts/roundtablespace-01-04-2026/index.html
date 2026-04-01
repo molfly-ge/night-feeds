@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roundtablespace — 01-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>roundtablespace — 01-04-2026</h1>
+<p>Центральная история дня — утечка исходного кода Claude Code. 29 твитов, и примерно половина так или иначе касается этого события и вокруг него.</p>
+<p><strong>Утечка Claude Code.</strong> Исходник появился через source maps в npm-пакете — 512 000 строк, публичный Cloudflare bucket. <a href="https://claude-code-info.vercel.app/">Интерактивный обзор кода</a> позволяет ходить по нему как по продукту. Внутри обнаружили 44 нереализованных feature flag: фоновые агенты 24/7, один Claude-оркестратор с несколькими worker-агентами, cron-расписание, голосовое управление, управление браузером через Playwright, «сон» агентов с само-возобновлением, персистентная память между сессиями. <a href="https://x.com/roundtablespace/status/2038960753458438156">Твит с описанием скрытых фич</a></p>
+<p><strong><a href="/tools/ollama">Ollama</a> + MLX.</strong> Ollama заработал на Apple Silicon через MLX — локальные агенты Claude Code, <a href="/tools/openclaw">OpenClaw</a>, Codex ускорились на Mac. <a href="https://x.com/roundtablespace/status/2039119297771941904">Твит</a></p>
+<p><strong>GLM 5.1 — 744B модель без пейволла.</strong> Zhipu убрали ограничение с 744B агентной модели, что делает её доступной в инструментах вроде Claude Code и Kilo Code. <a href="https://x.com/roundtablespace/status/2039134397136535772">Твит</a></p>
+<p><strong>AutoClaw — локальный OpenClaw.</strong> Инструмент запускает OpenClaw на собственной машине без API-ключа, данные не покидают устройство. <a href="https://x.com/roundtablespace/status/2039126847259091001">Твит</a></p>
+<p><strong>GLM OCR — 0.9B модель #1 на OmniDocBench.</strong> Zhipu выложили в опенсорс лучшую на данный момент OCR-модель: 94.62 балла, меньше гигабайта параметров, работает на edge-устройствах, понимает таблицы, формулы, печати. <a href="https://x.com/roundtablespace/status/2039043800317001815">Твит</a></p>
+<p><strong>Polymarket + Claude.</strong> Сразу несколько постов о случаях, когда Claude-бот торговал на Polymarket: $62 → $721 000, $1 000 → $23 100 за 48 часов. OpenClaw при этом слился в ноль. <a href="https://x.com/roundtablespace/status/2039157046520479915">Твит</a></p>
+<p><strong>OpenAI поднял $122B.</strong> Крупнейший венчурный раунд в истории при оценке $852B. <a href="https://x.com/roundtablespace/status/2039104198294241736">Твит</a></p>
+<p><strong><a href="/tools/skill-seekers">Skill Seekers</a> — слой данных для ИИ.</strong> Один командой превращает документацию, репо, PDF или видео в структурированную базу знаний для экспорта в 16 платформ (Claude, Cursor, LangChain, Pinecone и др.). 12K GitHub stars, #3 в трендах. <a href="https://github.com/yusufkaraaslan/Skill_Seekers">GitHub</a></p>
+<p><strong>AtomicChat — опенсорс альтернатива ChatGPT.</strong> Локальные LLM + облачные модели + полный контроль над данными. <a href="https://github.com/AtomicBot-ai/Atomic-Chat">GitHub</a></p>
+<p><strong>Claude логирует агрессию пользователей.</strong> Когда злишься на Claude и пишешь об этом — он это фиксирует в аналитике как негативный сигнал. Не меняет поведения, просто записывает. <a href="https://x.com/roundtablespace/status/2039111747936690483">Твит</a></p>
+<p><strong>Public API для агентов с доступом к рынку.</strong> Регулятор открыл доступ для агентов, умеющих следить за рынком, управлять деньгами и совершать сделки. <a href="https://x.com/roundtablespace/status/2039172145985589478">Твит</a></p>
+<p><strong>Oumi — сборка кастомной модели за часы, не месяцы.</strong> Предлагает ускоренный путь к fine-tuning под конкретные задачи. <a href="https://x.com/roundtablespace/status/2039164596049637661">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://claude-code-info.vercel.app/">claude-code-info.vercel.app</a></li>
+<li><a href="https://github.com/yusufkaraaslan/Skill_Seekers">Skill Seekers на GitHub</a></li>
+<li><a href="https://github.com/AtomicBot-ai/Atomic-Chat">AtomicChat на GitHub</a></li>
+<li><a href="https://x.com/roundtablespace/status/2038960753458438156">@roundtablespace, 01-04-2026 — утечка Claude Code</a></li>
+<li><a href="https://x.com/roundtablespace/status/2038968303092220291">@roundtablespace, 01-04-2026 — скрытые фичи</a></li>
+<li><a href="https://x.com/roundtablespace/status/2039119297771941904">@roundtablespace, 01-04-2026 — Ollama+MLX</a></li>
+<li><a href="https://x.com/roundtablespace/status/2039134397136535772">@roundtablespace, 01-04-2026 — GLM 5.1</a></li>
+<li><a href="https://x.com/roundtablespace/status/2039126847259091001">@roundtablespace, 01-04-2026 — AutoClaw</a></li>
+</ul></article><div class="tool-cards"><img src="/tools/atomic-chat/atomic-chat.png" alt="atomic-chat">
+<img src="/tools/skill-seekers/skill-seekers.png" alt="skill-seekers"></div>
+  </div>
+</body>
+</html>

@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 31 Mar 2026 07:06:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 03:23:32 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,35 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 01-04-2026</title>
+      <link>https://rss.molfly.me/digests/01-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/01-04-2026/</guid>
+      <pubDate>Wed, 01 Apr 2026 06:00:00 +0000</pubDate>
+      <description>утечка исходного кода Claude Code через npm source maps, Ollama 0.19 + MLX на Apple Silicon, OpenAI $122B</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<p><strong>1. Утечка исходного кода Claude Code — случайный open source.</strong>
+Anthropic забыл добавить <code>*.map</code> в <code>.npmignore</code>. Bun (который принадлежит Anthropic) генерирует source maps по умолчанию. Результат: 512 000 строк исходного кода в npm-пакете на публичном Cloudflare bucket. 41 500 форков на GitHub за несколько часов. Внутри: 44 unreleased feature flag, anti-distillation механизмы (фальшивые tool calls, скрытые reasoning chains, изолированный JSON-протокол), dream-движок консолидации памяти, Tamagotchi-компаньон <code>/buddy</code> (запланирован на 1 апреля). И 29–30% false claims rate в последней версии модели против 16.7% в v4.
+— <a href="/posts/roundtablespace-01-04-2026">@roundtablespace</a>, <a href="/posts/aakashgupta-01-04-2026">@aakashgupta</a>, <a href="/posts/axiaisacat-01-04-2026">@axiaisacat</a>, <a href="/posts/garrytan-01-04-2026">@garrytan</a>, <a href="/posts/dotey-01-04-2026">@dotey</a>, <a href="/posts/GithubProjects-01-04-2026">@GithubProjects</a></p>
+<p><strong>2. Ollama 0.19: MLX-бэкенд на Apple Silicon.</strong>
+Ollama теперь использует MLX для ускорения на Mac — 2–3x прирост скорости генерации. На M5 через GPU Neural Accelerators. NVFP4 для NVIDIA. Умное кэширование промптов. Стартовая модель: Qwen3.5-35B-A3B-nvfp4 (нужно &gt;32 GB).
+— <a href="/posts/ollama-01-04-2026">@ollama</a>, <a href="/posts/roundtablespace-01-04-2026">@roundtablespace</a></p>
+<p><strong>3. OpenAI $122B — деньги циркулируют, не поступают.</strong>
+Amazon вложил $50B и расширил AWS-коммитмент OpenAI на $100B. Nvidia вложила $30B и продаёт OpenAI GPU. SoftBank вложил $30B через мостовой кредит $40B. Оценка $852B при 35x revenue multiple у компании, никогда не получавшей прибыль, сжигающей $150M в день. Runway: 18–24 месяца.
+— <a href="/posts/aakashgupta-01-04-2026">@aakashgupta</a>, <a href="/posts/roundtablespace-01-04-2026">@roundtablespace</a></p>
+<p><strong>4. Китайская платформенная война за OpenClaw за одну неделю.</strong>
+OpenClaw (310K GitHub stars) спровоцировал ответ четырёх триллионно-долларовых компаний: ArkClaw (ByteDance), WorkBuddy (Tencent), QoderWork (Alibaba), AutoClaw (Zhipu). Zhipu: no API key, local model, 50 pre-built skills. Акции +13%. Шэньчжэнь платит разработчикам до 2 млн юаней.
+— <a href="/posts/aakashgupta-01-04-2026">@aakashgupta</a></p>
+<p><strong>5. npm axios supply chain attack.</strong>
+Популярнейшая HTTP-библиотека JavaScript (300M загрузок/неделю): версии axios@1.14.1 и axios@0.30.4 содержат Remote Access Trojan. Не первый такой инцидент в npm.
+— <a href="/posts/karpathy-01-04-2026">@karpathy</a>, <a href="/posts/dotey-01-04-2026">@dotey</a></p>
+<p><strong>6. Perplexity — Stripe для AI.</strong>
+Оценка $20B, не обучила ни одного параметра. Маршрутизирует к 19 моделям. В январе 2025 два модели занимали 90% трафика, к декабрю — ни одна не выше 25%. ARR ~$200M. Четыре компании Mag Seven используют их Search API в production и ничего не могут сделать: отключить = потерять дистрибуцию.
+— <a href="/posts/aakashgupta-01-04-2026">@aakashgupta</a></p>
+<p><strong>7. TurboQuant/TQ3_1S: 27B модель в 12.9 GB на RTX 5060 Ti.</strong>
+Google делал для KV cache compression — сообщество применило к весам. 0.19% PPL gap от Q4_0, 1.5 GB экономии, которые решают войдёт ли модель в 16 GB VRAM. 96.91% HumanEval, -24% chain-of-thought bloat.
+— <a href="/posts/huggingface-01-04-2026">@huggingface</a>, <a href="/posts/aakashgupta-01-04-2026">@aakashgupta</a></p>]]></content:encoded>
     </item>
   </channel>
 </rss>

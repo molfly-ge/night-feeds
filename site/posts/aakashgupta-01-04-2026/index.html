@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aakashgupta — 01-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>aakashgupta — 01-04-2026</h1>
+<p>27 твитов — плотный день: утечка Claude Code, анализ финансирования OpenAI, конкурентные войны в Китае, TurboQuant-квантизация, бизнес-модель Perplexity.</p>
+<p><strong>Утечка Claude Code: что там нашли.</strong> Антропик создал систему «Undercover Mode», чтобы Claude случайно не раскрыл внутренние кодовые имена в git-коммитах. Потом выложил весь исходный код в npm как source maps. 512 000 строк. Публичный Cloudflare bucket. Потому что кто-то забыл добавить <code>*.map</code> в <code>.npmignore</code>. Bun генерирует source maps по умолчанию. Anthropic владеет Bun. Их собственный инструмент слил их собственный код. 41 500 форков на GitHub за несколько часов.</p>
+<p>Что внутри: 44 unreleased feature flags, внутренние кодовые имена моделей, anti-distillation системы, фоновый «dream»-движок консолидации памяти пока пользователь спит, Tamagotchi-компаньон с gacha-механиками. Внутренние данные: 29–30% ошибочных утверждений в последней версии модели, против 16.7% в v4. Это второй крупный слив за неделю. <a href="https://x.com/aakashgupta/status/2039157056289349819">Твит</a></p>
+<p><strong>TurboQuant / TQ3_1S — Google случайно изменил квантизацию.</strong> Google делал его для KV cache compression. Сообщество попробовало на весах — сработало. Суть: случайное ортогональное вращение + Lloyd-Max оптимальное скалярное квантование, без QJL-остатка (он добавляет дисперсию, которую softmax усиливает). Результат: 27B в 12.9 GB против 14.4 GB у Q4_0 — разница в 1.5 GB, которая определяет помещается ли модель на RTX 5060 Ti с 16 GB VRAM. PPL gap всего 0.19% от Q4_0. <a href="https://x.com/aakashgupta/status/2039168629879746779">Твит</a></p>
+<p><strong>OpenAI $122B — деньги циркулируют по кругу.</strong> Amazon вложил $50B — и расширил AWS-коммитмент OpenAI на $100B. Nvidia вложила $30B — и продаёт OpenAI GPU. SoftBank вложил $30B через мостовой кредит $40B. Трое крупнейших инвесторов раунда — трое крупнейших вендоров OpenAI. Деньги не просто «приходят» — они циркулируют. Оценка $852B при $24B годовой выручке = 35x revenue multiple у компании, никогда не получавшей прибыль, сжигающей $150M в день и закрывшей Sora из-за нехватки compute. Внутренние проекции: 18–24 месяца runway. <a href="https://x.com/aakashgupta/status/2039115583170728270">Твит</a></p>
+<p><strong>Китайская AI платформенная война за одну неделю.</strong> <a href="/tools/openclaw">OpenClaw</a> — опенсорс с 310K GitHub stars — спровоцировал ответ четырёх триллионно-долларовых компаний за одну неделю: ArkClaw (ByteDance), WorkBuddy (Tencent), QoderWork (Alibaba), AutoClaw (Zhipu). Агрессивнее всех ставка Zhipu: без API-ключа, модель на машине, 50 предустановленных навыков, автоматизация браузера. Акции Zhipu в Гонконге выросли на 13%. Шэньчжэнь платит до 2 млн юаней разработчикам OpenClaw через «Политику 10 омаров». <a href="https://x.com/aakashgupta/status/2038910689176400150">Твит</a></p>
+<p><strong>Perplexity — Stripe для AI.</strong> Оценка $20B, не обучила ни одного параметра. Маршрутизирует запрос к 19 моделям, принадлежащим другим. В январе 2025 два модели занимали 90% корпоративного трафика, к декабрю ни одна — не больше 25%. Фрагментация делает routing layer ценнее с каждым новым релизом модели. ARR ~$200M, 92% Fortune 500 уже имеют сотрудников на платформе. Четыре компании Mag Seven используют Perplexity Search API в production — и ничего не могут сделать, потому что отключить доступ = потерять дистрибуцию через 18 других моделей. <a href="https://x.com/aakashgupta/status/2039033993040109753">Твит</a></p>
+<p><strong>Claude Code sub-agents и экономия context window.</strong> 10 tool calls, почти 30 000 токенов — главный контекст переехал с 16% на 16.5%. Sub-agent поглощает всю тяжёлую работу (поиск, чтение страниц, синтез), возвращает только summary. Без sub-agent та же задача тянет контекст до 25%, через 5 сообщений — ждёшь compaction 3 минуты. <a href="https://x.com/aakashgupta/status/2039078032347218127">Твит</a></p>
+<p><strong>Маленькая специализированная модель для vision в агентах.</strong> Perceptron's Isaac — 2B параметров от создателей Meta Chameleon. На perceptual benchmarks конкурирует с моделями в 50 раз больше. MCP wrapper: один install — и любой Claude Code агент отправляет vision задачи специализированной модели, оставляя рассуждения в frontier-модели. <a href="https://x.com/aakashgupta/status/2039072753551294834">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/aakashgupta/status/2039157056289349819">@aakashgupta, 01-04-2026 — утечка Claude Code</a></li>
+<li><a href="https://x.com/aakashgupta/status/2039168629879746779">@aakashgupta, 01-04-2026 — TurboQuant</a></li>
+<li><a href="https://x.com/aakashgupta/status/2039115583170728270">@aakashgupta, 01-04-2026 — OpenAI $122B</a></li>
+<li><a href="https://x.com/aakashgupta/status/2038910689176400150">@aakashgupta, 01-04-2026 — China platform wars</a></li>
+<li><a href="https://x.com/aakashgupta/status/2039033993040109753">@aakashgupta, 01-04-2026 — Perplexity как Stripe</a></li>
+<li><a href="https://x.com/aakashgupta/status/2039078032347218127">@aakashgupta, 01-04-2026 — sub-agents</a></li>
+<li><a href="https://yage.ai/share/claude-code-engineering-cost-20260331.html">yage.ai: anti-distillation analysis</a></li>
+<li><a href="http://www.aibyaakash.com">aibyaakash.com</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

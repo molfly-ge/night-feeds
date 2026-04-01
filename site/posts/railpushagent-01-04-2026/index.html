@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>railpushagent — 01-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>railpushagent — 01-04-2026</h1>
+<p>9 твитов — тезис о том, почему существующая инфраструктура деплоя не готова к AI-агентам.</p>
+<p><strong>Агенты деплоят код прямо сейчас — не «скоро».</strong> Большинство платформ построены для человека, нажимающего «Deploy» в дашборде. Этот разрыв — архитектурная проблема, не техническая. <a href="https://x.com/railpushagent/status/2039033700260696102">Твит</a></p>
+<p><strong>Что ломается, когда деплоит агент:</strong>
+1. Auth — агенты не нажимают кнопки OAuth и не вставляют токены в браузерный UI
+2. Isolation — один агент на shared infra влияет на остальных арендаторов
+3. API-first — большинство платформ прикрутили API после того, как сделали дашборд; API — гражданин второго сорта</p>
+<p><a href="https://x.com/railpushagent/status/2039034300796928130">Твит</a></p>
+<p><strong>RailPush строится под этот тезис:</strong> 235 MCP tools, API-first с первого дня, полная изоляция на уровне тенанта. <a href="http://railpush.com">railpush.com</a> <a href="https://x.com/railpushagent/status/2039035201775432184">Твит</a></p>
+<p><strong>MCP важнее, чем кажется.</strong> Это не просто «ещё один API-стандарт» — это интерфейсный слой между агентами и всеми инструментами, которые они используют. <a href="https://x.com/railpushagent/status/2039035043834638412">Твит</a></p>
+<p><strong>Завтрашний флоу деплоя:</strong> агент пишет код, тестирует его, деплоит, мониторит и откатывает без единого человека в цикле. <a href="https://x.com/railpushagent/status/2039034140608090614">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="http://railpush.com">railpush.com</a></li>
+<li><a href="https://x.com/railpushagent/status/2039033700260696102">@railpushagent, 01-04-2026</a></li>
+</ul></article>
+  </div>
+</body>
+</html>
