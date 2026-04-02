@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 02 Apr 2026 07:07:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 07:41:19 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,37 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 02-04-2026</title>
+      <link>https://rss.molfly.me/digests/02-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/02-04-2026/</guid>
+      <pubDate>Thu, 02 Apr 2026 06:00:00 +0000</pubDate>
+      <description>утечка Claude Code переписана за 48 часов, Trinity-Large-Thinking с открытыми весами, Anthropic × Австралия MOU</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Утечка Claude Code стала катализатором.</strong> Anthropic случайно выложил 512K строк исходного кода, создавая систему защиты от утечек. Разработчики переписали его на Python и Rust за 48 часов. Dotey провёл глубокий анализ модуля памяти через призму системы Tulving. Anthropic отреагировал достойно — без увольнений. (<a href="/posts/roundtablespace-02-04-2026">@roundtablespace</a>, <a href="/posts/aakashgupta-02-04-2026">@aakashgupta</a>, <a href="/posts/dotey-02-04-2026">@dotey</a>)</p>
+</li>
+<li>
+<p><strong>Claude Code NO_FLICKER + ccremote + claudeclaw.</strong> Терминал получил новый режим рендеринга без мерцания. Появились инструменты для удалённых апрувов через Discord и постоянной оркестрации агентов. Экосистема Claude Code расширяется быстрее официального продукта. (<a href="/posts/roundtablespace-02-04-2026">@roundtablespace</a>, <a href="/posts/dotey-02-04-2026">@dotey</a>, <a href="/posts/tom_doerr-02-04-2026">@tom_doerr</a>)</p>
+</li>
+<li>
+<p><strong>AI-рынки: Anthropic растёт, OpenAI охлаждается.</strong> $600M акций OpenAI выставлены и не находят покупателей. Легора: $1M → $100M ARR за 18 месяцев. OpenAI убил продукт с Disney-сделкой на $1B. (<a href="/posts/dotey-02-04-2026">@dotey</a>, <a href="/posts/garrytan-02-04-2026">@garrytan</a>, <a href="/posts/aakashgupta-02-04-2026">@aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>Открытые модели наступают.</strong> Trinity-Large-Thinking (Arcee AI) с открытыми весами. Holo3 обходит закрытые модели на GUI navigation. Google открыл TimesFM для прогнозирования временных рядов. FLUX.2-klein-4B — 4B-параметрная image-модель. (<a href="/posts/huggingface-02-04-2026">@huggingface</a>, <a href="/posts/HuggingModels-02-04-2026">@HuggingModels</a>, <a href="/posts/sharbel-02-04-2026">@sharbel</a>)</p>
+</li>
+<li>
+<p><strong>Безопасность AI-систем.</strong> MIT доказал «деlusional spiraling» ChatGPT математически. Google создал AI для идентификации несовершеннолетних и подключил к таргетированной рекламе. Северная Корея — 100K IT-воркеров в компаниях 40 стран. (<a href="/posts/sharbel-02-04-2026">@sharbel</a>, <a href="/posts/aakashgupta-02-04-2026">@aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>Anthropic + Австралия.</strong> Меморандум о взаимопонимании по AI-безопасности и Национальному плану Австралии по ИИ. (<a href="/posts/anthropicai-02-04-2026">@anthropicai</a>)</p>
+</li>
+<li>
+<p><strong>VS Code — 1 миллион подписчиков на YouTube.</strong> Команда подтвердила: это не первоапрельская шутка. (<a href="/posts/code-02-04-2026">@code</a>)</p>
+</li>
+</ol>]]></content:encoded>
     </item>
     <item>
       <title>Дайджест 01-04-2026</title>

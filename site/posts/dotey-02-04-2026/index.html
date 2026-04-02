@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotey — 02-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #000; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #000; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>dotey — 02-04-2026</h1>
+<p>24 твита за сутки — глубокий анализ Claude Code на китайском языке.</p>
+<p><strong>Главная тема дня: разбор утечки Claude Code.</strong></p>
+<p><strong>Анализ памяти в Claude Code.</strong> Dotey изучил исходники и сделал анализ модуля памяти через призму системы Tulving (1972): три вида памяти — эпизодическая, семантическая, процедурная. <a href="https://x.com/dotey/status/2039376926931104153">Твит</a></p>
+<p><strong>Причина утечки</strong> — ошибка разработчика, не связана с bun. Anthropic отреагировал корректно: не уволил виновных, не стал искать козла отпущения. <a href="https://x.com/dotey/status/2039173976275009799">Твит</a> | <a href="https://x.com/dotey/status/2039230364925698531">Твит с реакцией Anthropic</a></p>
+<p><strong>«<a href="/tools/openclaw">OpenClaw</a>» (переписанный Claude Code) стал популярным</strong> по той же причине, что и DeepSeek — не новая технология, а вывод уже существующих возможностей к широкой аудитории. <a href="https://x.com/dotey/status/2039538422738788517">Твит</a></p>
+<p><strong>Claude Code NO_FLICKER режим</strong> — новый режим полноэкранного рендеринга терминала: <code>CLAUDE_CODE_NO_FLICKER=1 claude</code>. <a href="https://x.com/dotey/status/2039447849675469060">Твит</a></p>
+<p><strong>ccunpacked.dev</strong> — сайт для визуализации принципов работы Claude Code, с анимацией Agent Loop. <a href="https://ccunpacked.dev/">Ссылка</a> | <a href="https://x.com/dotey/status/2039365135140077765">Твит</a></p>
+<p><strong>Рынки Anthropic vs OpenAI.</strong> Bloomberg: $600M акций OpenAI выставлены и не находят покупателей. Anthopic горячий. <a href="https://x.com/dotey/status/2039563247917867275">Твит</a></p>
+<p><strong>«Перестань использовать ChatGPT»</strong> — о разнице между «использовать ИИ» и «использовать ИИ правильно», разница не 30%, а 10x. <a href="https://yage.ai/stop-using-chatgpt.html">Статья</a> | <a href="https://x.com/dotey/status/2039548632815579391">Твит</a></p>
+<p><strong>SentrySearch</strong> — опенсорс инструмент для поиска в видео по естественному языку (например, в записях dashcam). <a href="https://x.com/dotey/status/2039147493355634989">Твит</a></p>
+<p><strong>Метод изучения опенсорс-кода</strong> — четырёхшаговый тред: запустить → понять точку входа → переосмыслить → от имитации к превосходству. <a href="https://x.com/dotey/status/2039173267018191155">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://ccunpacked.dev/">ccunpacked.dev — визуализация Claude Code</a></li>
+<li><a href="https://yage.ai/stop-using-chatgpt.html">yage.ai — перестань использовать ChatGPT</a></li>
+<li><a href="https://x.com/dotey/status/2039376926931104153">@dotey, 02-04-2026 — анализ памяти Claude Code</a></li>
+<li><a href="https://x.com/dotey/status/2039538422738788517">@dotey, 02-04-2026 — OpenClaw популярность</a></li>
+<li><a href="https://x.com/dotey/status/2039447849675469060">@dotey, 02-04-2026 — NO_FLICKER режим</a></li>
+<li><a href="https://x.com/dotey/status/2039563247917867275">@dotey, 02-04-2026 — Bloomberg Anthropic vs OpenAI рынки</a></li>
+</ul></article>
+  </div>
+</body>
+</html>
