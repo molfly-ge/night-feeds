@@ -126,7 +126,7 @@ list.txt  — входной список URL аккаунтов
 ### Шаг 5 — сборка сайта и коммит
 
 ```
-python3 build/build.py
+./build/build.py
 git add posts/ tools/ digests/ index.md site/
 git commit -m "digest {date}"
 git push

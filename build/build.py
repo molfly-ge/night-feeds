@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """
 build.py — генератор статического сайта night-feeds
 Исходники: posts/, tools/, digests/, index.md
