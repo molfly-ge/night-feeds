@@ -181,7 +181,8 @@ def page(title: str, body: str, back: str = None) -> str:
     p  {{ margin-bottom: 16px; }}
     ul, ol {{ margin: 0 0 16px 20px; }}
     li {{ margin-bottom: 4px; }}
-    a  {{ color: #000; text-decoration: none; }}
+    a  {{ color: #4B0082; text-decoration: none; }}
+    a:visited {{ color: #87CEEB; }}
     a:hover {{ text-decoration: underline; }}
     code {{ font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
             background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }}
@@ -197,7 +198,8 @@ def page(title: str, body: str, back: str = None) -> str:
     .back a {{ color: #666; font-size: 15px; }}
     .posts {{ display: flex; flex-direction: column; gap: 10px; }}
     .post {{ display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }}
-    .post a {{ color: #000; }}
+    .post a {{ color: #4B0082; }}
+    .post a:visited {{ color: #87CEEB; }}
     .post .date {{ color: #666; white-space: nowrap; font-size: 15px; }}
     .tool-cards {{ margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }}
     .tool-cards img {{ width: 100%; height: auto; display: block; }}
