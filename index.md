@@ -1,5 +1,6 @@
 # Реестр дайджестов
 
+- [03-04-2026](digests/digest-03-04-2026.md) — Gemma 4 под Apache 2.0 взорвала open-source, Anthropic исследовала эмоции Claude, Claude Code набрал 10K звёзд за день
 - [02-04-2026](digests/digest-02-04-2026.md) — утечка Claude Code переписана за 48 часов, Trinity-Large-Thinking с открытыми весами, Anthropic × Австралия MOU
 - [01-04-2026](digests/digest-01-04-2026.md) — утечка исходного кода Claude Code через npm source maps, Ollama 0.19 + MLX на Apple Silicon, OpenAI $122B
 - [31-03-2026](digests/digest-31-03-2026.md) — Claude Code computer use в CLI, Codex-плагин OpenAI для Claude Code, RAM-кризис и TurboQuant, llama.cpp 100K звёзд

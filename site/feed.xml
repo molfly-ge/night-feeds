@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 02 Apr 2026 07:41:19 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 03:44:53 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,37 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 03-04-2026</title>
+      <link>https://rss.molfly.me/digests/03-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/03-04-2026/</guid>
+      <pubDate>Fri, 03 Apr 2026 06:00:00 +0000</pubDate>
+      <description>Gemma 4 под Apache 2.0 взорвала open-source, Anthropic исследовала эмоции Claude, Claude Code набрал 10K звёзд за день</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Gemma 4 — Google перешёл на Apache 2.0.</strong> Самый громкий релиз дня: Google выпустил Gemma 4 — мультимодальные открытые модели (текст, изображения, аудио), 140 языков, контекст до 256K, нативный tool use. Ключевое — смена лицензии с проприетарной на Apache 2.0. Day-0 поддержка в llama.cpp, Ollama, HuggingFace. ggerganov показал 300 т/с на Mac Studio M2 Ultra. Hugging Face запустили демо прямо в браузере через WebGPU. (<a href="/posts/google-03-04-2026">@google</a>, <a href="/posts/googledeepmind-03-04-2026">@googledeepmind</a>, <a href="/posts/huggingface-03-04-2026">@huggingface</a>, <a href="/posts/ggerganov-03-04-2026">@ggerganov</a>, <a href="/posts/ollama-03-04-2026">@ollama</a>, <a href="/posts/dotey-03-04-2026">@dotey</a>, <a href="/posts/aakashgupta-03-04-2026">@aakashgupta</a>, <a href="/posts/sharbel-03-04-2026">@sharbel</a>)</p>
+</li>
+<li>
+<p><strong>Anthropic: эмоции в Claude — 171 паттерн.</strong> Исследование показало, что Claude Sonnet 4.5 содержит внутренние представления эмоциональных концепций, которые влияют на поведение модели. Claude описывается как «персонаж, которого модель играет», с функциональными эмоциями. 1.6M просмотров на анонсе. (<a href="/posts/anthropicai-03-04-2026">@anthropicai</a>, <a href="/posts/dotey-03-04-2026">@dotey</a>, <a href="/posts/aakashgupta-03-04-2026">@aakashgupta</a>, <a href="/posts/onevcat-03-04-2026">@onevcat</a>)</p>
+</li>
+<li>
+<p><strong>Claude Code — 10K звёзд за сутки и экосистема растёт.</strong> Репозиторий набрал 10,749 звёзд за день (всего 104K). Computer use вышел на Windows. Вирусный гайд по агентским скиллам — 400K просмотров. GStack от Garry Tan, claude-token-efficient для экономии токенов, конференция AIE Europe с Claude Code meetups. (<a href="/posts/trending_repos-03-04-2026">@trending_repos</a>, <a href="/posts/claudeai-03-04-2026">@claudeai</a>, <a href="/posts/roundtablespace-03-04-2026">@roundtablespace</a>, <a href="/posts/garrytan-03-04-2026">@garrytan</a>, <a href="/posts/steipete-03-04-2026">@steipete</a>)</p>
+</li>
+<li>
+<p><strong>OpenClaw набирает обороты.</strong> Релиз v2026.4.2 с Durable Task Flow. CEO Brex ($5B) управляет компанией через OpenClaw. Доступен через Siri/CarPlay. Демо с Gemma 4 на MacBook Air M4. Сравнение с DeepSeek: не новая технология, но первый массовый agentic AI с файлами и памятью. (<a href="/posts/openclaw-03-04-2026">@openclaw</a>, <a href="/posts/steipete-03-04-2026">@steipete</a>, <a href="/posts/atomicbot_ai-03-04-2026">@atomicbot_ai</a>, <a href="/posts/dotey-03-04-2026">@dotey</a>, <a href="/posts/roundtablespace-03-04-2026">@roundtablespace</a>)</p>
+</li>
+<li>
+<p><strong>Karpathy: LLM Knowledge Bases как новый рабочий процесс.</strong> Сброс сырых данных в папку, компиляция markdown-вики через LLM, Q&amp;A поверх базы. Прогноз: каждый запрос к фронтир-модели будет порождать команду агентов, строящих эфемерную вики. (<a href="/posts/karpathy-03-04-2026">@karpathy</a>, <a href="/posts/garrytan-03-04-2026">@garrytan</a>, <a href="/posts/aakashgupta-03-04-2026">@aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>OpenAI: покупка TBPN, ChatGPT в CarPlay, гибкая тарификация Codex.</strong> OpenAI приобрела медиакомпанию TBPN. ChatGPT стал доступен в Apple CarPlay. Codex получил usage-based pricing для команд с промо-кредитами до $500. Вторичный рынок акций: $600M не находят покупателей, тогда как на Anthropic готовы $2B. (<a href="/posts/openai-03-04-2026">@openai</a>, <a href="/posts/openaidevs-03-04-2026">@openaidevs</a>, <a href="/posts/dotey-03-04-2026">@dotey</a>, <a href="/posts/aakashgupta-03-04-2026">@aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>AI-слоп угрожает open source.</strong> Число отчётов об уязвимостях в ядре Linux выросло с 2-3 в неделю до 5-10 в день — и большинство из них корректные. Прогноз: это может «убить» некоторые проекты. Параллельно — утечка тренировочных данных Mercor AI из крупнейших лабораторий. (<a href="/posts/steipete-03-04-2026">@steipete</a>, <a href="/posts/garrytan-03-04-2026">@garrytan</a>)</p>
+</li>
+</ol>]]></content:encoded>
     </item>
     <item>
       <title>Дайджест 02-04-2026</title>

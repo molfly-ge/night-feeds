@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ggerganov — 03-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>ggerganov — 03-04-2026</h1>
+<p>10 твитов за сутки.</p>
+<h2><a href="/tools/gemma-4">Gemma 4</a> — day-0 поддержка в llama.cpp</h2>
+<p><strong>Релиз Gemma 4</strong> — Google выпустила Gemma 4, и llama.cpp получил поддержку модели с первого дня. Георгий называет её «лучшей open-source моделью, которую можно запустить локально». Квантизированные GGUF-версии уже доступны на Hugging Face. <a href="https://x.com/ggerganov/status/2039744468899811419">Твит</a> | <a href="https://huggingface.co/collections/ggml-org/gemma-4">Модели на HF</a></p>
+<p><strong>Демо: 300 токенов/с на Mac Studio M2 Ultra</strong> — Gemma 4 26B A4B Q8_0 с prompt-based speculative decoding выдаёт 300 т/с на трёхлетнем Mac Studio. Встроенный WebUI, MCP-поддержка (web-search, HF, GitHub) из коробки. <a href="https://x.com/ggerganov/status/2039752638384709661">Твит</a> Уточнение: скорость объясняется тем, что модель пересказывает контент из промпта — спекулятивное декодирование особенно эффективно в таком случае. <a href="https://x.com/ggerganov/status/2039753496317059270">Твит</a></p>
+<p><strong>NVIDIA оптимизировала Gemma 4</strong> — партнёры из NVIDIA AI PC помогли с оптимизациями и бенчмарками для запуска Gemma 4 во всей экосистеме NVIDIA. <a href="https://x.com/ggerganov/status/2039797628116881567">Твит</a> | <a href="https://blogs.nvidia.com/blog/rtx-ai-garage-open-models-google-gemma-4/">Блог NVIDIA</a></p>
+<h2>llama.cpp как локальный агент</h2>
+<p><strong>WebUI + MCP = самодостаточный агент</strong> — llama.cpp со встроенным WebUI позиционируется как самый легковесный локальный агент с поддержкой MCP-серверов (Hugging Face, поиск и др.). <a href="https://x.com/ggerganov/status/2039786276765782518">Твит</a></p>
+<p><strong>Tailscale для мобильного инференса</strong> — совет: связать Mac и телефон через Tailscale для быстрого приватного инференса на ходу. Демо Gemma 4 на iPhone через Mac Studio. <a href="https://x.com/ggerganov/status/2039804601810001921">Твит</a></p>
+<p><strong>Установка одной командой</strong> — ретвит <a href="https://x.com/julien_c?s=11">@julien_c</a>: <code>brew install llama.cpp --HEAD</code>, затем <code>llama-server -hf ggml-org/gemma-4-26B-A4B-it-GGUF:Q4_K_M</code>. <a href="https://x.com/julien_c/status/2039746054355067002">Ретвит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://huggingface.co/collections/ggml-org/gemma-4">Gemma 4 GGUF на Hugging Face</a></li>
+<li><a href="https://blogs.nvidia.com/blog/rtx-ai-garage-open-models-google-gemma-4/">NVIDIA RTX AI Garage — Gemma 4</a></li>
+<li><a href="https://x.com/ggerganov/status/2039744468899811419">@ggerganov, 03-04-2026</a></li>
+<li><a href="https://x.com/ggerganov/status/2039752638384709661">@ggerganov, 03-04-2026</a></li>
+<li><a href="https://x.com/ggerganov/status/2039797628116881567">@ggerganov, 03-04-2026</a></li>
+<li><a href="https://x.com/ggerganov/status/2039804601810001921">@ggerganov, 03-04-2026</a></li>
+<li><a href="https://x.com/ggerganov/status/2039786276765782518">@ggerganov, 03-04-2026</a></li>
+<li><a href="https://x.com/julien_c/status/2039746054355067002">@julien_c (ретвит), 03-04-2026</a></li>
+</ul></article>
+  </div>
+</body>
+</html>
