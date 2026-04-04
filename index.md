@@ -1,5 +1,6 @@
 # Реестр дайджестов
 
+- [04-04-2026](digests/digest-04-04-2026.md) — Anthropic ограничивает сторонние клиенты, исследование эмоций LLM, массовый выпуск Qwen3.5 и Gemma 4
 - [03-04-2026](digests/digest-03-04-2026.md) — Gemma 4 под Apache 2.0 взорвала open-source, Anthropic исследовала эмоции Claude, Claude Code набрал 10K звёзд за день
 - [02-04-2026](digests/digest-02-04-2026.md) — утечка Claude Code переписана за 48 часов, Trinity-Large-Thinking с открытыми весами, Anthropic × Австралия MOU
 - [01-04-2026](digests/digest-01-04-2026.md) — утечка исходного кода Claude Code через npm source maps, Ollama 0.19 + MLX на Apple Silicon, OpenAI $122B

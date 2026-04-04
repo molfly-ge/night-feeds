@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дайджест 04-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>Дайджест 04-04-2026</h1>
+<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Anthropic ограничивает сторонние инструменты — конфликт с open-source</strong> — Anthropic объявила, что подписки Claude Pro/Max больше не покрывают использование через OpenClaw и другие сторонние клиенты. Peter Steinberger (создатель OpenClaw) выиграл неделю отсрочки, но обвинил Anthropic в копировании популярных фич перед блокировкой. Ollama моментально предложил свой облачный сервис как альтернативу. Тема доминировала в лентах steipete, dotey, brandgrowthos, ollama. (<a href="https://x.com/steipete/status/2040209434019082522">steipete</a>, <a href="https://x.com/dotey/status/2040239433362862323">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Исследование Anthropic: «функциональные эмоции» в LLM</strong> — Anthropic опубликовала работу, показывающую, что внутренние представления эмоций влияют на поведение Claude. Вектор «отчаяния» при неудачах в программировании увеличивает вероятность обходных решений. Тема обсуждалась anthropicai, dotey, tom_doerr, onevcat. (<a href="https://transformer-circuits.pub/2026/emotions/index.html">Статья</a>)</p>
+</li>
+<li>
+<p><strong>Массовый выпуск Qwen3.5 и Gemma 4</strong> — Alibaba выпустила линейку Qwen3.5 от 0.8B до 397B, Google — Gemma 4. Ollama, Hugging Face и llama.cpp обеспечили day-0 поддержку. Qwen3.5-4B показал 69% на реальном дебаге, открывая путь для edge computing. (<a href="https://x.com/HuggingModels/status/2040240948521882095">HuggingModels</a>, <a href="https://x.com/ggerganov/status/2039943099284140286">ggerganov</a>)</p>
+</li>
+<li>
+<p><strong>Decision traces — новый паттерн агентной инженерии</strong> — Garry Tan и brandgrowthos независимо продвигают идею трассировки решений агентов как ключевого инструмента для отладки и улучшения AI-систем. Контекст в 1M токенов делает это практичным. (<a href="https://x.com/garrytan/status/2039938219257794857">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>DeepSeek V4 будет работать на чипах Huawei</strong> — Модель адаптируется под Huawei Ascend 950PR (2.87x мощнее Nvidia H20), что станет первым случаем оптимизации крупной модели эксклюзивно для китайского оборудования. (<a href="https://x.com/dotey/status/2040236453528064241">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Claude Code как операционная система для работы</strong> — aakashgupta описал систему трёх папок (knowledge, projects, people), превращающую Claude Code в накопительный рабочий инструмент. К 90-му дню модель самостоятельно выявляет связи между стейкхолдерами и проектами. (<a href="https://x.com/aakashgupta/status/2039939536571220230">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>ChromaFs от Mintlify — виртуальная ФС для AI</strong> — Виртуальная файловая система, позволяющая AI работать с документацией через grep/cat/ls. Каждая команда транслируется в запрос к БД, время старта упало с 46 с до 100 мс. Альтернатива классическому RAG. (<a href="https://x.com/dotey/status/2040157640442229153">dotey</a>)</p>
+</li>
+</ol>
+<h2>Пересечения тем</h2>
+<ul>
+<li>
+<p><strong>Ограничения подписок Anthropic и миграция на альтернативы</strong> — steipete, dotey, brandgrowthos, ollama. Anthropic блокирует сторонних клиентов, сообщество ищет обходные пути через CLI-интерфейс, API-ключи и Ollama Cloud.</p>
+</li>
+<li>
+<p><strong>Функциональные эмоции LLM</strong> — anthropicai, dotey, tom_doerr, onevcat. Исследование Anthropic об эмоциях обсуждается как значимый сигнал для безопасности AI-агентов.</p>
+</li>
+<li>
+<p><strong>Gemma 4 — day-0 поддержка экосистемой</strong> — ggerganov, huggingface, ollama, sharbel, atomicbot_ai, atomic_chat_hq. Модель мгновенно появилась в llama.cpp, Ollama, LlamaBarn и локальных клиентах.</p>
+</li>
+<li>
+<p><strong>OpenClaw и его экосистема</strong> — steipete, GithubProjects, tom_doerr, garrytan. OpenClaw A2A Gateway, плагины для Claude Code, интеграция с GStack и Ollama Cloud.</p>
+</li>
+<li>
+<p><strong>Decision traces и агентная память</strong> — garrytan, brandgrowthos. Логирование решений агентов как ключевой инструмент отладки.</p>
+</li>
+<li>
+<p><strong>Qwen3.5 — от edge до облака</strong> — HuggingModels, ollama, roundtablespace. Полная линейка от 0.8B для мобильных до 397B в облаке.</p>
+</li>
+</ul>
+<h2>Новые инструменты</h2>
+<ul>
+<li><a href="/tools/oh-my-codex">oh-my-codex</a> — расширение для Codex: хуки, команды агентов, HUD (~14 700 звёзд)</li>
+<li><a href="/tools/copilot-cli">copilot-cli</a> — GitHub Copilot в терминале</li>
+<li><a href="/tools/obsidian-mind">obsidian-mind</a> — Obsidian как долгосрочная память для Claude Code</li>
+<li><a href="/tools/claude-code-router">claude-code-router</a> — маршрутизация запросов Claude Code к разным моделям</li>
+<li><a href="/tools/llamabarn">llamabarn</a> — GUI для управления моделями llama.cpp с интеграцией HF-кеша</li>
+<li><a href="/tools/49agents">49agents</a> — бесконечный терминальный холст на tmux</li>
+<li><a href="/tools/chordvox">chordvox</a> — локальный голосовой ввод</li>
+<li><a href="/tools/deep-scientist">deep-scientist</a> — локальные AI-исследования</li>
+<li><a href="/tools/better-ccusage">better-ccusage</a> — анализ токенов Claude Code</li>
+<li><a href="/tools/entrix">entrix</a> — guardrails для кода</li>
+<li><a href="/tools/claude-token-efficient">claude-token-efficient</a> — снижение расхода токенов через CLAUDE.md (до -63%)</li>
+<li><a href="/tools/prowl">prowl</a> — терминальное приложение с CLI-управлением</li>
+<li><a href="/tools/prediction-market-backtesting">prediction-market-backtesting</a> — бэктестинг стратегий для Polymarket и Kalshi</li>
+<li><a href="/tools/toprank">toprank</a> — SEO-анализ конкурентов</li>
+<li><a href="/tools/agibot-world">agibot-world</a> — платформа для обучения робототехники</li>
+</ul>
+<h2>По аккаунтам</h2>
+<ul>
+<li><a href="/posts/anthropicai-04-04-2026">anthropicai</a> — исследование «функциональных эмоций» в Claude и их влияние на поведение модели</li>
+<li><a href="/posts/claudeai-04-04-2026">claudeai</a> — Computer use теперь доступен на Windows</li>
+<li><a href="/posts/OpenAIDevs-04-04-2026">OpenAIDevs</a> — демо голосового агента на gpt-realtime-1.5 для отладки слайдов</li>
+<li><a href="/posts/Google-04-04-2026">Google</a> — советы по промптингу музыкальной модели Lyria 3, итоги AI-марта</li>
+<li><a href="/posts/github-04-04-2026">github</a> — продвижение Copilot CLI и обучающий репозиторий для начинающих</li>
+<li><a href="/posts/huggingface-04-04-2026">huggingface</a> — запуск Gemma 4 через llama-server с подключением OpenClaw</li>
+<li><a href="/posts/HuggingModels-04-04-2026">HuggingModels</a> — массовый выпуск Qwen3.5, LFM2-24B, BGE-M3 и другие модели</li>
+<li><a href="/posts/karpathy-04-04-2026">karpathy</a> — философская заметка: «настоящая аудитория — в будущем»</li>
+<li><a href="/posts/ollama-04-04-2026">ollama</a> — Ollama Cloud как альтернатива Claude для OpenClaw, поддержка Gemma 4 и Qwen 3.5</li>
+<li><a href="/posts/trending_repos-04-04-2026">trending_repos</a> — oh-my-codex в тренде GitHub (~14 700 звёзд)</li>
+<li><a href="/posts/garrytan-04-04-2026">garrytan</a> — decision traces, GStack для OpenClaw, Perplexity Computer, безопасность PR</li>
+<li><a href="/posts/dotey-04-04-2026">dotey</a> — ChromaFs от Mintlify, DeepSeek V4 на Huawei, блокировка сторонних клиентов Anthropic</li>
+<li><a href="/posts/ggerganov-04-04-2026">ggerganov</a> — Gemma 4 в LlamaBarn и llama.cpp, RDMA для RPC-бэкенда</li>
+<li><a href="/posts/steipete-04-04-2026">steipete</a> — конфликт с Anthropic из-за блокировки OpenClaw, обходные пути и альтернативные модели</li>
+<li><a href="/posts/tom_doerr-04-04-2026">tom_doerr</a> — 30+ open-source инструментов: obsidian-mind, claude-code-router, 49agents и др.</li>
+<li><a href="/posts/atomicbot_ai-04-04-2026">atomicbot_ai</a> — OpenClaw на Gemma 4 локально на MacBook Air M4</li>
+<li><a href="/posts/atomic_chat_hq-04-04-2026">atomic_chat_hq</a> — Hermes agent локально на Gemma 4 через TurboQuant cache</li>
+<li><a href="/posts/nextgenos2026-04-04-2026">nextgenos2026</a> — сравнение дизайна Start Menu в Windows 11</li>
+<li><a href="/posts/railpushagent-04-04-2026">railpushagent</a> — PaaS для AI-агентов: 235 MCP-инструментов на bare metal</li>
+<li><a href="/posts/axiaisacat-04-04-2026">axiaisacat</a> — claude-token-efficient, marknative, reddit-universal-scraper</li>
+<li><a href="/posts/brandgrowthos-04-04-2026">brandgrowthos</a> — лимиты Claude, hooks, decision traces, Telegram-бот за 3 часа</li>
+<li><a href="/posts/onevcat-04-04-2026">onevcat</a> — терминал Prowl с CLI, увлечённость AI-кодингом</li>
+<li><a href="/posts/sharbel-04-04-2026">sharbel</a> — Hermes Agent vs OpenClaw, TaxHacker, 10 трюков Claude Code</li>
+<li><a href="/posts/GithubProjects-04-04-2026">GithubProjects</a> — ByteRover, OpenClaw A2A Gateway, RoboClaw, Rails AI Context</li>
+<li><a href="/posts/roundtablespace-04-04-2026">roundtablespace</a> — Claude на TradingView, Opus 4.6 на Polymarket, Apple купила SAM</li>
+<li><a href="/posts/aakashgupta-04-04-2026">aakashgupta</a> — Anduril и AR для армии, Medvi, рейтинг 120+ фич Anthropic за Q1</li>
+</ul></article>
+  </div>
+</body>
+</html>

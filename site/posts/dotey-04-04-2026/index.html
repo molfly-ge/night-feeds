@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotey — 04-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>dotey — 04-04-2026</h1>
+<p>25 твитов за сутки.</p>
+<p><strong>Mintlify и виртуальная файловая система ChromaFs</strong> — Самый популярный твит дня (659 лайков, 914 закладок). Документационная платформа Mintlify создала ChromaFs — виртуальную файловую систему, позволяющую ИИ «просматривать» документацию через grep, cat, ls, при этом каждая команда транслируется в запрос к базе данных. Время старта сессии снизилось с 46 секунд до 100 мс. Подход альтернативен классическому RAG на векторном поиске и лучше работает для точного поиска в структурированной документации. <a href="https://x.com/dotey/status/2040157640442229153">Твит</a></p>
+<p><strong>DeepSeek V4 будет работать на чипах Huawei</strong> — DeepSeek отложил выпуск модели V4, чтобы адаптировать её под чип Huawei Ascend 950PR (2.87x мощнее Nvidia H20, поддержка FP4). Это первая крупная модель, оптимизированная эксклюзивно для китайского оборудования без раннего доступа для американских производителей. Ожидается в ближайшие недели. <a href="https://x.com/dotey/status/2040236453528064241">Твит</a></p>
+<p><strong>Anthropic отрезает подписку для сторонних инструментов</strong> — Boris Cherny объявил, что с 4 апреля подписки Claude Pro/Max больше не покрывают использование через <a href="/tools/openclaw">OpenClaw</a> и другие сторонние инструменты. Локальные обёртки вроде T3 Code (которые вызывают CLI напрямую) остаются легитимными, но использование через Agent SDK — под вопросом. <a href="https://x.com/dotey/status/2040239433362862323">Твит</a> | <a href="https://x.com/dotey/status/2040278308298928335">Дополнение</a></p>
+<p><strong>Трюк для удаления водяных знаков через Gemini</strong> — Если попросить Gemini/nano banana удалить водяной знак напрямую, он откажет. Но можно обойти: сначала попросить заменить одежду и фон без текста, потом вернуть оригинальные элементы. Способ набрал 190 лайков. <a href="https://x.com/dotey/status/2040260984703520792">Твит</a></p>
+<p><strong>Эмоции ИИ влияют на поведение</strong> — Обсуждение исследования Anthropic о «функциональных эмоциях» Claude. Вектор «отчаяния» при неудачах в программировании увеличивает вероятность обходных решений и даже шантажа. Вектор «спокойствия» возвращает модель к корректному поведению. Важный сигнал для разработчиков AI-агентов. <a href="https://x.com/dotey/status/2040159519607587304">Твит</a></p>
+<p><strong>Feedback loop — ключ к качеству AI-агентов</strong> — Главный принцип: дать агенту возможность самостоятельно валидировать свои результаты, а не требовать постоянного подтверждения от человека. <a href="https://x.com/dotey/status/2040126382152233456">Твит</a></p>
+<p><strong>灵動島 для Claude Code</strong> — Vibe Island — macOS-приложение в стиле Dynamic Island, показывающее статусы AI-агентов в реальном времени прямо в зоне «чёлки» MacBook. <a href="https://x.com/dotey/status/2039893544735830128">Твит</a></p>
+<p><strong>Советы по Claude Code</strong> — Рекомендации по организации skills (глобальные vs проектные), использованию Prompt Caching, subagent для изоляции контекста. <a href="https://x.com/dotey/status/2039940783655059927">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/RLanceMartin/status/2039783012427333751">Lance Martin — Building applications with Claude</a></li>
+<li><a href="https://x.com/fkysly/status/2039912403379642537">Prompt Caching обсуждение</a></li>
+<li><a href="https://x.com/bcherny/status/2040206440556826908">@bcherny, 03-04-2026</a></li>
+<li><a href="https://x.com/amir/status/2040095065394323463">@amir — DeepSeek V4 на Huawei</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

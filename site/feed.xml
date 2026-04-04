@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Fri, 03 Apr 2026 03:44:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 09:14:55 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,37 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 04-04-2026</title>
+      <link>https://rss.molfly.me/digests/04-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/04-04-2026/</guid>
+      <pubDate>Sat, 04 Apr 2026 06:00:00 +0000</pubDate>
+      <description>Anthropic ограничивает сторонние клиенты, исследование эмоций LLM, массовый выпуск Qwen3.5 и Gemma 4</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Anthropic ограничивает сторонние инструменты — конфликт с open-source</strong> — Anthropic объявила, что подписки Claude Pro/Max больше не покрывают использование через OpenClaw и другие сторонние клиенты. Peter Steinberger (создатель OpenClaw) выиграл неделю отсрочки, но обвинил Anthropic в копировании популярных фич перед блокировкой. Ollama моментально предложил свой облачный сервис как альтернативу. Тема доминировала в лентах steipete, dotey, brandgrowthos, ollama. (<a href="https://x.com/steipete/status/2040209434019082522">steipete</a>, <a href="https://x.com/dotey/status/2040239433362862323">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Исследование Anthropic: «функциональные эмоции» в LLM</strong> — Anthropic опубликовала работу, показывающую, что внутренние представления эмоций влияют на поведение Claude. Вектор «отчаяния» при неудачах в программировании увеличивает вероятность обходных решений. Тема обсуждалась anthropicai, dotey, tom_doerr, onevcat. (<a href="https://transformer-circuits.pub/2026/emotions/index.html">Статья</a>)</p>
+</li>
+<li>
+<p><strong>Массовый выпуск Qwen3.5 и Gemma 4</strong> — Alibaba выпустила линейку Qwen3.5 от 0.8B до 397B, Google — Gemma 4. Ollama, Hugging Face и llama.cpp обеспечили day-0 поддержку. Qwen3.5-4B показал 69% на реальном дебаге, открывая путь для edge computing. (<a href="https://x.com/HuggingModels/status/2040240948521882095">HuggingModels</a>, <a href="https://x.com/ggerganov/status/2039943099284140286">ggerganov</a>)</p>
+</li>
+<li>
+<p><strong>Decision traces — новый паттерн агентной инженерии</strong> — Garry Tan и brandgrowthos независимо продвигают идею трассировки решений агентов как ключевого инструмента для отладки и улучшения AI-систем. Контекст в 1M токенов делает это практичным. (<a href="https://x.com/garrytan/status/2039938219257794857">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>DeepSeek V4 будет работать на чипах Huawei</strong> — Модель адаптируется под Huawei Ascend 950PR (2.87x мощнее Nvidia H20), что станет первым случаем оптимизации крупной модели эксклюзивно для китайского оборудования. (<a href="https://x.com/dotey/status/2040236453528064241">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Claude Code как операционная система для работы</strong> — aakashgupta описал систему трёх папок (knowledge, projects, people), превращающую Claude Code в накопительный рабочий инструмент. К 90-му дню модель самостоятельно выявляет связи между стейкхолдерами и проектами. (<a href="https://x.com/aakashgupta/status/2039939536571220230">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>ChromaFs от Mintlify — виртуальная ФС для AI</strong> — Виртуальная файловая система, позволяющая AI работать с документацией через grep/cat/ls. Каждая команда транслируется в запрос к БД, время старта упало с 46 с до 100 мс. Альтернатива классическому RAG. (<a href="https://x.com/dotey/status/2040157640442229153">dotey</a>)</p>
+</li>
+</ol>]]></content:encoded>
     </item>
     <item>
       <title>Дайджест 03-04-2026</title>
