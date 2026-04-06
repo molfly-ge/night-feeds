@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dotey — 06-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>dotey — 06-04-2026</h1>
+<p>9 твитов за сутки. Главная тема дня — Anthropic отрезала сторонние harness-клиенты от подписки Claude, и что это значит для экосистемы агентов.</p>
+<p><strong>Anthropic vs. сторонние harness: экономика токенов</strong> — Бао Юй подробно пересказывает пост Фули Ло (руководителя Xiaomi MiMo): глобальных вычислительных мощностей не хватает для потребления токенов в эпоху агентов. Проблема не в дешёвых токенах, а в эффективных фреймворках. <a href="/tools/openclaw">OpenClaw</a>, к примеру, плохо управляет контекстом — на один запрос пользователя приходится множество низкоценных tool-вызовов с окнами 100K+ токенов, реальная стоимость в десятки раз выше подписки. Вывод: ограничения Anthropic подтолкнут всю экосистему к инженерной дисциплине. <a href="https://x.com/dotey/status/2040854097838952598">Твит</a></p>
+<p><strong>Тестирование блокировки Claude</strong> — Бао Юй сам проверил: можно использовать <code>--append-system-prompt</code> и <code>-p</code>, но нельзя упоминать OpenClaw в system prompt — Anthropic блокирует конкретно по ключевому слову. <a href="https://x.com/dotey/status/2040830616032206967">Твит</a></p>
+<p><strong><a href="/tools/claude-island">Claude Island</a> — уведомления Claude Code через Dynamic Island</strong> — обзор открытого macOS-приложения на Swift от farouqaldori. Вешается на «чёлку» MacBook, показывает статус сессий Claude Code и кнопки одобрения/отклонения прямо в Dynamic Island. Работает через хуки в <code>~/.claude/hooks/</code> и Unix-сокеты. Apache 2.0, есть Mixpanel-аналитика. Оригинальный репо уже не поддерживается, активный форк — от engels74. <a href="https://x.com/dotey/status/2040850151405707702">Твит</a></p>
+<p><strong>Статья «Ключевые компоненты кодинг-агентов»</strong> — Бао Юй опубликовал перевод статьи о core-компонентах программирующих агентов. <a href="https://x.com/dotey/status/2040659186070040584">Твит</a></p>
+<p><strong>Комментарий Майкла Го</strong> — согласие с тезисом о том, что плохо спроектированные harness-ы (вроде OpenClaw) — источник перерасхода, а ограничения Anthropic вынуждают экосистему улучшаться. Отдельно замечает: локальные модели (типа <a href="/tools/gemma-4">Gemma 4</a>) становятся всё привлекательнее как запасной вариант. <a href="https://x.com/dotey/status/2040854544779755670">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/FlorianKluge/status/2040827544618840548?s=20">Тест от @FlorianKluge</a></li>
+<li><a href="http://x.com/i/article/2040657346175676416">Статья «Ключевые компоненты кодинг-агентов»</a></li>
+<li><a href="https://x.com/Michaelzsguo/status/2040844920475287733">Комментарий @Michaelzsguo</a></li>
+<li><a href="https://github.com/farouqaldori/claude-island">Claude Island — оригинальный репо</a></li>
+<li><a href="https://github.com/engels74/claude-island">Claude Island — активный форк</a></li>
+<li><a href="https://x.com/parrotboy888/status/2040852105674805475?s=20">@parrotboy888 о форке</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

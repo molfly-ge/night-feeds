@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brandgrowthos — 06-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>brandgrowthos — 06-04-2026</h1>
+<p>31 твит за сутки. Практик AI-автоматизации делится опытом: от ручной координации агентов до полностью автономных воркфлоу через n8n.</p>
+<p><strong>Тред: от ручных агентов к автономным воркфлоу</strong> — шестичастный тред о пути автоматизации. Начинал с TypeScript-воркфлоу, которые требовали постоянного ручного надзора. Прорыв случился, когда агенты стали передавать контекст напрямую через n8n-вебхуки вместо копипаста между сессиями. Сейчас контент-пайплайн полностью автономен: research-агент кормит writing-агента, тот триггерит постинг. Агенты даже дебажат друг друга — writing-агент ловит ошибки форматирования research-агента. <a href="https://x.com/BrandGrowthOS/status/2040867688608870456">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040867962203316405">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040868229246284199">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040868433114644505">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040868638753018099">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040868917942555095">Твит</a></p>
+<p><strong>Claude Code как ежедневный инструмент</strong> — использует Claude Code как основной инструмент разработки. Построил целую систему Telegram-ботов, просто описывая желаемое и итерируя. Отмечает сдвиг: теперь больше времени уходит на продумывание задачи и ревью, чем на написание кода. Сравнивает: "как быть архитектором вместо плотника". <a href="https://x.com/BrandGrowthOS/status/2040852884292784587">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040777946609422382">Твит</a></p>
+<p><strong>Локальные модели и экономика</strong> — запускает локальные модели на домашнем сервере с 4090. Причина: rate limits облачных API не подходят для агентов 24/7. Интересуется <a href="/tools/gemma-4">Gemma 4</a> и <a href="/tools/dgx-spark">DGX Spark</a>. Вернулся к локальным моделям после повышения тарифов. <a href="https://x.com/BrandGrowthOS/status/2040973721650041300">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040778754151354642">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040626576422011326">Твит</a></p>
+<p><strong><a href="/tools/goose">Goose</a> vs Claude Code</strong> — попробовал Goose: локальный запуск работает, но навигация между файлами неудобна по сравнению с Claude Code. Впрочем, "$180/месяц — это $180/месяц". Спрашивает, работает ли Goose с локальными Llama-моделями. <a href="https://x.com/BrandGrowthOS/status/2040778485300674931">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040853315291075010">Твит</a></p>
+<p><strong>Компания одного человека</strong> — запускает 6 AI-агентов на домашнем сервере, которые заменяют целые команды. Считает, что большинство фаундеров всё ещё по привычке думают, что нужно нанимать людей первым делом. <a href="https://x.com/BrandGrowthOS/status/2040809083662639527">Твит</a></p>
+<p><strong>Obsidian + Claude для баз знаний</strong> — использует Claude для организации сырых данных в базы знаний. Считает это ценнее, чем генерация кода. <a href="https://x.com/BrandGrowthOS/status/2040626319600521524">Твит</a>, <a href="https://x.com/BrandGrowthOS/status/2040898540847902988">Твит</a></p>
+<p><strong>Специализация агентов</strong> — разделяет агентов по узким функциям: Telegram-бот ничего не знает о контент-стратегии, контент-агент не знает про n8n. Узкий фокус даёт лучшие результаты. <a href="https://x.com/BrandGrowthOS/status/2040808144868442377">Твит</a></p>
+<p><strong>Cursor для итераций, Claude для архитектуры</strong> — перешёл на Cursor для повторяющегося редактирования файлов. Claude Code быстро сжигает токены при итерациях над одним файлом: контекстное окно забивается дублирующими диффами. <a href="https://x.com/BrandGrowthOS/status/2040928685939892571">Твит</a></p>
+<p><strong>Токены и масштабирование</strong> — ключевая мысль: большинство людей при первой неудаче думают "модель недостаточно умна", хотя на самом деле проблема — "недостаточно токенов". Больше think-time = лучше результат. <a href="https://x.com/BrandGrowthOS/status/2040913473732038734">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://x.com/BrandGrowthOS/status/2040867688608870456">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040867962203316405">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040868433114644505">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040868638753018099">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040868917942555095">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040852884292784587">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040973721650041300">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040809083662639527">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040913473732038734">@BrandGrowthOS, 06-04-2026</a></li>
+<li><a href="https://x.com/BrandGrowthOS/status/2040928685939892571">@BrandGrowthOS, 06-04-2026</a></li>
+</ul></article><div class="tool-cards"><img src="/tools/dgx-spark/dgx-spark.png" alt="dgx-spark"></div>
+  </div>
+</body>
+</html>
