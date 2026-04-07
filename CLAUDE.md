@@ -6,10 +6,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Ночной дайджест Twitter-аккаунтов. Claude Code читает `list.txt`, обходит каждый аккаунт, формирует саммари, карточки инструментов, агрегированный дайджест и обновляет реестр.
 
-## Зависимости
+## Зависимости и пути
 
-- [twitter-cli](https://github.com/public-clis/twitter-cli) — CLI для извлечения твитов
-- [ljg-skills](https://github.com/lijigang/ljg-skills/) — навыки `ljg-paper`, `ljg-plain`, `ljg-card`
+### twitter CLI
+
+- **Бинарь:** `/home/calcifer/.local/bin/twitter`
+- **Получение твитов:** `twitter user-posts {account} --max 50 --json`
+- **Фильтрация по 24ч:** CLI не поддерживает `--since` — фильтровать в Python по полю `createdAtISO`
+- **Rate limits:** при параллельных запросах (>3-4 одновременных) возвращает HTTP 429; пауза ~6 мин до сброса
+- **JSON-структура твита:** `id`, `text`, `createdAtISO`, `urls[]`, `media[]`, `metrics{}`, `quotedTweet.urls[]`
+
+### ljg-skills
+
+- **Репозиторий:** [ljg-skills](https://github.com/lijigang/ljg-skills/) — установлен в `/home/calcifer/git/ljg-skills/`
+- **ljg-card (PNG-карточки):**
+  - Шаблон: `/home/calcifer/git/ljg-skills/skills/ljg-card/assets/long_template.html`
+  - Переменные: `{{TITLE_BLOCK}}`, `{{BODY_HTML}}`, `{{SOURCE}}`, `{{BG_COLOR}}`, `{{ACCENT_COLOR}}`
+  - Логотип: `file:///home/calcifer/git/ljg-skills/skills/ljg-card/assets/logo.png`
+  - Скриншот: `node /home/calcifer/git/ljg-skills/skills/ljg-card/assets/capture.js /tmp/ljg_{name}.html tools/{tool-name}.png 1080 800 fullpage`
+- **ljg-paper / ljg-plain:** используются как **стилистический ориентир** для markdown-постов (русский язык, без академизма, конкретика + ссылки). НЕ вызываются как навыки — они генерируют .org файлы в ~/Documents/notes/, что не нужно в пайплайне.
 
 ## Структура файлов
 
@@ -37,8 +52,8 @@ list.txt  — входной список URL аккаунтов
 Если `posts/post-{account}-{date}.md` уже существует — пропустить аккаунт, вывести `⏭ {account} — уже обработан, пропуск`.
 
 **2b. Получение твитов**
-Запустить twitter-cli для получения твитов за последние 24 часа.
-- Если команда завершилась с ошибкой → вывести `✗ {account} — ошибка twitter-cli`, продолжить следующий аккаунт.
+Запустить `twitter user-posts {account} --max 50 --json`, отфильтровать твиты за последние 24 часа по `createdAtISO`.
+- Если команда завершилась с ошибкой → вывести `✗ {account} — ошибка twitter`, продолжить следующий аккаунт.
 - Если твитов 0 → создать `posts/post-{account}-{date}.md` с содержимым:
   ```
   # {account} — {date}
@@ -47,7 +62,7 @@ list.txt  — входной список URL аккаунтов
   Перейти к следующему аккаунту.
 
 **2c. Формирование саммари**
-Применить навыки `ljg-paper` и `ljg-plain` к полученному контенту.
+Написать саммари в стиле ljg-paper / ljg-plain (русский язык, без академизма, конкретика, ссылки на источники).
 Сохранить результат в `posts/post-{account}-{date}.md`.
 
 Перед составлением саммари — извлечь из JSON-данных твитов все внешние URL (поля `urls[]` в каждом твите, `quotedTweet.urls[]`, расширенные ссылки). Сократить t.co ссылки до оригинальных.
@@ -68,11 +83,13 @@ list.txt  — входной список URL аккаунтов
 ```markdown
 # {account} — {date}
 
-{саммари через ljg-paper / ljg-plain, с inline-ссылками на источники}
+{N} твитов за сутки. {1 предложение — главные темы}
+
+**{Тема}** — {описание с inline-ссылками}. [Твит](https://x.com/{Account}/status/{id})
 
 ## Источники
 
-{список URL из твитов}
+{список уникальных внешних URL из твитов}
 ```
 
 **2d. Обнаружение инструментов**
@@ -81,11 +98,9 @@ list.txt  — входной список URL аккаунтов
 - Проверить: существует ли `tools/{tool-name}.md` → если да, пропустить.
 - Если нет:
   1. Создать `tools/{tool-name}.md` — текстовая карточка с описанием, **ссылками** (GitHub, сайт, Twitter, Reddit и т.п.) и источником-твитом
-  2. Сгенерировать PNG-карточку через ljg-card (шаблон `~/.claude/skills/ljg-card` или `/home/calcifer/git/ljg-skills/skills/ljg-card`):
+  2. Сгенерировать PNG-карточку через ljg-card (пути см. в секции «Зависимости и пути»):
      - Создать HTML из `long_template.html`, заполнив `{{TITLE_BLOCK}}`, `{{BODY_HTML}}`, `{{SOURCE}}`, `{{BG_COLOR}}`, `{{ACCENT_COLOR}}`
-     - Путь к логотипу: `file:///home/calcifer/git/ljg-skills/skills/ljg-card/assets/logo.png`
-     - Запустить: `node ~/.claude/skills/ljg-card/assets/capture.js /tmp/ljg_{name}.html tools/{tool-name}.png 1080 800 fullpage`
-     - Если skills установлены в `/home/calcifer/git/ljg-skills/skills/ljg-card/assets/capture.js` — использовать этот путь
+     - Запустить: `node /home/calcifer/git/ljg-skills/skills/ljg-card/assets/capture.js /tmp/ljg_{name}.html tools/{tool-name}.png 1080 800 fullpage`
 
 **2e. Вывод статуса**
 ```
@@ -143,8 +158,8 @@ git push
 |---|---|
 | Пустая строка в list.txt | Пропустить |
 | Невалидный URL (нет имени аккаунта) | Вывести предупреждение, пропустить |
-| twitter-cli вернул ошибку | Залогировать, продолжить следующий аккаунт |
-| ljg-skills не установлен | Остановиться, сообщить об ошибке |
+| twitter вернул ошибку (включая 429) | Залогировать, продолжить следующий аккаунт |
+| ljg-card capture.js не найден | Остановиться, сообщить об ошибке |
 | Файл уже существует (тот же день) | Пропустить без перезаписи |
 
 ## Проверка результата после запуска
