@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 07 Apr 2026 06:24:35 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 06:37:09 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,37 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 07-04-2026</title>
+      <link>https://rss.molfly.me/digests/07-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/07-04-2026/</guid>
+      <pubDate>Tue, 07 Apr 2026 06:00:00 +0000</pubDate>
+      <description>Polymarket-бот с Claude Code +13%, LLM Wiki от Karpathy как замена RAG, Gemma 4 в облаке Ollama на GPU Blackwell, уязвимость Claude.ai не исправлена</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Garry Tan рекомендует каждому построить личный OpenClaw</strong> — 28 твитов о развитии экосистемы GStack: интеграция с браузером Chromium, навык /design-html, AlphaClaw как способ запустить OpenClaw на 8GB. (<a href="https://x.com/garrytan/status/2041311645243527320">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>Polymarket-бот с Claude Code — 13% за 3 часа</strong> — Sharbel собрал полноценного торгового бота за одну сессию Claude Code, используя Bullpen CLI. Подробный туториал с нуля до живого результата. (<a href="https://x.com/sharbel/status/2041192886289494173">sharbel</a>)</p>
+</li>
+<li>
+<p><strong>LLM Wiki от Karpathy — альтернатива RAG</strong> — Вместо поиска по чанкам — накапливаемая база знаний: сущности, связи, резюме обновляются при каждом новом источнике. Open source. (<a href="https://x.com/sharbel/status/2041170724807758309">sharbel</a>, <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">GitHub Gist</a>)</p>
+</li>
+<li>
+<p><strong>Gemma 4 в облаке Ollama на GPU NVIDIA Blackwell</strong> — Ollama запустил Gemma 4 через подписку для разработчиков, работает на самых новых GPU. Перед релизом — совместная работа с HuggingFace, vLLM и Google. (<a href="https://x.com/ollama/status/2041238722914685336">ollama</a>)</p>
+</li>
+<li>
+<p><strong>Уязвимость в Claude.ai / Cowork остаётся неисправленной</strong> — Garry Tan поделился информацией: атакующие могут эксфильтровать файлы пользователей через уязвимость, обнаруженную Johann Rehberger. Anthropic подтвердила, но не исправила. (<a href="https://x.com/garrytan/status/2041388847930712399">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>X (Twitter) выпустил официальный MCP-сервер</strong> — Стандартизированный доступ к X API для подключения к OpenClaw и другим агентам. (<a href="https://x.com/garrytan/status/2041267905304867179">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>Сэм Альтман: сверхинтеллект требует нового общественного договора</strong> — Масштаб как Прогрессивная эпоха + Новый курс. Возможна массовая безработица, кибератаки государственного уровня. (<a href="https://x.com/garrytan/status/2041126936097812598">garrytan</a>)</p>
+</li>
+</ol>]]></content:encoded>
     </item>
     <item>
       <title>Дайджест 06-04-2026</title>

@@ -1,5 +1,6 @@
 # Реестр дайджестов
 
+- [07-04-2026](digests/digest-07-04-2026.md) — Polymarket-бот с Claude Code +13%, LLM Wiki от Karpathy как замена RAG, Gemma 4 в облаке Ollama на GPU Blackwell, уязвимость Claude.ai не исправлена
 - [06-04-2026](digests/digest-06-04-2026.md) — Anthropic блокирует OpenClaw по ключевому слову, Goose от Block с 35k звёздами, Gemma 4 делает агентов бесплатными, Alibaba собирает данные через бесплатные токены
 - [05-04-2026](digests/digest-05-04-2026.md) — Anthropic отключает Claude от сторонних инструментов, Ollama запускает облако, llama.cpp 300 tok/s, волна новых моделей на HF
 - [04-04-2026](digests/digest-04-04-2026.md) — Anthropic ограничивает сторонние клиенты, исследование эмоций LLM, массовый выпуск Qwen3.5 и Gemma 4
