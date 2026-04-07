@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Tue, 07 Apr 2026 07:26:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 07:41:24 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -161,25 +161,25 @@
       <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
 <ol>
 <li>
-<p><strong>Garry Tan рекомендует каждому построить личный OpenClaw</strong> — 28 твитов о развитии экосистемы GStack: интеграция с браузером Chromium, навык /design-html, AlphaClaw как способ запустить OpenClaw на 8GB. (<a href="https://x.com/garrytan/status/2041311645243527320">garrytan</a>)</p>
+<p><strong>Anthropic обогнал OpenAI по выручке — $30B vs $25B</strong> — Годовая выручка Anthropic превысила $30B, обогнав OpenAI (~$25B). За 15 месяцев: от $1B (декабрь 2024) до $30B сегодня. Одновременно Anthropic заключил партнёрство с Google и Broadcom на гигаватты TPU с 2027. (<a href="https://x.com/aakashgupta/status/2041283873108332878">aakashgupta</a>, <a href="https://x.com/dotey/status/2041307413777883484">dotey</a>, <a href="https://x.com/AnthropicAI/status/2041275561704931636">anthropicai</a>)</p>
 </li>
 <li>
-<p><strong>Polymarket-бот с Claude Code — 13% за 3 часа</strong> — Sharbel собрал полноценного торгового бота за одну сессию Claude Code, используя Bullpen CLI. Подробный туториал с нуля до живого результата. (<a href="https://x.com/sharbel/status/2041192886289494173">sharbel</a>)</p>
+<p><strong>OpenClaw 2026.4.5: /dreaming, видеогенерация, уход от Anthropic</strong> — Крупный релиз OpenClaw с консолидацией памяти агента (/dreaming), встроенной генерацией видео/музыки, и официальной рекомендацией переходить с Claude на GPT-5.4/Codex/Qwen. GitHub стал официальным спонсором OpenClaw. (<a href="https://x.com/openclaw/status/2040998570317197607">openclaw</a>, <a href="https://x.com/steipete/status/2041254442994205164">steipete</a>, <a href="https://x.com/steipete/status/2041272727613665517">steipete</a>)</p>
 </li>
 <li>
-<p><strong>LLM Wiki от Karpathy — альтернатива RAG</strong> — Вместо поиска по чанкам — накапливаемая база знаний: сущности, связи, резюме обновляются при каждом новом источнике. Open source. (<a href="https://x.com/sharbel/status/2041170724807758309">sharbel</a>, <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">GitHub Gist</a>)</p>
+<p><strong>Polymarket-бот с Claude Code — 13% за 3 часа</strong> — Sharbel собрал полноценного торгового бота за одну сессию Claude Code через Bullpen CLI. Подробный туториал с нуля до результата. (<a href="https://x.com/sharbel/status/2041192886289494173">sharbel</a>)</p>
 </li>
 <li>
-<p><strong>Gemma 4 в облаке Ollama на GPU NVIDIA Blackwell</strong> — Ollama запустил Gemma 4 через подписку для разработчиков, работает на самых новых GPU. Перед релизом — совместная работа с HuggingFace, vLLM и Google. (<a href="https://x.com/ollama/status/2041238722914685336">ollama</a>)</p>
+<p><strong>LLM Wiki от Karpathy — альтернатива RAG</strong> — Персистентная база знаний вместо повторного поиска по чанкам: сущности, связи, резюме обновляются при каждом новом источнике. Open source. (<a href="https://x.com/sharbel/status/2041170724807758309">sharbel</a>, <a href="https://x.com/RoundtableSpace/status/2041301174708556029">roundtablespace</a>)</p>
 </li>
 <li>
-<p><strong>Уязвимость в Claude.ai / Cowork остаётся неисправленной</strong> — Garry Tan поделился информацией: атакующие могут эксфильтровать файлы пользователей через уязвимость, обнаруженную Johann Rehberger. Anthropic подтвердила, но не исправила. (<a href="https://x.com/garrytan/status/2041388847930712399">garrytan</a>)</p>
+<p><strong>Взлом Mercor — утечка секретов AI-лабораторий</strong> — Mercor ($10B оценка, тренировочный подрядчик OpenAI/Anthropic/Meta) взломан через LiteLLM: 4 ТБ данных, включая обучающие протоколы. Meta прекратила сотрудничество. (<a href="https://x.com/aakashgupta/status/2041379451913838918">aakashgupta</a>)</p>
 </li>
 <li>
-<p><strong>X (Twitter) выпустил официальный MCP-сервер</strong> — Стандартизированный доступ к X API для подключения к OpenClaw и другим агентам. (<a href="https://x.com/garrytan/status/2041267905304867179">garrytan</a>)</p>
+<p><strong>Уязвимость в Claude.ai/Cowork остаётся неисправленной</strong> — Атакующие могут эксфильтровать файлы пользователей. Anthropic подтвердила, но не исправила. (<a href="https://x.com/garrytan/status/2041388847930712399">garrytan</a>)</p>
 </li>
 <li>
-<p><strong>Сэм Альтман: сверхинтеллект требует нового общественного договора</strong> — Масштаб как Прогрессивная эпоха + Новый курс. Возможна массовая безработица, кибератаки государственного уровня. (<a href="https://x.com/garrytan/status/2041126936097812598">garrytan</a>)</p>
+<p><strong>Сэм Альтман: сверхинтеллект требует нового общественного договора</strong> — OpenAI опубликовал «Industrial Policy for the Intelligence Age» — 6 предложений масштаба Прогрессивной эпохи. Раунд $122B и стратегия 3X выручки на единицу compute. (<a href="https://x.com/OpenAINewsroom/status/2041198359420215453">openainewsroom</a>, <a href="https://x.com/garrytan/status/2041126936097812598">garrytan</a>)</p>
 </li>
 </ol>]]></content:encoded>
     </item>
