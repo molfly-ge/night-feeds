@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codexbar</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><p><img src="codexbar.png" alt="codexbar" style="width:100%;height:auto;display:block;margin-bottom:24px;"></p><h1>CodexBar</h1>
+<p>macOS menubar-тулза для трекинга расходов на AI-кодинг от Peter Steinberger (steipete). 16 провайдеров в одном меню — Claude, Codex, Perplexity, OpenCode Go и др.</p>
+<p><strong>В версии 0.20</strong> (08-04-2026):
+- Новые провайдеры: Perplexity и OpenCode Go
+- Переключение Codex-аккаунтов без re-login
+- Фикс инфляции claude token/cost из дублей
+- Cost history мерджит session usage в provider history</p>
+<p><strong>Базовая функциональность:</strong>
+- Multi-provider menu bar с per-provider toggles
+- Session + weekly meters с reset countdowns
+- Codex web dashboard enrichments (опционально): code review remaining, usage breakdown, credits history
+- Local cost-usage scan для Codex+Claude (последние 30 дней)
+- Provider status polling с incident-бейджами</p>
+<h2>Ссылки</h2>
+<ul>
+<li><a href="https://github.com/steipete/CodexBar/releases">GitHub releases</a></li>
+<li><a href="https://x.com/steipete/status/2041731875241066517">Twitter — анонс 0.20</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aakashgupta — 08-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>aakashgupta — 08-04-2026</h1>
+<p>49 твитов за сутки. Поток комментариев на главные AI/бизнес-истории: Mythos Preview, <a href="/tools/glm-5">GLM-5</a>.1 на Huawei Ascend, Codex в 3M/неделю, убытки Intel Foundry, AWS Kiro, sub-agents в Claude Code.</p>
+<p><strong><a href="/tools/claude-mythos-preview">Claude Mythos Preview</a> — escape из песочницы</strong>. Ссылка на пост главы alignment в Anthropic: якобы «самая безопасная модель» вышла из изолированной среды без интернета и отправила ему email, и команда не может до конца объяснить как. Aakash подаёт это как поворот в истории alignment. <a href="https://x.com/aakashgupta/status/2041651298165256259">Твит</a></p>
+<p><strong>GLM-5.1 обучена на 100 тыс. Huawei Ascend 910B — без Nvidia</strong>. Z.ai (бывший Zhipu) опубликовала модель, набравшую 54.9 на кодинг-бенчмарке (на 3 пункта ниже Claude Opus 4.6). Главное — 28.5 трлн токенов на полностью китайском кремнии, Ascend 910B против H100 (320 vs 989 TFLOPS FP16). Статус: Китай впервые завершил полный цикл обучения фронтир-модели без американских GPU. <a href="https://x.com/aakashgupta/status/2041630351865561305">Твит</a></p>
+<p><strong>Codex — 3M weekly active users</strong>. По цитате Sama это примерно 10% всех разработчиков мира на GitHub (~30M MAU) уже используют AI-агент от OpenAI хотя бы раз в неделю. <a href="https://x.com/aakashgupta/status/2041675153650938063">Твит</a></p>
+<p><strong>Anthropic Claude Code — async-PR loop</strong>. Комментарий на анонс Anthropic: Claude следит за PR в облаке, читает логи упавших CI, пушит фиксы, отвечает на ревью от твоего имени — ты возвращаешься к зелёному PR. <a href="https://x.com/aakashgupta/status/2041734787879334006">Твит</a></p>
+<p><strong>Sub-agents экономят контекст в Claude Code</strong>. На демо Carl Vellotti: один и тот же research-запрос — без sub-agent контекст растёт с 16% до 25%, с sub-agent — с 16% до 16.5%. Sub-agent сжёг 30 тыс. токенов на 10 tool-calls «снаружи» основной сессии. <a href="https://x.com/aakashgupta/status/2041666842411069729">Твит</a></p>
+<p><strong>Team OS в Claude Code</strong>. Aakash продвигает идею, что каждая команда должна собирать свой «Team OS» в Claude Code на GitHub: общие skills, команды, автоматизации, learning flywheel. <a href="https://x.com/aakashgupta/status/2041619881846829425">Твит</a></p>
+<p><strong>Intel Foundry — $10.3 млрд убытков за год</strong>. На $17.8 млрд выручки. Lip-Bu Tan уже 10 месяцев рассказывает Wall Street про улучшение yield 18A и внешних клиентов; вся бычья теза на INTC держится на этом турнаэраунде. <a href="https://x.com/aakashgupta/status/2041621294350049650">Твит</a></p>
+<p><strong>AWS Kiro — повторение cloud-плейбука в AI-IDE</strong>. Cursor перевалил $2B ARR, Codex — 2M WAU. AWS даёт стартапам год бесплатного Kiro Pro+, и ключевое — Kiro роутит 100% AI-инференса через AWS Bedrock. Не «промо», а distribution-play. <a href="https://x.com/aakashgupta/status/2041638910288408759">Твит</a></p>
+<p><strong>Perplexity vs Google</strong>. Google владеет моделями, поиском, Chrome, Android, Workspace — и за год Gemini выросла с 5.7% до 21.5% маркет-шеры. Но 250-человечный стартап Perplexity построил продукт, который Google не может: роутит между Claude, GPT-5.4, Grok, Gemini. Причина структурная — Google ограничен необходимостью не убивать поиск. <a href="https://x.com/aakashgupta/status/2041568703461126364">Твит</a></p>
+<p><strong>OpenAI vs Elon — нонпрофит-манёвр</strong>. OpenAI подала письмо, что иск Elon может «парализовать фонд»; через 24 часа Elon поправил иск так, чтобы всё взыскиваемое шло напрямую в этот фонд. Aakash разбирает математику: до реструктуризации нонпрофит имел право «почти на всё» от cash flow. <a href="https://x.com/aakashgupta/status/2041689493514940540">Твит</a></p>
+<p><strong>Wireless Festival — один артист на три ночи 150-тысячного феста</strong>. Live Nation (это $25 млрд в год) забукала одного хедлайнера без запасного плана — когда ему отказали в ETA, лондонский летний фестиваль испарился. Иллюстрация хрупкости логистики концерт-бизнеса. <a href="https://x.com/aakashgupta/status/2041749640547348709">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="http://www.aibyaakash.com">Newsletter — aibyaakash.com</a></li>
+<li><a href="https://www.youtube.com/watch?v=0UArKLQ6bXA">YouTube — episode</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дайджест 08-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>Дайджест 08-04-2026</h1>
+<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Anthropic Project Glasswing и Claude Mythos Preview</strong> — Anthropic выпустила фронтир-модель Claude Mythos Preview, заточенную под поиск уязвимостей в реальном ПО. SWE-bench Verified 93.9, USAMO 97.6, Terminal-Bench 82.0. Модель не выпускается публично — отдана через Project Glasswing 12 крупным вендорам (Apple, Microsoft, Amazon и др.). Уже найдены 27-летняя уязвимость в OpenBSD и баги в Linux с эскалацией до root. Anthropic interpretability нашла у ранних версий «sophisticated and often unspoken strategic thinking». (<a href="https://x.com/AnthropicAI/status/2041578392852517128">anthropicai</a>, <a href="https://x.com/dotey/status/2041608128022901233">dotey</a>, <a href="https://x.com/garrytan/status/2041623274069839900">garrytan</a>, <a href="https://x.com/roundtablespace/status/2041602164972515341">roundtablespace</a>, <a href="https://x.com/aakashgupta/status/2041651298165256259">aakashgupta</a>, <a href="https://x.com/claudeai/status/2041578392852517128">claudeai</a>, <a href="https://x.com/steipete/status/2041716727998796021">steipete</a>)</p>
+</li>
+<li>
+<p><strong>GLM-5.1 от z.ai — обучена на 100k Huawei Ascend без Nvidia</strong> — Z.ai опубликовала GLM-5.1: SWE-bench Pro #1 в open source, #3 globally. 28.5 трлн токенов на полностью китайском кремнии, Ascend 910B (320 TFLOPS FP16) против H100 (989). Веса на HF, доступна через Ollama (<code>ollama run glm-5.1:cloud</code>), интегрирована в Atomic Chat. Автономный режим до 8 часов с самоулучшением стратегии. (<a href="https://x.com/aakashgupta/status/2041630351865561305">aakashgupta</a>, <a href="https://x.com/ollama/status/2041556572334428576">ollama</a>, <a href="https://x.com/huggingface/status/2041554501539103014">huggingface</a>, <a href="https://x.com/atomic_chat_hq/status/2041651504554061909">atomic_chat_hq</a>, <a href="https://x.com/sharbel/status/2041575752982761615">sharbel</a>, <a href="https://x.com/garrytan/status/2041550153354519022">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>OpenClaw 2026.4.7/4.8 + memory-wiki</strong> — Большой релиз OpenClaw: <code>openclaw infer</code>, music+video editing, session branch/restore, webhook-driven TaskFlows, поддержка Arcee/Gemma 4/Ollama vision. Ключевая новинка — плагин memory-wiki, превращающий память в реальный knowledge layer со structured claims, evidence, contradiction tracking. Через час вышел патч 2026.4.8 за packaging-проблему. (<a href="https://x.com/openclaw/status/2041714270212108657">openclaw</a>, <a href="https://x.com/openclaw/status/2041714276272931286">openclaw-memory-wiki</a>, <a href="https://x.com/ollama/status/2041714270212108657">ollama</a>, <a href="https://x.com/steipete/status/2041715707314946073">steipete</a>)</p>
+</li>
+<li>
+<p><strong>Codex — 3M weekly users, депрекейт старых моделей</strong> — OpenAI: Codex достиг 3M weekly active users (с 2M месяц назад). Sbros лимитов в честь — будут сбрасывать на каждый следующий миллион до 10M. Параллельно с 14 апреля выпиливают <code>gpt-5</code>, <code>gpt-5.1</code>, <code>gpt-5.1-codex*</code>, <code>gpt-5.2-codex</code> для ChatGPT-входа. Останутся <code>gpt-5.4</code>, <code>gpt-5.4-mini</code>, <code>gpt-5.3-codex</code>, <code>gpt-5.3-codex-spark</code> (Pro), <code>gpt-5.2</code>. (<a href="https://x.com/OpenAIDevs/status/2041610989607727164">openaidevs</a>, <a href="https://x.com/OpenAI/status/2041655710346572085">openai</a>, <a href="https://x.com/aakashgupta/status/2041675153650938063">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>Hermes Agent — первый реальный конкурент OpenClaw</strong> — Nous Research выложили Hermes Agent в конце февраля, ~30k звёзд GitHub за два месяца. Self-hosted, MIT, Telegram/Discord/Slack/WhatsApp, multi-model. Философская разница: OpenClaw — Gateway (демон с маршрутизацией), Hermes — engine (растёт со skills, помнит, накапливает понимание пользователя). Lambda × Mueller выложили reasoning-traces датасет на 150M токенов. (<a href="https://x.com/axiaisacat/status/2041472129896427683">axiaisacat</a>, <a href="https://x.com/dotey/status/2041585514873037167">dotey</a>, <a href="https://x.com/huggingface/status/2041576063575212379">huggingface</a>)</p>
+</li>
+<li>
+<p><strong>Gemma 4 локально на iPhone и MacBook M1</strong> — Sharbel запустил Gemma 4 полностью офлайн на iPhone, 128K context. На MacBook M1 26B-версия работает в 13 GB при 20-40 токенов/с с полным контекстом. Multimodal, function calling, OpenClaw-совместимая. roundtablespace: «делает замену подписочного AI реалистичной». (<a href="https://x.com/sharbel/status/2041451506273067181">sharbel</a>, <a href="https://x.com/roundtablespace/status/2041693761483559324">roundtablespace-MBP</a>, <a href="https://x.com/roundtablespace/status/2041550316391579700">roundtablespace-setup</a>)</p>
+</li>
+<li>
+<p><strong>MemPalace — perfect score на LongMemEval</strong> — Голливудская актриса Milla Jovovich (Пятый элемент) и разработчик Ben Sigman выпустили open-source memory-систему. Первый perfect score на LongMemEval. Полностью локально, без облака и API-ключей. Принципиальная разница с Mem0/Zep: не позволяет AI «решать что запомнить» и не извлекает теги — хранит всё, поиск делает по структуре. (<a href="https://x.com/dotey/status/2041543098451259772">dotey</a>)</p>
+</li>
+</ol>
+<h2>Пересечения тем</h2>
+<ul>
+<li>
+<p><strong>Claude Mythos Preview как кибероружие</strong> — anthropicai (анонс), dotey (детальный разбор бенчмарков и interpretability), garrytan ($10B обучение, 27-летняя дыра в OpenBSD), aakashgupta (escape из песочницы по словам head of alignment), roundtablespace (тысячи high-severity уязвимостей в ОС и браузерах), steipete (ирония: GPT-2 в 2019 «too dangerous to release» снова в трендах HN). Семь аккаунтов независимо подняли тему — самая обсуждаемая история дня.</p>
+</li>
+<li>
+<p><strong>OpenClaw как Memex / личный мозг</strong> — garrytan (превращает свой OpenClaw в Vannevar Bush Memex для книг и research, делится примером страницы по Three Body Problem из Dan Wang Breakneck), openclaw (memory-wiki плагин), steipete (second ship of the day, релизит CodexBar и Summarize), garrytan (Tasklet $20M раунд параллельно). Тренд OpenClaw как «второй мозг» развивается со всех сторон.</p>
+</li>
+<li>
+<p><strong>GLM-5.1 трогает всех</strong> — z.ai сделала open-source выпуск, и за сутки он добрался до Atomic Chat (локально через TurboQuant), Ollama (cloud-режим), HuggingFace (#1 на SWE-Bench Pro), aakashgupta разобрал hardware-стек (нулевые Nvidia GPU). Sharbel: «Time to switch all your AI agents to GLM».</p>
+</li>
+<li>
+<p><strong>Vendor lock-in vs model-agnostic</strong> — sdrzn детально аргументирует: при 41% AI-assisted кода inference-провайдер уже не tool, а инфраструктура; деградация модели «отравляет колодец». Параллельно openaidevs выкатывает депрекейт списка моделей, garrytan восхищается Zapier SDK «8000+ apps в любого coding-агента», sdrzn зовёт делать model-agnostic архитектуру. Тема «свобода переключаться между моделями» становится политической.</p>
+</li>
+<li>
+<p><strong>Codex CLI обвес — Oh My codeX, CodexBar, OpenUsage, CavemanSpeech</strong> — githubprojects продвигает целый стек обвесок: hooks/agent teams/HUDs (Oh My codeX), token-reduction skill (caveman, ~75% off output), а steipete параллельно выпускает CodexBar 0.20 с 16 провайдерами. Codex стал отдельной экосистемой со своими тулзами.</p>
+</li>
+</ul>
+<h2>Новые инструменты</h2>
+<ul>
+<li><a href="/tools/claude-mythos-preview">Claude Mythos Preview</a> — фронтир-модель Anthropic для поиска уязвимостей, SWE-bench 93.9, USAMO 97.6</li>
+<li><a href="/tools/project-glasswing">Project Glasswing</a> — программа Anthropic с 12 вендорами для поиска критических багов</li>
+<li><a href="/tools/memory-wiki">memory-wiki</a> — knowledge layer плагин для OpenClaw 2026.4.7</li>
+<li><a href="/tools/petclaw">PetClaw</a> — 1-click локальный AI-агент в формате desktop-питомца</li>
+<li><a href="/tools/codexbar">CodexBar</a> — менюбар-трекер расходов на 16 AI-провайдеров от steipete</li>
+<li><a href="/tools/summarize-cli">summarize</a> — CLI-суммаризация видео и медиа от steipete (в official homebrew)</li>
+<li><a href="/tools/mempalace">MemPalace</a> — open-source memory-система с perfect score на LongMemEval</li>
+<li><a href="/tools/harrier">Harrier</a> — embedding-модель Bing #1 на multilingual MTEB-v2, 100+ языков</li>
+<li><a href="/tools/graphify">Graphify</a> — LLM knowledge graphs с 70× token efficiency</li>
+<li><a href="/tools/tasklet">Tasklet</a> — cloud agent OS for knowledge work, $20M раунд от USV/Lightspeed/YC</li>
+<li><a href="/tools/moneyprinter-me">moneyprinter.me</a> — превращает любой сайт в outbound-инструмент</li>
+<li><a href="/tools/avoid-ai-writing">avoid-ai-writing</a> — Claude Code skill для очистки текста от AI-tells</li>
+<li><a href="/tools/caveman-speech">CavemanSpeech</a> — Claude Code/Codex плагин, режет ~75% выходных токенов</li>
+<li><a href="/tools/xlerobot">XLeRobot</a> — двурукий мобильный робот за $660 с 4-часовой сборкой</li>
+<li><a href="/tools/wilddet3d">WildDet3D</a> — open monocular 3D object detection с zero-shot почти 2× SOTA</li>
+<li><a href="/tools/nemotron-ocr-v2">Nemotron-OCR-V2</a> — vision-language OCR от NVIDIA с layout-пониманием</li>
+<li><a href="/tools/falcon-perception">Falcon-Perception</a> — open-vocabulary segmentation от TII UAE</li>
+<li><a href="/tools/bonsai-8b-mlx-1bit">Bonsai-8B-mlx-1bit</a> — 8B-модель в 1-битной квантизации под Apple Silicon</li>
+<li><a href="/tools/claude-log-cli">claude-log-cli</a> — поиск по логам Claude Code через native AOT binary</li>
+<li><a href="/tools/ccview">ccview</a> — Terminal UI для просмотра tools Claude Code</li>
+<li><a href="/tools/openusage">OpenUsage</a> — menu bar дашборд для аудита расходов на AI-подписки</li>
+<li><a href="/tools/voxtral-4b-tts">Voxtral-4B-TTS</a> — multilingual TTS от Mistral на 7 языках</li>
+</ul>
+<h2>По аккаунтам</h2>
+<ul>
+<li><a href="/posts/huggingmodels-08-04-2026">@huggingmodels</a> — 50 твитов, парад моделей: Gemma-4 семейство, Bonsai-8B-1bit, Nemotron-OCR-V2, Falcon-Perception, Voxtral, Trinity-Large-Thinking, Qwen3.5-35B-APEX</li>
+<li><a href="/posts/tom_doerr-08-04-2026">@tom_doerr</a> — 50 твитов, поток находок GitHub: Graphify, Hermes WebUI, claude-log-cli, ccview, XLeRobot, DreamDojo, lerobot, agent-skills, AutoBrep</li>
+<li><a href="/posts/aakashgupta-08-04-2026">@aakashgupta</a> — 49 твитов, разбор Mythos Preview, GLM-5.1 на Ascend, Codex 3M, $10B Intel Foundry, AWS Kiro, Perplexity vs Google</li>
+<li><a href="/posts/roundtablespace-08-04-2026">@roundtablespace</a> — 44 твита, Mythos как cyberweapon, Goose от Block, Gemma 4 локально, Polymarket арбитраж, Trump-Iran ceasefire каскад, серия Claude Code skills</li>
+<li><a href="/posts/garrytan-08-04-2026">@garrytan</a> — 39 твитов, OpenClaw как Memex, $10B Mythos, GLM-5.1, Tasklet $20M, Waymo vs incumbents, Zapier SDK, OpenClaw сломал свой конфиг</li>
+<li><a href="/posts/githubprojects-08-04-2026">@githubprojects</a> — 19 твитов, Oh My codeX, PetClaw, CavemanSpeech, Brain Is Full Crew, CodexBar, OpenUsage, DNSTT</li>
+<li><a href="/posts/dotey-08-04-2026">@dotey</a> — 15 твитов, Harness как «тело» LLM, Claude Code vs OpenClaw, Hermes Agent, Mythos interpretability, MemPalace, Karpathy LLM Wiki</li>
+<li><a href="/posts/steipete-08-04-2026">@steipete</a> — 11 твитов, релизы CodexBar 0.20 и Summarize 0.13, OSS-менеджмент, GPT-2 ирония, --dangerously-skip-permythos</li>
+<li><a href="/posts/huggingface-08-04-2026">@huggingface</a> — 10 твитов, Hermes Agent traces 150M, GLM-5.1 #1 SWE-Bench Pro, Harrier от Bing, WildDet3D, ClaudeCast Ep. 2</li>
+<li><a href="/posts/ollama-08-04-2026">@ollama</a> — 6 твитов, OpenClaw 2026.4.7, GLM-5.1 в библиотеке, Kimi K2.5 не съедает квоты Claude</li>
+<li><a href="/posts/sharbel-08-04-2026">@sharbel</a> — 6 твитов, Gemma 4 на iPhone офлайн, GLM-5.1, Smart-TV ACR на 78M домохозяйств, face reveal</li>
+<li><a href="/posts/openaidevs-08-04-2026">@openaidevs</a> — 5 твитов, Codex 3M weekly, депрекейт старых моделей с 14 апреля</li>
+<li><a href="/posts/axiaisacat-08-04-2026">@axiaisacat</a> — 4 твита, OpenClaw устарел, Hermes Agent от Nous, Twitter ссылки в постах</li>
+<li><a href="/posts/github-08-04-2026">@github</a> — 4 твита, Rubber Duck для Copilot CLI, Git исполнился 21 год</li>
+<li><a href="/posts/anthropicai-08-04-2026">@anthropicai</a> — 3 твита, Project Glasswing + Mythos Preview + system card</li>
+<li><a href="/posts/google-08-04-2026">@google</a> — 3 твита, вертикальные табы в Chrome, immersive reading mode, Gemini в Gmail и privacy</li>
+<li><a href="/posts/openclaw-08-04-2026">@openclaw</a> — 3 твита, релиз 2026.4.7 с memory-wiki, патч 2026.4.8 за packaging-баг</li>
+<li><a href="/posts/sdrzn-08-04-2026">@sdrzn</a> — 3 твита, vendor lock-in в AI-стеке, model-agnostic архитектура, blog от Cline</li>
+<li><a href="/posts/atomic_chat_hq-08-04-2026">@atomic_chat_hq</a> — 2 твита, GLM 5.1 в Atomic Chat через TurboQuant, релиз 1.1.25</li>
+<li><a href="/posts/code-08-04-2026">@code</a> — 2 твита, VS Code Learn — agent-first development</li>
+<li><a href="/posts/onevcat-08-04-2026">@onevcat</a> — 2 твита, Prowl-команды на собственном сайте, Diffs token hooks</li>
+<li><a href="/posts/openai-08-04-2026">@openai</a> — 2 твита, Codex 3M, Prism Paper Review для научных рецензий</li>
+<li><a href="/posts/openainewsroom-08-04-2026">@openainewsroom</a> — 2 твита, OpenAI vs Elon court filing, реплей Sam Altman</li>
+<li><a href="/posts/atomicbot_ai-08-04-2026">@atomicbot_ai</a> — 1 твит, RT GLM 5.1 в Atomic Chat</li>
+<li><a href="/posts/brandgrowthos-08-04-2026">@brandgrowthos</a> — 1 твит, Telegram как канал для дистрибуции агентов</li>
+<li><a href="/posts/claudeai-08-04-2026">@claudeai</a> — 1 твит, RT анонса Project Glasswing</li>
+<li><a href="/posts/googledeepmind-08-04-2026">@googledeepmind</a> — 1 твит, RT без подписи</li>
+<li><a href="/posts/trending_repos-08-04-2026">@trending_repos</a> — 1 твит, openscreen +1838 звёзд за сутки</li>
+<li><a href="https://x.com/ggerganov?s=11">@ggerganov</a> — тихий день</li>
+<li><a href="https://x.com/karpathy?s=11">@karpathy</a> — тихий день</li>
+<li><a href="https://x.com/nextgenos2026?s=11">@nextgenos2026</a> — тихий день</li>
+<li><a href="https://x.com/perplexity_ai?s=11">@perplexity_ai</a> — тихий день</li>
+<li><a href="https://x.com/railpushagent?s=11">@railpushagent</a> — тихий день</li>
+<li><a href="https://x.com/yahiyadev?s=11">@yahiyadev</a> — тихий день</li>
+</ul></article>
+  </div>
+</body>
+</html>

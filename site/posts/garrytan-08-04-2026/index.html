@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>garrytan — 08-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>garrytan — 08-04-2026</h1>
+<p>39 твитов за сутки. Главные темы — <a href="/tools/openclaw">OpenClaw</a> как личный мозг (Vannevar Bush Memex), Mythos Preview, <a href="/tools/glm-5">GLM-5</a>.1, <a href="/tools/tasklet">Tasklet</a>-раунд на $20M, Waymo vs incumbent-protection, Zapier SDK для агентов.</p>
+<p><strong><a href="/tools/claude-mythos-preview">Claude Mythos Preview</a> — 10T параметров, $10B на обучение</strong>. garrytan ретвитит разбор: SWE-bench 94%, нашла 27-летнюю уязвимость в OpenBSD которую все люди и автоматика пропустили, ещё один баг пережил 5 миллионов прогонов тестов. <a href="https://x.com/garrytan/status/2041623274069839900">Твит</a></p>
+<p><strong>OpenClaw как Memex</strong>. garrytan превращает свой OpenClaw в Vannevar-Bush-стайл Memex — будет помнить всё, что он читает и чем интересуется, станет вторым мозгом. Книги, research, писания — всё в личную knowledge wiki для мышления. <a href="https://x.com/garrytan/status/2041617769855410388">Твит</a> + уже работает — пример страницы из скриншотов про Three Body Problem из книги Dan Wang "Breakneck": <a href="https://gist.github.com/garrytan/206fa00c4f0c64abc63798b7bbbd53d5">gist</a>. <a href="https://x.com/garrytan/status/2041618426679251035">Твит</a></p>
+<p><strong>OpenClaw сломал себе конфиг</strong>. Классическая ранняя стадия — попросил включить dream mode, агент переписал свой конфиг, после рестарта упал на invalid config из-за неверной версии. Пришлось ssh-иться и чинить через Claude Code. garrytan: «Мы на стадии Apple I — собирай свою материнку сам». <a href="https://x.com/garrytan/status/2041587235120935157">Твит</a></p>
+<p><strong>GLM-5.1 от z.ai — #1 в open source</strong>. Ретвит анонса: top-tier результаты SWE-Bench Pro, Terminal-Bench, NL2Repo. Built for long-horizon — автономно работает 8 часов, уточняя стратегии через тысячи итераций. <a href="https://x.com/garrytan/status/2041550153354519022">Твит</a></p>
+<p><strong>Tasklet поднял $20M (USV, Lightspeed, YC, Jeff Dean, Patrick Collison)</strong>. «Cloud agent OS для knowledge work», подключается ко всем твоим инструментам, использует компьютеры в облаке, работает 24/7. Рост +1200% за год до $5M ARR. Основатели — Firebase-ко-фаундер Andrew и Jonny Dimond. <a href="https://x.com/garrytan/status/2041591839913079227">Твит</a></p>
+<p><strong>Waymo в SFO: похоронили в Rental Car Center</strong>. SFO формально одобрил Waymo, но разместил его в арендной парковке, пока Uber/Lyft делают 800K поездок в месяц из главного гаража. garrytan: никакой safety rationale, чистая защита incumbents. <a href="https://x.com/garrytan/status/2041621778787963174">Твит</a> <a href="https://gli.st/kftxyzj8">пример статьи</a>. Плюс ретвит про остановку rollout-а Waymo в NYC. <a href="https://x.com/garrytan/status/2041489241406906503">Твит</a></p>
+<p><strong>Zapier SDK открыли для всех</strong>. Устанавливаешь в coding-агента (Cursor, Claude Code, Codex) — агент получает доступ к 8000+ приложениям через Zapier, и может делать всё, что умеют эти API. garrytan пользуется 2 месяца. <a href="https://x.com/garrytan/status/2041501747105890393">Твит</a></p>
+<p><strong>SaaS → open source через агентов</strong>. garrytan формулирует войну 2026-го: это наши данные или данные SaaS-системы записи? «Покупатели, fully codegen-pilled, будут гигантскими волнами слезать с закрытых SaaS на OSS ближайшие два года». <a href="https://x.com/garrytan/status/2041548237879025741">Твит</a></p>
+<p><strong>Telegram как surface для OpenClaw</strong>. garrytan летит на United с ужасным Wi-Fi, на MacBook толком не поработаешь — спасается, ведя несколько топиков в Telegram-группе с OpenClaw-ботом. «Это ощущается потрясающе». <a href="https://x.com/garrytan/status/2041547098064334995">Твит</a></p>
+<p><strong>Claude Cowork vs OpenClaw</strong>. Ретвит: «Claude Cowork мощный, но сейчас ни в какое сравнение не идёт с OpenClaw — гонка началась». <a href="https://x.com/garrytan/status/2041531013478912404">Твит</a></p>
+<p><strong><a href="/tools/mempalace">MemPalace</a> — LongMemEval perfect score</strong>. Ретвит Mythos system card: <a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf">Model card PDF</a>. <a href="https://x.com/garrytan/status/2041605852382351666">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf">Mythos Preview — model card PDF</a></li>
+<li><a href="https://gist.github.com/garrytan/206fa00c4f0c64abc63798b7bbbd53d5">garrytan gist — OpenClaw Memex page example</a></li>
+<li><a href="https://gli.st/kftxyzj8">Waymo-at-SFO write-up</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

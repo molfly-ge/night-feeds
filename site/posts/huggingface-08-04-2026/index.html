@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>huggingface — 08-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>huggingface — 08-04-2026</h1>
+<p>10 твитов за сутки (всё RT). Лента — <a href="/tools/hermes-agent">Hermes Agent</a> reasoning traces, <a href="/tools/glm-5">GLM-5</a>.1 в #1 SWE-Bench Pro, <a href="/tools/harrier">Harrier</a> embedding-модель от Bing, <a href="/tools/wilddet3d">WildDet3D</a>, ClaudeCast Ep.2 и психиатрическая генетика.</p>
+<p><strong>Hermes Agent reasoning traces — 150M токенов</strong>. Lambda и Zach Mueller выложили open-source трассы рассуждений: Hermes harness от Nous Research × <a href="/tools/kimi-k2-5">Kimi-K2.5</a> и GLM-5.1. <a href="https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces">Датасет</a> · <a href="https://x.com/huggingface/status/2041576063575212379">Твит</a></p>
+<p><strong>GLM-5.1 — best-performing на SWE-Bench Pro и open-source на HF</strong>. Z.ai выложила <a href="https://huggingface.co/zai-org/GLM-5.1">веса GLM-5.1 на HF</a>. По собственному заявлению — #1 в open source и #3 globally на SWE-Bench Pro / Terminal-Bench / NL2Repo, держит автономный режим до 8 часов. <a href="https://x.com/huggingface/status/2041554501539103014">Твит</a> · <a href="https://x.com/huggingface/status/2041550153354519022">Анонс</a></p>
+<p><strong>Harrier — open-source embedding-модель от Bing, #1 на multilingual MTEB-v2</strong>. Search-команда Microsoft выложила Harrier: SOTA по retrieval-quality, semantic matching и contextual analysis, 100+ языков, до 32K input. <a href="https://x.com/huggingface/status/2041552243019980929">Твит</a> · <a href="https://x.com/huggingface/status/2041550352739164404">Анонс</a></p>
+<p><strong>WildDet3D — monocular 3D object detection</strong>. Открытая модель: работает с текстом, кликами или 2D-боксами, на zero-shot почти удваивает прежние best scores. <a href="https://x.com/huggingface/status/2041545111151022094">Твит</a></p>
+<p><strong>ClaudeCast Ep. 2</strong> — теперь поддерживает Pi-логи. Инструмент гоняет аудио-сабмишены через своих «экспертов». <a href="https://claudecast.cc/">ClaudeCast</a> · <a href="https://x.com/huggingface/status/2041539680869429671">Твит</a></p>
+<p><strong>Psychiatric Genomics Consortium на HF — 1 млрд+ строк</strong>. ADHD, депрессия, шизофрения, биполярка, PTSD, OCD, аутизм, тревожность, синдром Туретта, расстройства пищевого поведения — 12 групп, 52 публикации, все GWAS summary statistics. Раньше: wget+gunzip+20 минут разбора сепараторов × 50. Теперь: одна строка Python. <a href="https://x.com/huggingface/status/2041501396692873308">Твит</a></p>
+<p><strong>Unfolding Robotics blog</strong>. Робот учится складывать одежду: 8 би-мануальных setups, 100+ часов демонстраций, 5k+ GPU-часов. Релиз с кодом, данными и реальной историей провалов и инженерии. <a href="https://x.com/huggingface/status/2041542790610297259">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces">Hermes Agent reasoning traces dataset</a></li>
+<li><a href="https://huggingface.co/zai-org/GLM-5.1">GLM-5.1 weights on HF</a></li>
+<li><a href="https://claudecast.cc/">ClaudeCast</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

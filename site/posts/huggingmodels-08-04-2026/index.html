@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>huggingmodels — 08-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>huggingmodels — 08-04-2026</h1>
+<p>50 твитов за сутки. Бот публикует серии из 3-4 твитов на каждую модель: краткое описание + ссылка. Это лента релизов и переупаковок моделей с HF — за окно прошло около 17 моделей.</p>
+<p><strong><a href="/tools/gemma-4">Gemma-4</a>-E4B (Google) — any-to-any</strong>. Multimodal трансформер: принимает любую комбинацию текста и изображений на вход, выдаёт любой текстовый вывод. Apache 2.0, safetensors, 22k+ скачиваний. <a href="https://huggingface.co/google/gemma-4-E4B">Модель</a> · <a href="https://x.com/HuggingModels/status/2041755444264452402">Твит</a></p>
+<p><strong>Gemma-4-E2B-it-GGUF (unsloth) — квантованная vision-language</strong>. Multimodal Gemma-4 с понижением ресурсных требований через GGUF. 280K+ скачиваний. <a href="https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF">Модель</a> · <a href="https://x.com/HuggingModels/status/2041720956079763708">Твит</a></p>
+<p><strong>gemma-4-21b-a4b-it-REAP (0xSero)</strong> — pruned-версия Gemma-4 21B с REAP, мультимодал, ~660 скачиваний. <a href="https://huggingface.co/0xSero/gemma-4-21b-a4b-it-REAP">Модель</a> · <a href="https://x.com/HuggingModels/status/2041728500437262494">Твит</a></p>
+<p><strong>gemma4-31b-Opus-4.6-reasoning (kai-os)</strong> — fine-tuned reasoning-специалист на Gemma-4 31B. <a href="https://huggingface.co/kai-os/gemma4-31b-Opus-4.6-reasoning">Модель</a> · <a href="https://x.com/HuggingModels/status/2041747629223375254">Твит</a></p>
+<p><strong><a href="/tools/bonsai-8b-mlx-1bit">Bonsai-8B-mlx-1bit</a> (prism-ml)</strong> — 8B-параметрическая модель в 1-бит квантизации, заточенная под Apple Silicon (MLX). 28k+ скачиваний. <a href="https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit">Модель</a> · <a href="https://x.com/HuggingModels/status/2041762997488755150">Твит</a></p>
+<p><strong>Qwopus3.5-27B-v3 (Jackrong)</strong> — vision-language reasoning, тег competitive-programming, 10k+ скачиваний. <a href="https://huggingface.co/Jackrong/Qwopus3.5-27B-v3">Модель</a> · <a href="https://x.com/HuggingModels/status/2041762728323527091">Твит</a></p>
+<p><strong>Qwen3.5-35B-A3B-APEX-GGUF (mudler)</strong> — 35B MoE с advanced mixed-precision квантизацией, <a href="/tools/llama-cpp">llama.cpp</a>-friendly, 47k+ скачиваний. <a href="https://huggingface.co/mudler/Qwen3.5-35B-A3B-APEX-GGUF">Модель</a> · <a href="https://x.com/HuggingModels/status/2041720954498511274">Твит</a></p>
+<p><strong><a href="/tools/trinity-large-thinking">Trinity-Large-Thinking</a> (arcee-ai)</strong> — AFMoE-архитектура (Adaptive Fast Mixture of Experts), заточена под reasoning + tool-use. <a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking">Модель</a> · <a href="https://x.com/HuggingModels/status/2041755179100598719">Твит</a></p>
+<p><strong><a href="/tools/voxtral-4b-tts">Voxtral-4B-TTS</a>-2603 (mistralai)</strong> — multilingual TTS на 7 языков, ~6k скачиваний. <a href="https://huggingface.co/mistralai/Voxtral-4B-TTS-2603">Модель</a> · <a href="https://x.com/HuggingModels/status/2041747894865424563">Твит</a></p>
+<p><strong><a href="/tools/nemotron-ocr-v2">Nemotron-OCR-V2</a> (nvidia)</strong> — OCR с пониманием layout, multilingual (включая English+Chinese), распознавание объектов в контексте текста. <a href="https://huggingface.co/nvidia/nemotron-ocr-v2">Модель</a> · <a href="https://x.com/HuggingModels/status/2041736051581186547">Твит</a></p>
+<p><strong><a href="/tools/falcon-perception">Falcon-Perception</a> (tiiuae)</strong> — vision-language, open-vocabulary segmentation: указываешь словами «red car» / «person wearing a hat» — модель строит pixel-perfect маску. <a href="https://huggingface.co/tiiuae/Falcon-Perception">Модель</a> · <a href="https://x.com/HuggingModels/status/2041736051862147216">Твит</a></p>
+<p><strong>JoyAI-Image-Edit (jdopensource)</strong> — модель для редактирования изображений, 72 community likes. <a href="https://huggingface.co/jdopensource/JoyAI-Image-Edit">Модель</a> · <a href="https://x.com/HuggingModels/status/2041728505080377558">Твит</a></p>
+<p><strong>wav2vec2-large-xlsr-53-russian (jonatasgrosman)</strong> — ASR для русского, 6.7M скачиваний, бенчмарк Robust Speech Event. <a href="https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian">Модель</a> · <a href="https://x.com/HuggingModels/status/2041773805857866058">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://huggingface.co/google/gemma-4-E4B">google/gemma-4-E4B</a></li>
+<li><a href="https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF">unsloth/gemma-4-E2B-it-GGUF</a></li>
+<li><a href="https://huggingface.co/0xSero/gemma-4-21b-a4b-it-REAP">0xSero/gemma-4-21b-a4b-it-REAP</a></li>
+<li><a href="https://huggingface.co/kai-os/gemma4-31b-Opus-4.6-reasoning">kai-os/gemma4-31b-Opus-4.6-reasoning</a></li>
+<li><a href="https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit">prism-ml/Bonsai-8B-mlx-1bit</a></li>
+<li><a href="https://huggingface.co/Jackrong/Qwopus3.5-27B-v3">Jackrong/Qwopus3.5-27B-v3</a></li>
+<li><a href="https://huggingface.co/mudler/Qwen3.5-35B-A3B-APEX-GGUF">mudler/Qwen3.5-35B-A3B-APEX-GGUF</a></li>
+<li><a href="https://huggingface.co/arcee-ai/Trinity-Large-Thinking">arcee-ai/Trinity-Large-Thinking</a></li>
+<li><a href="https://huggingface.co/mistralai/Voxtral-4B-TTS-2603">mistralai/Voxtral-4B-TTS-2603</a></li>
+<li><a href="https://huggingface.co/nvidia/nemotron-ocr-v2">nvidia/nemotron-ocr-v2</a></li>
+<li><a href="https://huggingface.co/tiiuae/Falcon-Perception">tiiuae/Falcon-Perception</a></li>
+<li><a href="https://huggingface.co/jdopensource/JoyAI-Image-Edit">jdopensource/JoyAI-Image-Edit</a></li>
+<li><a href="https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian">jonatasgrosman/wav2vec2-large-xlsr-53-russian</a></li>
+</ul></article>
+  </div>
+</body>
+</html>
