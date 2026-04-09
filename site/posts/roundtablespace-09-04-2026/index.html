@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roundtablespace — 09-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>roundtablespace — 09-04-2026</h1>
+<p>47 твитов за сутки. Главные темы — Claude Mythos и Managed Agents, <a href="/tools/openclaw">OpenClaw</a> v2026.4.7, AI-инструменты, крипто.</p>
+<p><strong>Claude Mythos</strong> — Anthropic подтвердила выход Claude Mythos, который «уничтожил все бенчмарки». Модель нашла уязвимости на крупных сайтах в 72.4% случаев — настолько опасная, что публичный релиз пока не планируется. Параллельно пользователи заметили, что Opus 4.6 стал «думать» на 67% меньше — «AI shrinkflation», возможно, для экономии compute на обучение Mythos. <a href="https://x.com/RoundtableSpace/status/2041912704773038345">Твит</a>, <a href="https://x.com/RoundtableSpace/status/2041897604708233650">Твит</a></p>
+<p><strong>Claude Managed Agents в public beta</strong> — туда входит агентный harness с production-инфраструктурой: задачи, инструменты, guardrails. Доступно через Claude Console, Code и CLI. <a href="https://x.com/RoundtableSpace/status/2041966328886530059">Твит</a></p>
+<p><strong><a href="/tools/multica">Multica</a></strong> — open-source альтернатива Claude Managed Agents, чтобы строить аналогичные workflow публично. <a href="https://x.com/RoundtableSpace/status/2042048599673205014">Твит</a></p>
+<p><strong>OpenClaw v2026.4.7</strong> — добавлены <a href="/tools/memory-wiki">Memory Wiki</a>, Session Restore и видео-инструменты, чтобы агент помнил, что делал. <a href="https://x.com/RoundtableSpace/status/2041799457876869484">Твит</a></p>
+<p><strong><a href="/tools/gemma-4">Gemma 4</a> 26B локально</strong> — 50 tok/s, sub-second response, чтение календаря, отправка сообщений — всё без облака. <a href="https://x.com/RoundtableSpace/status/2041958002677141765">Твит</a></p>
+<p><strong>Claude Code с Gemma 4 бесплатно</strong> — гайд по запуску Claude Code с Gemma 4 через <a href="/tools/ollama">Ollama</a>, без API-ключей. <a href="https://x.com/RoundtableSpace/status/2041776808966701080">Твит</a></p>
+<p><strong><a href="/tools/goose">Goose</a></strong> — бесплатный AI coding agent от компании Jack Dorsey (Block), 35K+ звёзд на GitHub, работает с любой AI-моделью. Открытая альтернатива Claude Code. <a href="https://x.com/RoundtableSpace/status/2041731510307275137">Твит</a></p>
+<p><strong>VIBEcode</strong> — телефон как фабрика мобильных приложений: то, что стоило $50K и месяцы, теперь ~$100 и меньше часа. <a href="https://x.com/RoundtableSpace/status/2042010850802774126">Твит</a></p>
+<p><strong>Hermes + <a href="/tools/llm-wiki">LLM Wiki</a></strong> — Hermes встроил LLM Wiki Karpathy как skill, чтобы исследования накапливались в knowledge base. <a href="https://x.com/RoundtableSpace/status/2042003301361971577">Твит</a></p>
+<p><strong><a href="/tools/deeptutor">DeepTutor</a></strong> — self-hosted AI-тьютор с persistent memory и автономными TutorBots, 10K+ звёзд на GitHub. Бесплатная замена репетиторов за $50-$100/час. <a href="https://x.com/RoundtableSpace/status/2041890055162142842">Твит</a></p>
+<p><strong>Open-Higgsfield-AI</strong> — open-source альтернатива Higgsfield AI: 200+ моделей, text-to-image, image-to-video, lip sync, cinema mode. Self-hosted. <a href="https://x.com/RoundtableSpace/status/2041882505712947210">Твит</a></p>
+<p><strong>Rowboat</strong> — open-source AI-коворкер, превращающий email, встречи и работу в live knowledge graph. <a href="https://x.com/RoundtableSpace/status/2041837206713856193">Твит</a></p>
+<p><strong>SureThing 2.0</strong> — превращает любую ссылку в AI-сотрудника с live dashboard и памятью. <a href="https://x.com/RoundtableSpace/status/2041852306896060626">Твит</a></p>
+<p><strong>AI job search с агентами</strong> — 516 вакансий оценено, 66 заявок отправлено, сотни отклонены автоматически с обоснованием. <a href="https://x.com/RoundtableSpace/status/2042056149424353748">Твит</a></p>
+<p><strong>«How to AI» — серия гайдов</strong> — курсы от <a href="https://x.com/rubenhassid?s=11">@rubenhassid</a>: Claude 101, Claude Code, Claude Skills. <a href="https://x.com/RoundtableSpace/status/2041950452842164591">Твит</a></p>
+<p><strong>Karpathy о стоимости токенов</strong> — message 30 стоит в 31 раз дороже, чем message 1. <a href="https://x.com/RoundtableSpace/status/2041784650159296520">Твит</a></p>
+<p><strong>Chrome: встроенные вертикальные вкладки</strong> — скоро в Chrome. <a href="https://x.com/RoundtableSpace/status/2041927803697033304">Твит</a></p>
+<h2>Источники</h2>
+<ul>
+<li><a href="https://github.com/openclaw/openclaw/releases/tag/v2026.4.7">OpenClaw v2026.4.7 Release</a></li>
+<li><a href="https://github.com/HKUDS/DeepTutor">DeepTutor — GitHub</a></li>
+<li><a href="https://github.com/Anil-matcha/Open-Higgsfield-AI">Open-Higgsfield-AI — GitHub</a></li>
+<li><a href="https://ruben.substack.com/p/claude">Claude 101 — ruben.substack.com</a></li>
+<li><a href="https://ruben.substack.com/p/claude-code">Claude Code гайд</a></li>
+<li><a href="https://ruben.substack.com/p/claude-skills">Claude Skills гайд</a></li>
+<li><a href="https://ruben.substack.com/p/banana-2-3bd">Nano banana 2</a></li>
+<li><a href="https://alison.com/course/ai-powered-cybersecurity-fundamentals">AI Cybersecurity Fundamentals — Alison</a></li>
+<li><a href="https://x.com/RoundtableSpace/status/2041966328886530059">@RoundtableSpace, 08-04-2026</a></li>
+</ul></article>
+  </div>
+</body>
+</html>

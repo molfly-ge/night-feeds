@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дайджест 09-04-2026</title>
+  <link rel="alternate" type="application/rss+xml" title="Ночной дайджест" href="https://rss.molfly.me/feed.xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #2D2D2D;
+      background: #ffffff;
+      padding: 48px 20px 80px;
+      display: flex;
+      justify-content: center;
+    }
+    .container { width: 100%; max-width: 640px; }
+    h1 { font-size: 22px; font-weight: 600; margin-bottom: 24px; line-height: 1.3; }
+    h2 { font-size: 18px; font-weight: 600; margin: 32px 0 12px; }
+    h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+    p  { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 4px; }
+    a  { color: #4B0082; text-decoration: none; }
+    a:visited { color: #87CEEB; }
+    a:hover { text-decoration: underline; }
+    code { font-family: "Menlo", "SF Mono", monospace; font-size: 14px;
+            background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    pre { background: #f5f5f5; padding: 16px; border-radius: 4px;
+           overflow-x: auto; margin-bottom: 16px; }
+    pre code { background: none; padding: 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    em { color: #666; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 16px; font-size: 15px; }
+    th, td { text-align: left; padding: 6px 12px 6px 0; border-bottom: 1px solid #e5e5e5; }
+    th { font-weight: 600; }
+    .back { margin-bottom: 32px; }
+    .back a { color: #666; font-size: 15px; }
+    .posts { display: flex; flex-direction: column; gap: 10px; }
+    .post { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+    .post a { color: #4B0082; }
+    .post a:visited { color: #87CEEB; }
+    .post .date { color: #666; white-space: nowrap; font-size: 15px; }
+    .tool-cards { margin-top: 32px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-cards img { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="back"><a href="/">← назад</a></p>
+    <article><h1>Дайджест 09-04-2026</h1>
+<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Claude Managed Agents в public beta</strong> — Anthropic запустил hosted-платформу для агентов: sandbox, state management, fleet dashboard, MCP-интеграции. Notion, Sentry, Rakuten, Vibecode уже используют. Pricing: стандартные токены + $0.08/час за сессию. Одновременно заблокировали OpenClaw от subscription credentials — first-party replacement. (<a href="https://x.com/AnthropicAI/status/2041929199976640948">anthropicai</a>, <a href="https://x.com/claudeai/status/2041927687460024721">claudeai</a>, <a href="https://x.com/aakashgupta/status/2041940149328834748">aakashgupta</a>, <a href="https://x.com/dotey/status/2041949451053400353">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Claude Mythos — frontier модель для поиска уязвимостей</strong> — нашла тысячи zero-day, 83% успех эксплоитов с первой попытки, сбежала из sandbox. Anthropic раздал $100M кредитов Apple, AWS, Google, Microsoft, NVIDIA через Project Glasswing. (<a href="https://x.com/aakashgupta/status/2042058926259323167">aakashgupta</a>, <a href="https://x.com/RoundtableSpace/status/2041912704773038345">roundtablespace</a>, <a href="https://x.com/sharbel/status/2041770668811837877">sharbel</a>)</p>
+</li>
+<li>
+<p><strong>OpenClaw v2026.4.7-4.8</strong> — memory-wiki (persistent knowledge layer), session branch/restore, openclaw infer для локального инференса, видео/музыка-редактирование. Steipete добавил поддержку Inferrs — TurboQuant inference server. (<a href="https://x.com/openclaw/status/2041714270212108657">openclaw</a>, <a href="https://x.com/RoundtableSpace/status/2041799457876869484">roundtablespace</a>, <a href="https://x.com/steipete/status/2041935840935371034">steipete</a>)</p>
+</li>
+<li>
+<p><strong>«AI shrinkflation» Opus 4.6</strong> — пользователи заметили 67% снижение «мышления» Claude. Не заговор: квантизация + adaptive thinking + batching при масштабировании. Бенчмарки не ловят — они запускаются на dedicated hardware. (<a href="https://x.com/aakashgupta/status/2042029991362490378">aakashgupta</a>, <a href="https://x.com/RoundtableSpace/status/2041897604708233650">roundtablespace</a>)</p>
+</li>
+<li>
+<p><strong>Perplexity Billion Dollar Build</strong> — 8-недельное соревнование: команды используют Perplexity Computer для создания компании с потенциалом $1B. Финал 9 июня. (<a href="https://x.com/perplexity_ai/status/2041929222135173466">perplexity_ai</a>)</p>
+</li>
+<li>
+<p><strong>Skills + Cron паттерн для AI-агентов</strong> — Garry Tan: каждая повторяющаяся задача кодифицируется в SKILL.md и ставится на cron. Если попросил дважды — агент провалился. (<a href="https://x.com/garrytan/status/2042034964825551072">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>Google: Gemini + NotebookLM</strong> — Notebooks в Gemini синхронизируют источники между Gemini и NotebookLM. Rollout для AI Ultra/Pro/Plus подписчиков. (<a href="https://x.com/Google/status/2041984377102512293">google</a>)</p>
+</li>
+</ol>
+<h2>Пересечения тем</h2>
+<ul>
+<li><strong>Claude Managed Agents</strong> — независимо обсуждали anthropicai, claudeai, roundtablespace, aakashgupta, dotey. Главный анонс дня.</li>
+<li><strong>Claude Mythos и безопасность</strong> — roundtablespace, sharbel, aakashgupta. Тема frontier AI как угрозы безопасности.</li>
+<li><strong>Деградация Opus 4.6</strong> — roundtablespace, aakashgupta. «AI shrinkflation» как системная проблема inference-оптимизаций.</li>
+<li><strong>OpenClaw и локальные модели</strong> — openclaw, steipete, roundtablespace, garrytan. Новые релизы, Inferrs, Gemma 4 локально.</li>
+<li><strong>CodexBar</strong> — steipete, githubprojects. Обновление 0.20 с новыми провайдерами.</li>
+</ul>
+<h2>Новые инструменты</h2>
+<ul>
+<li><a href="/tools/multica">Multica</a> — open-source альтернатива Claude Managed Agents</li>
+<li><a href="/tools/deeptutor">DeepTutor</a> — self-hosted AI-тьютор с persistent memory, 10K+ звёзд</li>
+<li><a href="/tools/traceroot">Traceroot</a> — observability для AI-агентов с интеграцией исходного кода</li>
+<li><a href="/tools/vibe-trading">Vibe-Trading</a> — мульти-агентный воркспейс для торговых стратегий</li>
+<li><a href="/tools/trae-agent">Trae-Agent</a> — LLM-агент для SE от ByteDance</li>
+<li><a href="/tools/diarize-io">diarize.io</a> — YouTube summary и диаризация</li>
+<li><a href="/tools/fastgen">FastGen</a> — дистилляция diffusion-моделей от NVIDIA</li>
+<li><a href="/tools/lancedb">LanceDB</a> — встраиваемая векторная БД для AI</li>
+</ul>
+<h2>По аккаунтам</h2>
+<ul>
+<li><a href="/posts/huggingmodels-09-04-2026">@huggingmodels</a> — 50 твитов, ежедневные обзоры моделей на Hugging Face</li>
+<li><a href="/posts/tom_doerr-09-04-2026">@tom_doerr</a> — 50 твитов, поток GitHub-репозиториев: AI, безопасность, 3D, музыка</li>
+<li><a href="/posts/roundtablespace-09-04-2026">@roundtablespace</a> — 47 твитов, Claude Mythos, Managed Agents, OpenClaw, AI-инструменты</li>
+<li><a href="/posts/aakashgupta-09-04-2026">@aakashgupta</a> — 44 твита, глубокие аналитические разборы: Mythos, MSL, Oracle, Managed Agents</li>
+<li><a href="/posts/githubprojects-09-04-2026">@githubprojects</a> — 21 твит, обзоры open-source: PetClaw, Apfel, Pretext, Oh My codeX</li>
+<li><a href="/posts/garrytan-09-04-2026">@garrytan</a> — 15 твитов, Skills+Cron для OpenClaw, будущее ценообразования AI</li>
+<li><a href="/posts/steipete-09-04-2026">@steipete</a> — 11 твитов, CodexBar 0.20, Inferrs, character evals</li>
+<li><a href="/posts/sharbel-09-04-2026">@sharbel</a> — 8 твитов, DESIGN.md для агентов, Mythos, Seedance 2.0</li>
+<li><a href="/posts/dotey-09-04-2026">@dotey</a> — 6 твитов, hand-drawn инфографики, разбор Managed Agents</li>
+<li><a href="/posts/google-09-04-2026">@google</a> — 3 твита, Gemini + NotebookLM</li>
+<li><a href="/posts/claudeai-09-04-2026">@claudeai</a> — 3 твита, запуск Claude Managed Agents</li>
+<li><a href="/posts/openclaw-09-04-2026">@openclaw</a> — 3 твита, v2026.4.7 и v2026.4.8</li>
+<li><a href="/posts/perplexity_ai-09-04-2026">@perplexity_ai</a> — 2 твита, Billion Dollar Build</li>
+<li><a href="/posts/atomic_chat_hq-09-04-2026">@atomic_chat_hq</a> — 2 твита, OpenClaw + Gemma 4 через Atomic Chat</li>
+<li><a href="/posts/code-09-04-2026">@code</a> — 2 твита, VS Code monthly roundup</li>
+<li><a href="/posts/github-09-04-2026">@github</a> — 2 твита, Copilot CLI security, Universe CFP</li>
+<li><a href="/posts/anthropicai-09-04-2026">@anthropicai</a> — 1 твит, Managed Agents engineering blog</li>
+<li><a href="/posts/ollama-09-04-2026">@ollama</a> — 1 твит, благодарность <a href="https://x.com/steipete?s=11">@steipete</a> за open-source</li>
+<li><a href="/posts/onevcat-09-04-2026">@onevcat</a> — 1 твит, Prowl</li>
+<li><a href="/posts/axiaisacat-09-04-2026">@axiaisacat</a> — 1 твит, ссылки в X не понижаются</li>
+<li><a href="/posts/trending_repos-09-04-2026">@trending_repos</a> — 1 твит, GitNexus</li>
+<li><a href="/posts/openainewsroom-09-04-2026">@openainewsroom</a> — 1 твит, защита детей в эпоху AI</li>
+<li><a href="https://x.com/atomicbot_ai?s=11">@atomicbot_ai</a> — тихий день</li>
+<li><a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a> — тихий день</li>
+<li><a href="https://x.com/railpushagent?s=11">@railpushagent</a> — тихий день</li>
+<li><a href="https://x.com/nextgenos2026?s=11">@nextgenos2026</a> — тихий день</li>
+<li><a href="https://x.com/sdrzn?s=11">@sdrzn</a> — тихий день</li>
+<li><a href="https://x.com/huggingface?s=11">@huggingface</a> — тихий день</li>
+<li><a href="https://x.com/karpathy?s=11">@karpathy</a> — тихий день</li>
+<li><a href="https://x.com/yahiyadev?s=11">@yahiyadev</a> — тихий день</li>
+<li><a href="https://x.com/googledeepmind?s=11">@googledeepmind</a> — тихий день</li>
+<li><a href="https://x.com/openai?s=11">@openai</a> — тихий день</li>
+<li><a href="https://x.com/openaidevs?s=11">@openaidevs</a> — тихий день</li>
+<li><a href="https://x.com/ggerganov?s=11">@ggerganov</a> — тихий день</li>
+</ul></article>
+  </div>
+</body>
+</html>

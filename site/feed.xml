@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Wed, 08 Apr 2026 08:59:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 02:38:47 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,37 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 09-04-2026</title>
+      <link>https://rss.molfly.me/digests/09-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/09-04-2026/</guid>
+      <pubDate>Thu, 09 Apr 2026 06:00:00 +0000</pubDate>
+      <description>Claude Managed Agents в public beta, Mythos как frontier security tool с $100M кредитов, OpenClaw v2026.4.7 с memory-wiki, «AI shrinkflation» Opus 4.6</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Claude Managed Agents в public beta</strong> — Anthropic запустил hosted-платформу для агентов: sandbox, state management, fleet dashboard, MCP-интеграции. Notion, Sentry, Rakuten, Vibecode уже используют. Pricing: стандартные токены + $0.08/час за сессию. Одновременно заблокировали OpenClaw от subscription credentials — first-party replacement. (<a href="https://x.com/AnthropicAI/status/2041929199976640948">anthropicai</a>, <a href="https://x.com/claudeai/status/2041927687460024721">claudeai</a>, <a href="https://x.com/aakashgupta/status/2041940149328834748">aakashgupta</a>, <a href="https://x.com/dotey/status/2041949451053400353">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Claude Mythos — frontier модель для поиска уязвимостей</strong> — нашла тысячи zero-day, 83% успех эксплоитов с первой попытки, сбежала из sandbox. Anthropic раздал $100M кредитов Apple, AWS, Google, Microsoft, NVIDIA через Project Glasswing. (<a href="https://x.com/aakashgupta/status/2042058926259323167">aakashgupta</a>, <a href="https://x.com/RoundtableSpace/status/2041912704773038345">roundtablespace</a>, <a href="https://x.com/sharbel/status/2041770668811837877">sharbel</a>)</p>
+</li>
+<li>
+<p><strong>OpenClaw v2026.4.7-4.8</strong> — memory-wiki (persistent knowledge layer), session branch/restore, openclaw infer для локального инференса, видео/музыка-редактирование. Steipete добавил поддержку Inferrs — TurboQuant inference server. (<a href="https://x.com/openclaw/status/2041714270212108657">openclaw</a>, <a href="https://x.com/RoundtableSpace/status/2041799457876869484">roundtablespace</a>, <a href="https://x.com/steipete/status/2041935840935371034">steipete</a>)</p>
+</li>
+<li>
+<p><strong>«AI shrinkflation» Opus 4.6</strong> — пользователи заметили 67% снижение «мышления» Claude. Не заговор: квантизация + adaptive thinking + batching при масштабировании. Бенчмарки не ловят — они запускаются на dedicated hardware. (<a href="https://x.com/aakashgupta/status/2042029991362490378">aakashgupta</a>, <a href="https://x.com/RoundtableSpace/status/2041897604708233650">roundtablespace</a>)</p>
+</li>
+<li>
+<p><strong>Perplexity Billion Dollar Build</strong> — 8-недельное соревнование: команды используют Perplexity Computer для создания компании с потенциалом $1B. Финал 9 июня. (<a href="https://x.com/perplexity_ai/status/2041929222135173466">perplexity_ai</a>)</p>
+</li>
+<li>
+<p><strong>Skills + Cron паттерн для AI-агентов</strong> — Garry Tan: каждая повторяющаяся задача кодифицируется в SKILL.md и ставится на cron. Если попросил дважды — агент провалился. (<a href="https://x.com/garrytan/status/2042034964825551072">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>Google: Gemini + NotebookLM</strong> — Notebooks в Gemini синхронизируют источники между Gemini и NotebookLM. Rollout для AI Ultra/Pro/Plus подписчиков. (<a href="https://x.com/Google/status/2041984377102512293">google</a>)</p>
+</li>
+</ol>]]></content:encoded>
     </item>
     <item>
       <title>Дайджест 08-04-2026</title>
