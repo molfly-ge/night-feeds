@@ -7,7 +7,7 @@
     <link>https://rss.molfly.me/</link>
     <description>Ежедневный дайджест Twitter-аккаунтов об AI и технологиях</description>
     <language>ru</language>
-    <lastBuildDate>Thu, 09 Apr 2026 02:38:47 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 02:31:07 +0000</lastBuildDate>
     <atom:link href="https://rss.molfly.me/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Дайджест 31-03-2026</title>
@@ -151,6 +151,37 @@
 <p><strong>3. AI-агенты торгуют на информационном лаге</strong> — бот видит спортивные данные на 8 секунд раньше Polymarket и делает деньги на этой дельте. Это не мошенничество, просто арбитраж данных. (<a href="https://x.com/roundtablespace?s=11">@roundtablespace</a>)</p>
 <p><strong>4. RAG падает не там, где думают</strong> — не из-за модели и не из-за эмбеддингов. Индексация — вот где всё ломается в production при масштабе 100k+ документов. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>
 <p><strong>5. CLI-инструменты нужно переосмыслить под AI-агентов</strong> — они спроектированы для людей с клавиатурой. AI-агенты как основные пользователи CLI — другой UX, другие требования. (<a href="https://x.com/brandgrowthos?s=11">@brandgrowthos</a>)</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Дайджест 10-04-2026</title>
+      <link>https://rss.molfly.me/digests/10-04-2026/</link>
+      <guid isPermaLink="true">https://rss.molfly.me/digests/10-04-2026/</guid>
+      <pubDate>Fri, 10 Apr 2026 06:00:00 +0000</pubDate>
+      <description>Claude Advisor strategy и Cowork GA, Mythos напрягает Уолл-стрит, GBrain от Garry Tan, Shopify AI-агенты, 9 новых инструментов</description>
+      <content:encoded><![CDATA[<h2>Топ-идеи дня</h2>
+<ol>
+<li>
+<p><strong>Claude Advisor strategy — Opus как советник</strong> — Sonnet с Opus-advisor набирает +2.7 п.п. на SWE-bench при снижении стоимости на 11.9%. Новая парадигма «дешёвый исполнитель + дорогой советник» для AI-агентов. (<a href="https://x.com/claudeai/status/2042308622181339453">claudeai</a>, <a href="https://x.com/RoundtableSpace/status/2042343040002723903">RoundtableSpace</a>, <a href="https://x.com/dotey/status/2042324245024555284">dotey</a>)</p>
+</li>
+<li>
+<p><strong>Claude Cowork — GA для всех платных планов</strong> — делегирование задач AI-агенту теперь доступно всем подписчикам, Enterprise получает RBAC и аналитику. (<a href="https://x.com/claudeai/status/2042273755485888810">claudeai</a>, <a href="https://x.com/RoundtableSpace/status/2042297741414744073">RoundtableSpace</a>)</p>
+</li>
+<li>
+<p><strong>Mythos напрягает Уолл-стрит</strong> — Bessent и Powell экстренно собрали топ-менеджеров из-за киберрисков нового Claude Mythos. Пользователи отмечают, что Opus уже кажется устаревшим. (<a href="https://x.com/RoundtableSpace/status/2042418537449595116">RoundtableSpace</a>, <a href="https://x.com/sharbel/status/2042164875233796141">sharbel</a>)</p>
+</li>
+<li>
+<p><strong>GBrain — open-source pgvector RAG</strong> — Garry Tan за неделю собрал персональную RAG-систему для OpenClaw: семантический поиск по 13K+ markdown-файлов. MIT-лицензия. (<a href="https://x.com/garrytan/status/2042300939525402875">garrytan</a>)</p>
+</li>
+<li>
+<p><strong>Shopify запускает AI-агентов для коммерции</strong> — 5.6M магазинов получают полный AI-тулкит. Claude Code и Cursor могут управлять Shopify-магазинами. (<a href="https://x.com/RoundtableSpace/status/2042365689403752570">RoundtableSpace</a>, <a href="https://x.com/aakashgupta/status/2042415274511704434">aakashgupta</a>)</p>
+</li>
+<li>
+<p><strong>Karpathy: разрыв в понимании AI растёт</strong> — кто пробовал бесплатный уровень год назад vs кто работает с фронтирными моделями ежедневно — это разные миры. OpenClaw стал большим, потому что не-техническая аудитория впервые получила локального агента. (<a href="https://x.com/karpathy/status/2042334451611693415">karpathy</a>)</p>
+</li>
+<li>
+<p><strong>Perplexity + Plaid = новый Mint</strong> — интеграция с Plaid для управления финансами. Трекинг расходов, бюджеты, net worth — всё через AI. (<a href="https://x.com/perplexity_ai/status/2042256932397019368">perplexity_ai</a>, <a href="https://x.com/aakashgupta/status/2042319393489895918">aakashgupta</a>)</p>
+</li>
+</ol>]]></content:encoded>
     </item>
     <item>
       <title>Дайджест 09-04-2026</title>

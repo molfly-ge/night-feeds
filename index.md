@@ -1,5 +1,6 @@
 # Реестр дайджестов
 
+- [10-04-2026](digests/digest-10-04-2026.md) — Claude Advisor strategy и Cowork GA, Mythos напрягает Уолл-стрит, GBrain от Garry Tan, Shopify AI-агенты, 9 новых инструментов
 - [09-04-2026](digests/digest-09-04-2026.md) — Claude Managed Agents в public beta, Mythos как frontier security tool с $100M кредитов, OpenClaw v2026.4.7 с memory-wiki, «AI shrinkflation» Opus 4.6
 - [08-04-2026](digests/digest-08-04-2026.md) — Anthropic Project Glasswing и Claude Mythos Preview (нашёл 27-летнюю дыру в OpenBSD), GLM-5.1 от z.ai на 100k Huawei Ascend, OpenClaw 2026.4.7 с memory-wiki, Codex 3M weekly users
 - [07-04-2026](digests/digest-07-04-2026.md) — Polymarket-бот с Claude Code +13%, LLM Wiki от Karpathy как замена RAG, Gemma 4 в облаке Ollama на GPU Blackwell, уязвимость Claude.ai не исправлена
